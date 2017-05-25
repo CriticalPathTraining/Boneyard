@@ -1,0 +1,8 @@
+SELECT        InvoiceDetails.Id, InvoiceDetails.InvoiceId, InvoiceDetails.ProductId, Invoices.CustomerId, Customers.FirstName, Customers.LastName, Customers.State, Customers.City, Customers.ZipCode, 
+                         SalesRegions.Region, Invoices.InvoiceDate AS [Purchase Date], InvoiceDetails.Quantity AS [Units Sold], InvoiceDetails.Price AS [Sales Amount], Products.UnitCost * InvoiceDetails.Quantity AS [Product Cost], 
+                         Invoices.InvoiceType
+FROM            Invoices INNER JOIN
+                         InvoiceDetails ON Invoices.Id = InvoiceDetails.InvoiceId INNER JOIN
+                         Products ON InvoiceDetails.ProductId = Products.Id INNER JOIN
+                         Customers ON Invoices.CustomerId = Customers.Id INNER JOIN
+                         SalesRegions ON Customers.State = SalesRegions.State

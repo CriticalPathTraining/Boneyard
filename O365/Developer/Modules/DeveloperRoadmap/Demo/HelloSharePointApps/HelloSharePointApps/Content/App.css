@@ -1,0 +1,24 @@
+﻿
+#toolbar {
+  margin: 0px;
+  padding: 6px;
+  padding-left: 0px;
+  background-color: black;
+  border-radius: 8px;
+}
+
+  #toolbar input {
+    padding: 2px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: black;
+  }
+
+#content_box {
+  margin-top: 4px;
+  min-height: 200px;
+  border: 1px solid #AAA;
+  border-radius: 8px;
+  background-color: #DDD;
+  padding: 8px;
+}

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="a6d9e21b-ac83-4803-af88-35a28027a1c0" 
+        solutionId="a6d9e21b-ac83-4803-af88-35a28027a1c0" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="AppPermissionsDemo"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="34a403ba-b888-4d65-9285-02cf525e579b" />
+  </features>
+</package>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  
+  <WebTemplate Name="WingtipWebTemplate"
+				 Title="Wingtip (extra special) Team Site"
+				 BaseTemplateID="1"
+				 BaseTemplateName="STS"
+				 BaseConfigurationID="0"
+				 DisplayCategory="Wingtip" />
+
+</Elements>

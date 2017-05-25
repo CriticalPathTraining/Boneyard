@@ -1,0 +1,27 @@
+
+  var requestUri = "/crm.svc/Customers/";
+
+  var requestHeaders = {
+    "accept": "application/json;odata=verbose",
+  }
+
+  var customerData = {
+    LastName: LastName,
+    FirstName: FirstName,
+    Company: Company,
+    WorkPhone: WorkPhone,
+    HomePhone: HomePhone,
+    EmailAddress: Email
+  };
+
+  var requestBody = JSON.stringify(customerData);
+
+  var deferred = $.ajax({
+    url: requestUri,
+    type: "POST",
+    contentType: "application/json;odata=verbose",
+    headers: requestHeaders,
+    data: requestBody,
+  });
+
+  return deferred.promise();

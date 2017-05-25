@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "WingtipSalesModelMD", "WingtipSalesModelMD\WingtipSalesModelMD.dwproj", "{E7B984BB-22E6-4C85-853D-09B0F25ED3FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7B984BB-22E6-4C85-853D-09B0F25ED3FA}.Development|Default.ActiveCfg = Development
+		{E7B984BB-22E6-4C85-853D-09B0F25ED3FA}.Development|Default.Build.0 = Development
+		{E7B984BB-22E6-4C85-853D-09B0F25ED3FA}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

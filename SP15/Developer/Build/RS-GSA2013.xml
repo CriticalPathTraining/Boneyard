@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Code>RS-GSA2013</Code>
+  <ShortName></ShortName>
+  <LongName>The Great SharePoint Adventure 2013 Roadshow</LongName>
+  <ExcludedModules>
+    <ExcludedModule Id="DevSolutions" />
+    <ExcludedModule Id="PagesNavUi" />
+    <ExcludedModule Id="ReusableTypeDefs" />
+    <ExcludedModule Id="ListsEvents" />
+    <ExcludedModule Id="DevServerSide" />
+    <ExcludedModule Id="ECM" />
+    <ExcludedModule Id="WCM" />
+    <ExcludedModule Id="OfficeServices" />
+  </ExcludedModules>
+  <Manual>
+    <FrontMatters>
+      <FrontMatter SortOrder="00A">AboutCourse_RS-GSA2013.docx</FrontMatter>
+      <FrontMatter SortOrder="00B">AboutLabs.docx</FrontMatter>
+    </FrontMatters>
+    <BackMatters />
+  </Manual>
+</Course>

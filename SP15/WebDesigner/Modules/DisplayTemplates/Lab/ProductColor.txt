@@ -1,0 +1,10 @@
+				<div style="text-align:middle;">Product Color: 
+				<!--#_
+				var colorSplit = ctx.CurrentItem.ProductColorOWSCHCM.split(";#")
+				for(i = 0; i < colorSplit.length; i++){
+				_#-->
+				<div style="background-color:_#=colorSplit[i]=#_;width:25px;height:25px;border-radius:3px;display:inline-block;"></div>
+				<!--#_
+				}
+				_#-->
+				</div><br/>

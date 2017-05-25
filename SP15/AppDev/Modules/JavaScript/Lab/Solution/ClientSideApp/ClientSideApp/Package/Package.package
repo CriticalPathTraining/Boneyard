@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="2b46a6ec-5a04-436f-9d02-7a39d1265a4b" 
+        solutionId="2b46a6ec-5a04-436f-9d02-7a39d1265a4b" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="ClientSideApp"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="06432e04-7a47-43e1-a089-8914fb3adb34" />
+  </features>
+</package>

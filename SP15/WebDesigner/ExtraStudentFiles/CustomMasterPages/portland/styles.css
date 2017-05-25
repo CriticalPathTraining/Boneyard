@@ -1,0 +1,928 @@
+﻿/*
+body{
+	margin-top: 50px;
+	background-color: red;
+}
+*/
+
+/*  Dark Blue: #000044     */
+/*  Dark Red: #880909      */
+/*  Light Yellow: #FFFFCC  */
+/*  Dark Orange: #CA651A   */
+
+
+#suiteBarLeft {
+  background-color: #000044;
+}
+
+.ms-core-brandingText::after {
+  content: " Rocks!";
+}
+
+#suiteBarRight {
+  background-color: #E4E4E4;
+  border-bottom: 1px solid #CCC;
+}
+
+.ms-cui-topBar2 {
+  background-color: #E4E4E4;
+}
+
+#s4-titlerow {
+  border-bottom: 2px solid #AAA;
+  height: 90px;
+  padding: 0px;
+}
+
+#titleAreaBox {
+  margin: 0px;
+}
+
+.ms-cui-tabContainer {
+  border-bottom: 2px solid #AAA;
+}
+
+
+.ms-siteicon-img {
+  display: none;
+}
+
+#siteIcon {
+  margin-top: 6px;
+  margin-left: 20px;
+  background-image: url('img/wingtip-logo-small.png');
+  background-repeat: no-repeat;
+}
+
+#siteIcon, .ms-siteicon-a {
+  width: 132px;
+  height: 80px;
+}
+
+
+
+.ms-mpSearchBox {
+  display: none;
+}
+
+#pageTitle {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #9AADBB;
+  font-family: 'Buxton Sketch';
+}
+
+#s4-workspace {
+}
+
+
+
+#s4-titlerow {
+  background-color: white;
+}
+
+#DeltaSuiteLinks {
+  display: none;
+}
+
+#ms-help {
+  display: none;
+}
+
+.ms-promotedActionButton {
+  display: none !important;
+}
+
+#contentRow {
+  padding: 0px;
+  margin: 0px;
+}
+
+#s4-workspace {
+  background-image: url("img/RainyWindow.jpg") !important;
+  background-repeat: repeat;
+}
+
+.ms-dialog body, .ms-dialog #s4-workspace {
+  background-image: none !important;
+  background-color: #FFFFCC;
+}
+
+#contentBox {
+  border-top-style: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #9BAEBC;
+  margin-top: 16px;
+  background-color: #FFF;
+  margin-left: 164px;
+  margin-right: 20px;
+  padding: 12px;
+  padding-top: 8px;
+  border-radius: 12px;
+  border-bottom-right-radius: 12px;
+  opacity: .8;
+  min-height: 720px;
+}
+
+.ms-fullscreenmode #contentBox {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+
+
+
+#contentBox h1, #contentBox h2, #contentBox h3 {
+  font-family: 'Buxton Sketch';
+  font-weight: bold;
+  color: #000044;
+  margin: 0px;
+}
+
+#contentBox h1 {
+  font-size: 32px;
+}
+
+#contentBox h2 {
+  font-size: 1.5em;
+}
+
+#contentBox h3 {
+  font-size: 1.2em;
+}
+
+#contentBox p {
+  color: #444;
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+
+#contentBox table {
+  padding: 8px;
+  border: 4px green 1px;
+  border-collapse: separate;
+}
+
+#contentBox hr {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-color: #000044;
+}
+
+#panel_left {
+  box-sizing: border-box;
+  float: left;
+  width: 49%;
+  margin: 0px;
+  padding: 8px;
+}
+
+
+#panel_right {
+  box-sizing: border-box;
+  float: right;
+  width: 49%;
+  margin: 0px;
+  padding: 8px;
+}
+
+
+
+/* Top Nav Bar Styles  */
+/*  ****************** */
+
+#DeltaTopNavigation .ms-core-listMenu-horizontalBox {
+  height: 20px;
+  float: right;
+  margin: 0px;
+  width: 680px;
+  background-color: #000044;
+  padding: 4px 8px 6px 8px;
+  padding-left: 6px;
+  border-bottom-left-radius: 5px;
+}
+
+#DeltaTopNavigation .static > li > .ms-core-listMenu-item,
+#DeltaTopNavigation .dynamic > li > .ms-core-listMenu-item {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  height: 18px;
+  line-height: 16px;
+  padding: 2px 12px 0px 8px;
+  margin-right: 0px !important;
+  color: white;
+}
+
+#DeltaTopNavigation ul {
+  margin: 0px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+#DeltaTopNavigation .root > li {
+  border-right: 1px solid #555;
+  border-style: none;
+  margin-right: 4px;
+  border-radius: 4px;
+}
+
+  #DeltaTopNavigation .root > li > .ms-core-listMenu-selected {
+    color: #880909;
+    background-color: #FFFFCC;
+    border-radius: 4px;
+  }
+
+.ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+  padding-right: 26px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected a.ms-core-listMenu-item:hover,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected .dynamic-children.additional-background {
+  background-image: url("/_layouts/15/images/menu-down.GIF?rev=23");
+}
+
+#DeltaTopNavigation a.ms-core-listMenu-item:hover .dynamic-children.additional-background {
+  background-image: url("/_layouts/15/images/menu-down.GIF?rev=23");
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+#DeltaTopNavigation a.ms-core-listMenu-item:hover {
+  text-decoration: none;
+  background-color: #FFFFCC;
+  color: black;
+  border-radius: 4px;
+}
+
+#DeltaTopNavigation .ms-core-listMenu-selected:hover {
+  color: DarkBlue !important;
+  background-color: orange !important;
+}
+
+
+#DeltaTopNavigation ul.dynamic {
+  min-width: 160px;
+  border: 0px none;
+  padding-top: 1px;
+  margin-left: 0px;
+  margin-top: 1px;
+  background-color: #FFFFCC;
+}
+
+  #DeltaTopNavigation ul.dynamic .ms-core-listMenu-item {
+    display: block;
+    border: 1px solid #000044;
+    border-top: 0px;
+    color: #880909;
+    padding: 4px;
+    padding-left: 8px;
+  }
+
+.ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+  padding-right: 26px;
+  background-image: url("/_layouts/15/images/MENULIGT.GIF?rev=23");
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+
+#DeltaTopNavigation li.dynamic > a:hover {
+  text-decoration: none;
+  background-color: Orange;
+  color: black;
+}
+
+.ms-navedit-linkCell a,
+.ms-navedit-linkCell .ms-core-listMenu-selected:hover,
+#DeltaTopNavigation .ms-navedit-editLinksText > span > .msmetadata,
+.ms-core-listMenuEdit:hover > tr > .ms-navedit-linkCell > .ms-core-listMenu-item,
+.ms-core-listMenu-horizontalBox div.ms-navedit-hiddenAppendArea,
+.ms-navedit-addLinkText {
+  color: white !important;
+  background-color: transparent !important;
+  height: 16px;
+  border: 0px none;
+}
+
+#DeltaTopNavigation .root > li.ms-listMenu-editLink {
+  border-style: none;
+}
+
+.ms-navedit-editLinksText > span > .ms-metadata,
+.ms-core-listMenuEdit > tr > .ms-navedit-linkCell > .ms-core-listMenu-item {
+  font-size: 10px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.ms-navedit-editLinksText:hover > span > .ms-metadata,
+.ms-core-listMenuEdit:hover > tr > .ms-navedit-linkCell > .ms-core-listMenu-item {
+  color: orange;
+}
+
+.ms-navedit-editLinksIconWrapper {
+  display: none;
+}
+
+.ms-core-listMenu-horizontalBox .dynamic .dynamic-children.additional-background {
+  background-image: url("/_layouts/15/images/menu-right.gif?rev=23");
+}
+
+.ms-core-listMenu-verticalBox .dynamic-children.additional-background {
+  padding-right: 26px;
+  background-image: url("/_layouts/15/images/menu-right.gif?rev=23");
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+/* end Top Link Bar*/
+
+
+/* begin Quick Launch */
+
+
+#sideNavBox {
+  margin: 8px;
+  margin-top: 0px;
+  width: 132px;
+  border-radius: 8px;
+  padding-left: 12px;
+  background-color: #000044;
+  padding: 4px;
+  border: 2px solid #9BAEBC;
+}
+
+.ms-core-sideNavBox-removeLeftMargin {
+  margin-left: 0px;
+}
+
+#sideNavBox .static > li > .ms-core-listMenu-item,
+#sideNavBox .dynamic > li > .ms-core-listMenu-item {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  height: 18px;
+  line-height: 16px;
+  padding: 2px 12px 0px 8px;
+  margin-right: 0px !important;
+  color: white;
+}
+
+#sideNavBox ul {
+  margin: 0px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+#sideNavBox .root > li {
+  border-right: 1px solid #555;
+  border-style: none;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 4px;
+}
+
+#sideNavBox ul.ms-core-listMenu-root > li.static a {
+  font-family: Cambria;
+  font-size: 11px;
+}
+
+#sideNavBox ul.ms-core-listMenu-root > li.static > ul.static > li.static {
+  padding-left: 8px;
+}
+
+  #sideNavBox ul.ms-core-listMenu-root > li.static > ul.static > li.static a {
+    font-family: 'Cambria Math';
+    font-size: 9px;
+    font-weight: normal;
+  }
+
+#sideNavBox .root > li > .ms-core-listMenu-selected {
+  color: #880909;
+  background-color: #FFFFCC;
+  border-radius: 4px;
+}
+
+.ms-core-listMenu-verticalBox .dynamic-children.additional-background {
+  padding-right: 26px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+.ms-core-listMenu-verticalBox .ms-core-listMenu-selected a.ms-core-listMenu-item:hover,
+.ms-core-listMenu-verticalBox .ms-core-listMenu-selected .dynamic-children.additional-background {
+  background-image: url("/_layouts/15/images/menu-right.GIF?rev=23");
+}
+
+#sideNavBox a.ms-core-listMenu-item:hover .dynamic-children.additional-background {
+  background-image: url("/_layouts/15/images/menu-right.GIF?rev=23");
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+#sideNavBox a.ms-core-listMenu-item:hover {
+  text-decoration: none;
+  background-color: #FFFFCC;
+  color: black;
+  border-radius: 4px;
+}
+
+#sideNavBox .ms-core-listMenu-selected:hover {
+  color: DarkBlue !important;
+  background-color: orange !important;
+}
+
+
+#sideNavBox ul.dynamic {
+  min-width: 160px;
+  border: 0px none;
+  padding-top: 1px;
+  margin-left: 0px;
+  margin-top: 1px;
+  background-color: #FFFFCC;
+}
+
+  #sideNavBox ul.dynamic .ms-core-listMenu-item {
+    display: block;
+    border: 1px solid #000044;
+    border-top: 0px;
+    color: #880909;
+    padding: 4px;
+    padding-left: 8px;
+  }
+
+.ms-core-listMenu-verticalBox .dynamic-children.additional-background {
+  padding-right: 26px;
+  background-image: url("/_layouts/15/images/MENULIGT.GIF?rev=23");
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+
+#sideNavBox li.dynamic > a:hover {
+  text-decoration: none;
+  background-color: Orange;
+  color: black;
+}
+
+
+.ms-core-listMenu-verticalBox .dynamic-children.additional-background {
+  padding-right: 26px;
+  background-image: url("/_layouts/15/images/menu-right.gif?rev=23");
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+
+/* hide site contents link */
+.ms-core-listMenu-verticalBox > a.ms-core-listMenu-item[href$="viewlsts.aspx"] {
+  display: none;
+}
+
+/* end Quick Launch */
+
+/* begin Search Box */
+
+/* add rounded background behind search box */
+.customSearchHolder {
+  background: url("searchbox.png") no-repeat scroll center top transparent;
+  float: right;
+  height: 38px;
+  position: relative;
+  right: 0;
+  top: 50px;
+  width: 246px;
+}
+  /* style input box */
+  .customSearchHolder input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #585858;
+    margin: 0 0 0 16px;
+    padding-top: 10px;
+    width: 173px;
+    font-weight: normal;
+  }
+  /* box around search */
+  .customSearchHolder .ms-srch-sb {
+    background: none no-repeat scroll 0 0 transparent;
+    margin-top: 0px;
+    width: 226px;
+  }
+  /* search box border */
+  .customSearchHolder .ms-srch-sb-border, .customSearchHolder .ms-srch-sb-borderFocused {
+    border-style: none;
+  }
+  /* add new search button image */
+  .customSearchHolder .ms-srch-sb > .ms-srch-sb-searchLink {
+    background: url("search-button.png") no-repeat scroll left top transparent;
+    height: 18px;
+    left: 5px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 10px;
+    width: 18px;
+    float: right;
+  }
+  /* hide the original search button */
+  .customSearchHolder .ms-srch-sb-searchImg {
+    display: none;
+  }
+  /* hide search dropdown */
+  .customSearchHolder .ms-srch-sb > .ms-srch-sb-navLink {
+    top: 10px;
+    display: none;
+  }
+
+/* end Search Box*/
+
+/* begin Web Part styles */
+
+.ms-webpart-titleText.ms-webpart-titleText,
+.ms-webpart-titleText > a {
+  background-color: #80AFCB;
+  font-size: 20px;
+  padding: 5px 15px;
+  font-weight: normal;
+  color: white;
+}
+
+.ms-webpart-zone {
+  padding: 0px 0px 10px;
+}
+
+
+.ms-WPBody {
+  padding: 15px;
+}
+
+/* end Web Part styles */
+
+/* fix margins when dialog is up */
+.ms-dialog, .ms-dialog body {
+  margin: 0 !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  background-color: #FFFFCC !important;
+  background-image: none !important;
+  padding: 0px !important;
+  overflow: inherit;
+  box-shadow: none;
+}
+
+
+
+.ms-dlgFrameContainer {
+  margin: 0px;
+  padding: 0px 8px 0px 12px;
+}
+
+.ms-dlgFrame {
+  width: 100% !important;
+}
+  .ms-dialog #contentBox {
+    min-height: 100px;
+    margin: 10px;
+  }
+
+
+.ms-dlgBorder {
+  border: 1px solid #000044;
+}
+
+
+.ms-dlgContent {
+  height: auto;
+  border: 1px solid black;
+  margin: 0px;
+  padding: 0px;
+  background-repeat: repeat;
+  background-color: #FFFFCC;
+}
+
+.ms-dialog #s4-workspace {
+  background-image: none;
+  background-color: #FFFFCC;
+}
+
+
+
+.ms-dlgTitle {
+  background-color: #000044;
+  padding: 4px;
+}
+
+  .ms-dlgTitle h1.ms-dlgTitleText {
+    color: white;
+    margin-left: 8px;
+  }
+
+#dlgTitleBtns {
+  margin: 0px;
+}
+
+
+input[type=password],
+input[type=text],
+input[type=file],
+textarea,
+.sp-peoplepicker-topLevel,
+.ms-inputBox {
+  border-color: #DDD;
+  border-image: none;
+}
+
+  input[type=password]:focus,
+  input[type=text]:focus,
+  input[type=file]:focus,
+  textarea:focus,
+  .sp-peoplepicker-topLevel:focus,
+  .ms-inputBox:focus {
+    border-color: #CCC;
+    border-image: none;
+  }
+
+  input[type=password]:focus,
+  input[type=text]:focus,
+  select:focus,
+  textarea:focus,
+  .sp-peoplepicker-topLevelFocus,
+  .ms-inputBoxActive,
+  .ms-inputBox.ms-inputBoxActive:hover {
+    border-style: none;
+    border-width: 4px;
+    border-image: none;
+  }
+
+
+  input[type=password]:hover,
+  input[type=text]:hover,
+  input[type=file]:hover,
+  textarea:hover,
+  .sp-peoplepicker-topLevel:hover,
+  .ms-inputBox:hover {
+    border-color: #BBB;
+    border-image: none;
+  }
+
+/* free form*/
+
+/* switch out yucky blue with a better blue */
+input.ms-button-emphasize, button.ms-button-emphasize {
+  border-color: #0067b0;
+  background-color: #000044;
+  background-color: #000044;
+  color: #fff;
+}
+
+a, .ms-link:visited {
+  color: #000044;
+  text-decoration: none;
+}
+
+.ms-core-needIEFilter .ms-welcome-root {
+  border-left-color: #000044;
+}
+
+.ms-core-form-heading {
+  color: #000044;
+}
+
+.ms-core-form-title {
+  font-size: inherit;
+  color: #000044;
+}
+
+.ms-storefront-appiconspan {
+  background-color: #000044;
+}
+
+.ms-accentText, .ms-accentText:visited {
+  color: #000044;
+}
+
+.ms-subtleLink:hover,
+.ms-atMention:hover,
+.ms-hashTag:hover {
+  color: #000044;
+}
+
+.ms-heroCommandLink,
+.ms-heroCommandLink:visited {
+  color: #000044;
+}
+
+
+.ms-webpart-titleText > a:hover {
+  color: #000044;
+}
+
+.ms-emphasis {
+  color: #fff;
+  background-color: #000044;
+}
+
+.ms-subtleEmphasisCommand:hover {
+  color: #000044;
+}
+
+.ms-ContentAccent1-fontColor {
+  color: #000044;
+}
+
+.ms-ContentAccent1-bgColor {
+  background-color: #000044;
+}
+
+.ms-EmphasisBackground-bgColor {
+  background-color: #000044;
+}
+
+.ms-ContentAccent1-borderColor {
+  border-color: #000044;
+}
+
+.ms-RowAccent-borderColor {
+  border-color: #000044;
+}
+
+.ms-rteThemeForeColor-5-0 {
+  color: #000044;
+}
+
+.ms-rteThemeBackColor-5-0 {
+  background-color: #000044;
+}
+
+
+.ms-rtestate-field h1,
+h1.ms-rteElement-H1,
+.ms-rtestate-field h2,
+h2.ms-rteElement-H2 {
+  color: #000044;
+}
+
+.ms-rteStyle-Emphasis,
+.ms-rteStyle-IntenseEmphasis {
+  color: #000044;
+}
+
+.ms-rteStyle-Comment,
+.ms-rteStyle-Accent1 {
+  color: #000044;
+}
+
+.ms-acal-rootdiv a:visited {
+  color: #000044;
+}
+
+tr td div.ms-acal-today {
+  color: #000044;
+}
+
+.ms-acal-item {
+  background-color: #000044;
+}
+
+.ms-acal-color2 {
+  background-color: #000044;
+}
+
+.ms-acal-apanel-item {
+  background-color: #000044;
+}
+
+.ms-acal-apanel-color2 {
+  background-color: #000044;
+}
+
+.ms-fb-selected {
+  background-color: #000044;
+}
+
+.ms-picker-footer a {
+  color: #000044;
+}
+
+.RemoveConnectionLink {
+  color: #000044;
+}
+
+.s4-wpActive .ms-WPTitle, .s4-wpActive .ms-WPTitle a {
+  color: #000044;
+}
+
+
+.s4-itm-selected > .ms-vb-imgFirstCell.ms-vb-imgFirstCell {
+  background-color: #000044;
+}
+
+.ms-sectionheader {
+  color: #000044;
+}
+
+  .ms-sectionheader a, .ms-sectionheader a:hover, .ms-sectionheader a:visited {
+    color: #000044;
+  }
+
+
+div.ms-viewselector a, div.ms-viewselectorhover a.ms-menu-a span {
+  color: #000044;
+}
+
+.ms-vb a:visited, .ms-vb2 a:visited, .ms-vb-user a:visited {
+  color: #000044;
+}
+
+  .ms-vb a:visited:hover, .ms-vb2 a:visited:hover, .ms-vb-user a:visited:hover {
+    color: #000044;
+  }
+
+.ms-alternatingstrong .ms-vb a:link, .ms-alternatingstrong .ms-vb2 a:link, .ms-alternatingstrong .ms-vb-user a:link, .ms-alternatingstrong .ms-vb a:visited, .ms-alternatingstrong .ms-vb2 a:visited, .ms-alternatingstrong .ms-vb-user a:visited, .ms-alternatingstrong .ms-vb a:visited:hover, .ms-alternatingstrong .ms-vb2 a:visited:hover, .ms-alternatingstrong .ms-vb-user a:visited:hover {
+  color: #000044;
+}
+
+
+.ms-pivotControl-surfacedOpt:hover,
+.ms-pivotControl-overflowDot:hover,
+.ms-pivotControl-surfacedOpt-selected {
+  color: #000044;
+}
+
+
+.ms-storMeUsed {
+  background-color: #000044;
+}
+
+div.ms-designgallery-item-current a.ms-designgallery-packagename {
+  color: #000044;
+}
+
+a.ms-designbuilder-navbutton:hover,
+a.ms-designbuilder-navbutton:focus {
+  color: #000044;
+}
+
+.ms-blog-postBoxDate {
+  background-color: #000044;
+}
+
+a.ms-missinglink {
+  border-bottom: 1px dashed #000044;
+}
+
+.ms-tileview-tile-content {
+  background-color: #000044;
+}
+
+.ms-tileview-tile-selected, .ms-tileview-tile-selectionBox, .ms-tileview-tile-selectionBox > *, .ms-tileview-tile-selectionBox:hover > * {
+  background-color: #000044;
+}
+
+/* swap out yucky yellow */
+
+
+.ms-cui-cg-or.ms-cui-cg {
+  border-top-color: #880909;
+}
+
+.ms-cui-ct-topBar-or, .ms-cui-tabBody-or {
+  border-color: #880909 !important;
+  border-bottom-style: none;
+}
+
+.ms-cui-cg-or .ms-cui-ct-ul {
+  border-color: #880909;
+}
+
+.ms-cui-cg-or.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a, .ms-cui-cg-or.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a:hover {
+  border-color: #880909;
+}
+
+.ms-cui-cg-or .ms-cui-ct-first > .ms-cui-tt-a, .ms-cui-cg-or .ms-cui-ct-first > .ms-cui-tt-a:hover {
+  border-left-color: #880909;
+}
+
+.ms-cui-cg-or .ms-cui-ct-last > .ms-cui-tt-a, .ms-cui-cg-or .ms-cui-ct-last > .ms-cui-tt-a:hover {
+  border-right-color: #880909;
+}
+
+
+.ms-cui-cg-or .ms-cui-tt-s > .ms-cui-tt-a > .ms-cui-tt-span,
+.ms-cui-cg-or .ms-cui-tt > .ms-cui-tt-a:hover > .ms-cui-tt-span {
+  color: #880909 !important;
+}

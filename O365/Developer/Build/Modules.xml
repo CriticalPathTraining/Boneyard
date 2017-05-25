@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Modules>
+    <Module Id="DeveloperRoadmap">
+      <SortOrder>01</SortOrder>
+      <Title>Developer Roadmap</Title>
+    </Module>
+    <Module Id="OfficeAddins">
+      <SortOrder>02</SortOrder>
+      <Title>Office Addins</Title>
+    </Module>
+    <Module Id="SharePointHostedAddIns">
+      <SortOrder>03</SortOrder>
+      <Title>SharePoint-Hosted Addins</Title>
+    </Module>
+    <Module Id="SharePointREST">
+      <SortOrder>04</SortOrder>
+      <Title>SharePoint REST API</Title>
+    </Module>
+    <Module Id="Angular">
+      <SortOrder>05</SortOrder>
+      <Title>AngularJS</Title>
+    </Module>
+     <Module Id="ProviderHostedAddins">
+      <SortOrder>06</SortOrder>
+      <Title>Provider-Hosted Addins</Title>
+    </Module>
+    <Module Id="MVC">
+      <SortOrder>07</SortOrder>
+      <Title>MVC</Title>
+    </Module>
+    <Module Id="CSOM">
+      <SortOrder>08</SortOrder>
+      <Title>CSOM</Title>
+    </Module>
+    <Module Id="RemoteEventReceivers">
+      <SortOrder>09</SortOrder>
+      <Title>Remote Event Receivers</Title>
+    </Module>    
+    <Module Id="WebAPI">
+      <SortOrder>10</SortOrder>
+      <Title>Web API 2</Title>
+    </Module>
+    <Module Id="PublishingAddins">
+      <SortOrder>11</SortOrder>
+      <Title>Publishing Addins</Title>
+    </Module>
+  <Module Id="JavaScriptInjection">
+      <SortOrder>12</SortOrder>
+      <Title>JavaScript Injection</Title>
+    </Module>
+   
+   <Module Id="AzureActiveDirectory">
+      <SortOrder>13</SortOrder>
+      <Title>Azure Active Directory</Title>
+    </Module>
+    <Module Id="Office365APIs">
+      <SortOrder>14</SortOrder>
+      <Title>Office 365 APIs</Title>
+    </Module>
+    <Module Id="UnifiedAPI_MVC">
+      <SortOrder>15</SortOrder>
+      <Title>MVC with Unified API</Title>
+    </Module>
+    <Module Id="UnifiedAPI_SPA">
+      <SortOrder>16</SortOrder>
+      <Title>SPA with Unified API</Title>
+    </Module>
+
+  </Modules>
+</Course>

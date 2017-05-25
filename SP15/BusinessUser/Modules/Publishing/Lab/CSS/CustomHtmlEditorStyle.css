@@ -1,0 +1,11 @@
+H2.customstyleElement-H2
+{
+-ms-name:"Heading 2";
+-ms-element:"true";
+}
+customstyleElement-H2
+{
+font-weight: bold;
+font-family: Cambria;
+font-size: 16pt;
+} 

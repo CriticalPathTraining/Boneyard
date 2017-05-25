@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Modules>
+    <Module Id="GettingStarted">
+      <SortOrder>01</SortOrder>
+      <Title>Understanding SharePoint 2013</Title>
+    </Module>
+    <Module Id="DevPracticesTechniques">
+      <SortOrder>02</SortOrder>
+      <Title>SharePoint Development Practices and Techniques</Title>
+    </Module>
+    <Module Id="DevSolutions">
+      <SortOrder>03</SortOrder>
+      <Title>Developing SharePoint Solutions</Title>
+    </Module>
+    <Module Id="DevApps">
+      <SortOrder>04</SortOrder>
+      <Title>Developing SharePoint App Models</Title>
+    </Module>
+    <Module Id="PagesNavUi">
+      <SortOrder>05</SortOrder>
+      <Title>Pages, Navigation and User Interface</Title>
+    </Module>
+    <Module Id="ReusableTypeDefs">
+      <SortOrder>06</SortOrder>
+      <Title>Reusable Type Definitions and Templates</Title>
+    </Module>
+    <Module Id="Security">
+      <SortOrder>07</SortOrder>
+      <Title>SharePoint Security</Title>
+    </Module>
+    <Module Id="ListsEvents">
+      <SortOrder>08</SortOrder>
+      <Title>Lists, Libraries and Events</Title>
+    </Module>
+    <Module Id="DevServerSide">
+      <SortOrder>09</SortOrder>
+      <Title>Server-Side SharePoint Development</Title>
+    </Module>
+    <Module Id="DevClientSide">
+      <SortOrder>10</SortOrder>
+      <Title>Client-Side SharePoint Development</Title>
+    </Module>
+    <Module Id="Workflow">
+      <SortOrder>11</SortOrder>
+      <Title>Developing Workflows</Title>
+    </Module>
+    <Module Id="BCS">
+      <SortOrder>12</SortOrder>
+      <Title>Business Connectivity Services</Title>
+    </Module>
+    <Module Id="Search">
+      <SortOrder>13</SortOrder>
+      <Title>SharePoint Search</Title>
+    </Module>
+    <Module Id="ECM">
+      <SortOrder>14</SortOrder>
+      <Title>Enterprise Content Management</Title>
+    </Module>
+    <Module Id="WCM">
+      <SortOrder>15</SortOrder>
+      <Title>Web Content Management</Title>
+    </Module>
+    <Module Id="OfficeServices">
+      <SortOrder>16</SortOrder>
+      <Title>Office Services</Title>
+    </Module>
+  </Modules>
+</Course>

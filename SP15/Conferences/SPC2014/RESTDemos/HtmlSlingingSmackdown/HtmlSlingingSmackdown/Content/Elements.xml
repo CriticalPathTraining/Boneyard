@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Content">
+    <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
+    <File Path="Content\img\AppIcon.gif" Url="Content/img/AppIcon.gif" ReplaceContent="TRUE" />
+    <File Path="Content\img\backarrow.png" Url="Content/img/backarrow.png" ReplaceContent="TRUE" />
+    <File Path="Content\img\PageBackground.jpg" Url="Content/img/PageBackground.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\img\loading_gif-transparent-22.gif" Url="Content/img/loading_gif-transparent-22.gif" ReplaceContent="TRUE" />
+    <File Path="Content\img\bessel.gif" Url="Content/img/bessel.gif" ReplaceContent="TRUE" />
+    <File Path="Content\img\jsrender.jpg" Url="Content/img/jsrender.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\img\knockout.jpg" Url="Content/img/knockout.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\img\rainman.jpg" Url="Content/img/rainman.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\img\angular.jpg" Url="Content/img/angular.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\img\caveman.jpg" Url="Content/img/caveman.jpg" ReplaceContent="TRUE" />
+    <File Path="Content\img\jquery.jpg" Url="Content/img/jquery.jpg" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

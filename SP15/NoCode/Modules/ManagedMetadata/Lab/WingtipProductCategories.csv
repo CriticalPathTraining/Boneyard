@@ -1,0 +1,31 @@
+Term Set Name,Term Set Description,LCID,Available for Tagging,Term Description,Level 1 Term,Level 2 Term,Level 3 Term
+Product Category,A heirarchical termset of Wingtip product categories,,FALSE,Action Figures,Action Figures,,
+,,,TRUE,Action figues of personalities seen in movies and on TV,Action Figures,Movies and TV,
+,,,TRUE,Tough guy action figures,Action Figures,Movies and TV,Tough Guys
+,,,TRUE,Cute and sensitive action figures,Action Figures,Movies and TV,Cute and Huggable
+,,,TRUE,Robots,Action Figures,Robots & Robotics,
+,,,TRUE,yada yada yada,Action Figures,Robots & Robotics,Simple
+,,,TRUE,yada yada yada,Action Figures,Robots & Robotics,Advanced
+,,,TRUE,yada yada yada,Action Figures,Sports,
+,,,TRUE,yada yada yada,Action Figures,Sports,Football
+,,,TRUE,yada yada yada,Action Figures,Sports,Baseball
+,,,FALSE,yada yada yada,Arts and Crafts,,
+,,,TRUE,yada yada yada,Arts and Crafts,Drawing and Coloring,
+,,,TRUE,yada yada yada,Arts and Crafts,Drawing and Coloring,Coloring
+,,,TRUE,yada yada yada,Arts and Crafts,Drawing and Coloring,Painting
+,,,TRUE,yada yada yada,Arts and Crafts,Beads and Jewelry,
+,,,TRUE,yada yada yada,Arts and Crafts,Beads and Jewelry,Jewelry Kits
+,,,TRUE,yada yada yada,Arts and Crafts,Beads and Jewelry,Parts and Accessories
+,,,TRUE,yada yada yada,Arts and Crafts,Scrapbooking,
+,,,TRUE,yada yada yada,Arts and Crafts,Scrapbooking,Scrapbooks
+,,,TRUE,yada yada yada,Arts and Crafts,Scrapbooking,Filler Pages
+,,,FALSE,yada yada yada,Vehicles and Remote Control,,
+,,,TRUE,yada yada yada,Vehicles and Remote Control,Hobbyist Vehicles,
+,,,TRUE,yada yada yada,Vehicles and Remote Control,Hobbyist Vehicles,Trains
+,,,TRUE,yada yada yada,Vehicles and Remote Control,Hobbyist Vehicles,Plains
+,,,TRUE,yada yada yada,Vehicles and Remote Control,Remote Control Toys,
+,,,TRUE,yada yada yada,Vehicles and Remote Control,Remote Control Toys,Cars
+,,,TRUE,yada yada yada,Vehicles and Remote Control,Remote Control Toys,Trucks
+,,,TRUE,yada yada yada,Vehicles and Remote Control,Remote Control Toys,Boats
+,,,TRUE,yada yada yada,Vehicles and Remote Control,Remote Control Toys,Planes
+,,,TRUE,yada yada yada,Vehicles and Remote Control,Remote Control Toys,Hellicopters

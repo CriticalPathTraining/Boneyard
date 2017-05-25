@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Modules>
+    <Module Id="GettingStarted">
+      <SortOrder>01</SortOrder>
+      <Title>Getting Started</Title>
+    </Module>
+    <Module Id="ExcelPowerQuery">
+      <SortOrder>02</SortOrder>
+      <Title>Using PowerPivot in Excel 2013</Title>
+    </Module>
+    <Module Id="ExcelPowerPivot">
+      <SortOrder>03</SortOrder>
+      <Title>Using PowerPivot in Excel 2013</Title>
+    </Module>
+    <Module Id="TimeIntelligenceAndKPIs">
+      <SortOrder>04</SortOrder>
+      <Title>Time Intelligence and KPIs</Title>
+    </Module>
+    <Module Id="ExcelPowerView">
+      <SortOrder>05</SortOrder>
+      <Title>Using Power View in Excel 2013</Title>
+    </Module>
+    <Module Id="ExcelServices">
+      <SortOrder>06</SortOrder>
+      <Title>Working with Excel Services in SharePoint 2013</Title>
+    </Module>
+    <Module Id="VisioServices">
+      <SortOrder>07</SortOrder>
+      <Title>Working with Visio 2013 and Visio Services</Title>
+    </Module>
+    <Module Id="PerformancePoint">
+      <SortOrder>08</SortOrder>
+      <Title>Creating Dashboards with PerformancePoint Services</Title>
+    </Module>
+    <Module Id="SSRS">
+      <SortOrder>09</SortOrder>
+      <Title>Creating Reports with SQL Server Reporting Services</Title>
+    </Module>
+    <Module Id="PowerBI">
+      <SortOrder>10</SortOrder>
+      <Title>Working with Power BI in Office 365</Title>
+    </Module>
+  </Modules>
+</Course>

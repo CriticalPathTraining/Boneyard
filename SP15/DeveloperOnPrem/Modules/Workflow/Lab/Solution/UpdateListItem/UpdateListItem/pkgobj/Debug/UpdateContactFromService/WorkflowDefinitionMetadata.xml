@@ -1,0 +1,7 @@
+﻿<WorkflowDefinition xmlns="http://schemas.microsoft.com/sharepoint/2012/app/workflow">
+  <Description>My 'Update Contact From Service' Workflow</Description>
+  <DisplayName>Update Contact From Service</DisplayName>
+  <Id>2dc0508d-8e37-4dcd-840f-11e3820c9872</Id>
+  <RestrictAssociationToId>Lists/SalesLeads</RestrictAssociationToId>
+  <RestrictAssociationToType>List</RestrictAssociationToType>
+</WorkflowDefinition>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Modules>
+    <Module Id="GettingStarted">
+      <SortOrder>01</SortOrder>
+      <Title>Getting Started</Title>
+    </Module>
+    <Module Id="ContentTypes">
+      <SortOrder>02</SortOrder>
+      <Title>Content Types</Title>
+    </Module>
+    <Module Id="DocumentLibraries">
+      <SortOrder>03</SortOrder>
+      <Title>Document Libraries</Title>
+    </Module>
+    <Module Id="InfoPath">
+      <SortOrder>04</SortOrder>
+      <Title>InfoPath</Title>
+    </Module>
+    <Module Id="Workflow">
+      <SortOrder>05</SortOrder>
+      <Title>Workflow</Title>
+    </Module>
+    <Module Id="ManagedMetadata">
+      <SortOrder>06</SortOrder>
+      <Title>Managed Metadata</Title>
+    </Module>
+    <Module Id="Search">
+      <SortOrder>07</SortOrder>
+      <Title>Search</Title>
+    </Module>
+    <Module Id="ExcelServices">
+      <SortOrder>08</SortOrder>
+      <Title>Excel Services</Title>
+    </Module>
+    <Module Id="AccessServices">
+      <SortOrder>09</SortOrder>
+      <Title>Access Services</Title>
+    </Module>
+  </Modules>
+</Course>

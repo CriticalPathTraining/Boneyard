@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Course-Detail-Forms:-myXSD-2010-05-18T18-37-18" solutionVersion="1.0.0.24" productVersion="14.0.0.0" PIVersion="1.0.0.0" href="http://intranet.sharepointblackops.com/Courses/Course%20Detail%20Forms/Forms/template.xsn"?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:courseDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2010-05-18T18:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:title>Building Enterprise Solutions with SharePoint Server 2007 </my:title>
+	<my:description>This intensive 4-day course demonstrates how to make the most out of Windows SharePoint Services 3.0 (WSS) and Microsoft Office SharePoint Server 2007 (MOSS) without having to engage in any custom development. You will be shown how to create business solution using nothing more than the browser and Microsoft Office SharePoint Designer 2007 (SPD). The course is designed to teach you and give you hands-on experience with the most valuable functionality of MOSS Enterprise Edition including its portal and search features and its infrastructure for Web Content Management (WCM), business process automation and Business Intelligence (BI).</my:description>
+	<my:courseCode>SAB301</my:courseCode>
+	<my:prerequisites>Attendees should have experience with the Internet Explorer and Office Products such as Word, Excel and Outlook. It is highly recommended (but not required) that students get some hands-on experience working with sites in a Windows SharePoint Services 3.0 environment and using Microsoft Office SharePoint Designer 2007 before the start of class.</my:prerequisites>
+	<my:modules>
+		<my:moduleName>Creating and Customizing WSS Sites</my:moduleName>
+		<my:moduleNumber>1</my:moduleNumber>
+		<my:moduleDescription>"to do"</my:moduleDescription>
+		<my:topicCovered>WSS as a site provisioning engine </my:topicCovered>
+	<my:topicCovered>Understanding Web Applications, Site Collections, Sites and Site Elements </my:topicCovered><my:topicCovered>Activating a feature within a WSS site </my:topicCovered><my:topicCovered>Site customization using WSS collaboration templates and Web Parts </my:topicCovered><my:topicCovered>Managing security within a Site Collection with users and groups</my:topicCovered></my:modules>
+<my:modules>
+									<my:moduleName>Lists, Document Libraries and Content Types </my:moduleName>
+									<my:moduleNumber>2</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Customizing a list by modifying its properties and adding columns </my:topicCovered>
+								<my:topicCovered>Configuring a document library with a custom document template </my:topicCovered><my:topicCovered>Creating custom site columns and content types </my:topicCovered><my:topicCovered>Configuring a document library to multiple content types </my:topicCovered><my:topicCovered>Making customizations reusable with list templates and site templates</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Introduction to SharePoint Designer 2007 </my:moduleName>
+									<my:moduleNumber>3</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Customizing a site’s virtual file system </my:topicCovered>
+								<my:topicCovered>Understanding site pages and the default Master Page </my:topicCovered><my:topicCovered>Using WSS themes to modify the look-and-feel of a site </my:topicCovered><my:topicCovered>Adding Web Part Zones to a site page </my:topicCovered><my:topicCovered>Customizing pages using the DataView Web Part</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Enter the name of the module. Creating Corporate Portal Sites </my:moduleName>
+									<my:moduleNumber>4</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Anatomy of a Corporate Portal Site </my:topicCovered>
+								<my:topicCovered>Adding child sites and pages to a Corporate Portal Site</my:topicCovered><my:topicCovered>The process for approving content </my:topicCovered><my:topicCovered>Shared Services Provider (SSP) Architecture</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>User Profiles, MySites and Audience Targeting </my:moduleName>
+									<my:moduleNumber>5</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Importing and configuring User Profiles</my:topicCovered>
+								<my:topicCovered>Extending user profiles using custom properties </my:topicCovered><my:topicCovered>Creating and customizing MySites </my:topicCovered><my:topicCovered>Updating a user profile through a MySite</my:topicCovered><my:topicCovered>Content Personalization through Audience Targeting</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Configuring and Extending Search </my:moduleName>
+									<my:moduleNumber>6</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Configuring content sources </my:topicCovered>
+								<my:topicCovered>Working with search scopes, best bets and relevance </my:topicCovered><my:topicCovered>Customizing Search Center sites </my:topicCovered><my:topicCovered>Leveraging the Search Web Parts</my:topicCovered><my:topicCovered>Customizing Search Results using XSLT</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>InfoPath 2007 and Forms Services </my:moduleName>
+									<my:moduleNumber>7</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Working with the InfoPath 2007 forms designer </my:topicCovered>
+								<my:topicCovered>Publishing an InfoPath form to a WSS Forms library </my:topicCovered><my:topicCovered>Creating and publishing browser-enabled forms</my:topicCovered><my:topicCovered>Accessing databases from InfoPath forms using trusted connections </my:topicCovered><my:topicCovered>Working with administrator-uploaded forms</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Workflow and Process Management </my:moduleName>
+									<my:moduleNumber>8</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Workflow Templates, Workflow Associations and Workflow Instances</my:topicCovered>
+								<my:topicCovered>Managing the features that control workflow template activation </my:topicCovered><my:topicCovered>Using the out-of-the-box workflows included with MOSS </my:topicCovered><my:topicCovered>Leveraging the MOSS Approval workflow to automate business processes </my:topicCovered><my:topicCovered>Creating custom workflows with the SharePoint Designer 2007</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Web Content Management using Publishing Portals </my:moduleName>
+									<my:moduleNumber>9</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Creating sites from the Publishing Portal site template </my:topicCovered>
+								<my:topicCovered>Managing content and customizing the navigation menus </my:topicCovered><my:topicCovered>Branding a Publishing Portal site with a custom Master Page </my:topicCovered><my:topicCovered>Creating custom Page Layouts with the SharePoint Designer </my:topicCovered><my:topicCovered>Considerations for Internet-facing Publishing Portal sites</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Leveraging the Business Data Catalog </my:moduleName>
+									<my:moduleNumber>10</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>BDC Architecture and Application Definitions Files </my:topicCovered>
+								<my:topicCovered>Extending a BDC entity by adding custom actions </my:topicCovered><my:topicCovered>Leveraging the out-of-the-box BDC Web Parts </my:topicCovered><my:topicCovered>Customizing the Profile Page for a BDC entity </my:topicCovered><my:topicCovered>Integrating BDC data with WSS lists and search</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Publishing Spreadsheets with Excel Services </my:moduleName>
+									<my:moduleNumber>11</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Understanding Excel Services architecture </my:topicCovered>
+								<my:topicCovered>Configuring Trusted File Locations</my:topicCovered><my:topicCovered>Publishing Excel workbooks that render through the browser </my:topicCovered><my:topicCovered>Publishing server-side Excel Workbooks which use data connections </my:topicCovered><my:topicCovered>Creating a server-side Workbook containing pivot tables</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Creating Dashboards with Report Center</my:moduleName>
+									<my:moduleNumber>12</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Understanding the Business Intelligence (BI) features of MOSS </my:topicCovered>
+								<my:topicCovered>Creating dashboard sites with Report Center site template </my:topicCovered><my:topicCovered>Integration with SQL Server 2005 Reporting Services</my:topicCovered><my:topicCovered>Creating and displaying lists of Key Performance Indicators (KPIs)</my:topicCovered><my:topicCovered>Drilling down on data using the MOSS Filtering Web Parts</my:topicCovered></my:modules></my:courseDetails>

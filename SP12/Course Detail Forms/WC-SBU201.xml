@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Course-Detail-Forms:-myXSD-2010-05-18T18-37-18" solutionVersion="1.0.0.24" productVersion="14.0.0.0" PIVersion="1.0.0.0" href="http://intranet.sharepointblackops.com/Courses/Course%20Detail%20Forms/Forms/template.xsn"?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:courseDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2010-05-18T18:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:title>Business Users Guide to SharePoint Server 2007 Webcast </my:title>
+	<my:description>This 5-day online course teaches information workers and content managers how to get started with Windows SharePoint Services 3.0 (WSS) and Microsoft Office SharePoint Server 2007 (MOSS). The course will be taught from the business side of the software, teaching you how to leverage WSS and MOSS to solve business issues you are currently seeing. The course will be hands on walking you through all of the basic features of WSS and MOSS, so that after the course ends you can go back into your environment and implement a solution.</my:description>
+	<my:courseCode>WC-SBU201</my:courseCode>
+	<my:prerequisites>Attendees should have experience with the Internet Explorer and Office Products such as Word, Excel and Outlook. No prior WSS or MOSS experience is needed. </my:prerequisites>
+	<my:modules>
+		<my:moduleName>SharePoint 101</my:moduleName>
+		<my:moduleNumber>1</my:moduleNumber>
+		<my:moduleDescription>"to do"</my:moduleDescription>
+		<my:topicCovered>What is SharePoint and how can you utilize it?</my:topicCovered>
+	<my:topicCovered>Commonly used terminology and phrases </my:topicCovered><my:topicCovered>WSS vs. MOSS, what is the difference?</my:topicCovered><my:topicCovered>Determine what version bests suits your organization </my:topicCovered><my:topicCovered>Real World Implementations</my:topicCovered></my:modules>
+<my:modules>
+									<my:moduleName>Lists and Web Parts</my:moduleName>
+									<my:moduleNumber>2</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Using Custom lists to collect data from users</my:topicCovered>
+								<my:topicCovered>What metadata should be collected about each item</my:topicCovered><my:topicCovered>Presenting data in different manners using views</my:topicCovered><my:topicCovered>The Web Parts-Lists Relationship </my:topicCovered><my:topicCovered>Workflow </my:topicCovered><my:topicCovered>Using Site Columns for Metadata and ease of maintenance</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Document Management </my:moduleName>
+									<my:moduleNumber>3</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Office Client Integration (Word, Excel, PowerPoint, and Outlook)</my:topicCovered>
+								<my:topicCovered>Setting up versioning </my:topicCovered><my:topicCovered>Ability to Require Check Out in Document Libraries</my:topicCovered><my:topicCovered>Creating Dynamic Presentations with the Slide Library </my:topicCovered><my:topicCovered>Using alert notifications to know when items are added/change </my:topicCovered><my:topicCovered>Creating reusable content with Content Types</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Sites and Security </my:moduleName>
+									<my:moduleNumber>4</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Creating sites for organization and containment </my:topicCovered>
+								<my:topicCovered>Utilizing site templates for quick deployment</my:topicCovered><my:topicCovered>Creating Security using SharePoint Groups and Permission Levels</my:topicCovered><my:topicCovered>Setting customized security on a single item </my:topicCovered><my:topicCovered>Security Trimming-Users only see what they can access</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Information Architecture and Governance</my:moduleName>
+									<my:moduleNumber>5</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Using the right Taxonomy for your environment </my:topicCovered>
+								<my:topicCovered>Ensuring the portal remains organized through a Governance Committee </my:topicCovered><my:topicCovered>Planning for the initial rollout of the Portal</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Creating a consistent Global Navigation</my:moduleName>
+									<my:moduleNumber>6</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Creating a consistent Global Navigation</my:topicCovered>
+								<my:topicCovered>Utilizing the Quick Launch Bar for navigational links related to the Current Site</my:topicCovered><my:topicCovered>Creating a personalized experience for users through Audience Targeting </my:topicCovered><my:topicCovered>Using the Table of Contents Web Part to show visitors the content available on a site </my:topicCovered><my:topicCovered>Creating a Site Directory with an organized listing of all site available</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Advanced Collaboration through Blogs, Wikis, and Meeting Workspaces </my:moduleName>
+									<my:moduleNumber>7</my:moduleNumber>
+									<my:moduleDescription>'to do"</my:moduleDescription>
+									<my:topicCovered>Empowering users to be heard </my:topicCovered>
+								<my:topicCovered>Using Blogs to send a message and collect feedback </my:topicCovered><my:topicCovered>Creating a knowledge base with the built in Wiki functionality </my:topicCovered><my:topicCovered>Utilizing RSS to both promote and aggregate important content </my:topicCovered><my:topicCovered>Using a Meeting Workspace to organize reoccurring meetings </my:topicCovered><my:topicCovered>Making reoccurring meetings easier to maintain through series items</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Search</my:moduleName>
+									<my:moduleNumber>8</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Returning more relevant search results with Scopes </my:topicCovered>
+								<my:topicCovered>Using Key Words and Best Bets to help users find the appropriate content </my:topicCovered><my:topicCovered>Using the Search Center and Search Web Parts to provide a tailored search experience for your environment</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Enterprise Features</my:moduleName>
+									<my:moduleNumber>9</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Creating Enterprise Access to Excel Spreadsheets through Excel Services</my:topicCovered>
+								<my:topicCovered>Using Form Server to ease the paper trail</my:topicCovered><my:topicCovered>Connecting and Reusing Data from other LOB applications through the Business Data Catalog</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Using a Publishing site to Share Information </my:moduleName>
+									<my:moduleNumber>10</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Features of a publishing site </my:topicCovered>
+								<my:topicCovered>Using Pages to easily display information </my:topicCovered><my:topicCovered>Using Page Layouts to create a consistent look for similar pieces of content </my:topicCovered><my:topicCovered>Creating a Branded Portal through Master Pages</my:topicCovered></my:modules></my:courseDetails>

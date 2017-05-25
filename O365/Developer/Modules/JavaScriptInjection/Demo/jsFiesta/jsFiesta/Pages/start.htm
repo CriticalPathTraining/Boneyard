@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+  <title>jsFiesta - Party-time JavaScript Demos</title>
+
+  <link href="../Content/themes/base/jquery-ui.css" rel="stylesheet" />
+  <link href="../Content/App.css" rel="stylesheet" />
+
+  <script src="../Scripts/jquery-2.0.3.js"></script>
+  <script src="../Scripts/jquery-ui-1.10.3.js"></script>
+
+  <script src="../Scripts/Wingtip.Counter.js"></script>
+
+  <script src="../Scripts/App.js"></script>
+
+  <script src="../Scripts/Listing.js"></script>
+
+</head>
+
+<body>
+
+  <div id="page_width">
+
+    <div id="top_banner">
+      <div id="site_logo">&nbsp;</div>
+      <div id="site_title">jsFiesta: a festival of JavaScript coding samples</div>
+    </div>
+
+    <div id="content_box">
+      <div id="tabs">
+        <ul>
+          <li><a href="#jsFundementals">jsFundementals</a></li>
+          <li><a href="#jQuerySyntax">jQuery Syntax</a></li>
+          <li><a href="#jQueryUI">jQuery UI</a></li>
+        </ul>
+
+        <div id="jsFundementals">
+          <h2>JavaScript Language Fundementals</h2>
+          <div class="toolbar">
+            <input id="cmdHelloDOM" type="button" value="Hello DOM" />
+            <input id="cmdGetQueryString" type="button" value="Get Query String" />
+            <input id="cmdCreateElements" type="button" value="Create Elements" />
+            <input id="cmdRemoveElements" type="button" value="Remove Elements" />
+            <input id="cmdObjects" type="button" value="Objects" />
+            <input id="cmdClosures" type="button" value="Closures" />
+            <input id="cmdModules" type="button" value="Modules" />
+          </div>
+          <div id="results">Click the buttons to run JavaScript code samples.</div>
+        </div>
+
+        <div id="jQuerySyntax">
+          <h2>jQuery Syntax</h2>
+          <div class="toolbar">
+
+            <input id="cmdHellojQuery" type="button" value="Hello jQuery" />
+            <input id="cmdCreateElements2" type="button" value="Create Elements" />
+            <input id="cmdSelectors" type="button" value="Selectors" />
+            <input id="cmdAjax" type="button" value="AJAX" />
+            <input id="cmdPromises" type="button" value="Promises" />
+
+          </div>
+          <div id="resultContainer">Click the buttons to run jQuery code samples.</div>
+
+        </div>
+
+        <div id="jQueryUI">
+
+          <h2>Change the jQuery UI Theme</h2>
+          <div id="themesToolbar" class="ui-widget-header">
+            <input type="radio" name="theme" id="smoothness" checked="checked" />
+            <label for="smoothness">smoothness</label>
+            <input type="radio" name="theme" id="start" />
+            <label for="start">start</label>
+            <input type="radio" name="theme" id="cupertino" />
+            <label for="cupertino">cupertino</label>
+            <input type="radio" name="theme" id="ui-lightness" />
+            <label for="ui-lightness">ui-lightness</label>
+            <input type="radio" name="theme" id="sunny" />
+            <label for="sunny">sunny</label>
+            <input type="radio" name="theme" id="redmond" />
+            <label for="redmond">redmond</label>
+            <input type="radio" name="theme" id="le-frog" />
+            <label for="le-frog">le-frog</label>
+          </div>
+
+          <hr />
+
+          <div id="left_column">
+
+            <h2>Auto-complete Demo</h2>
+
+            <div>
+              Enter favorite something:
+              <input id="autocomplete" />
+            </div>
+
+
+            <h2>Date Picker Demo</h2>
+            <div>
+              Enter a date:
+              <input id="startDate" />
+            </div>
+
+            <h2>Slider Demo</h2>
+
+            <div id="slider_demo" class="ui-widget-content">
+              <div id="red"></div>
+              <div id="green"></div>
+              <div id="blue"></div>
+              <div id="swatch"></div>
+            </div>
+
+
+            <h2>Dialog Demo</h2>
+
+            <div id="dialog_demo">
+
+              <div>
+                <input id="cmdAddNewCustomer" type="button" value="Add New Customer" />
+              </div>
+
+              <div id="newCustomerInfo" class="ui-widget-content">
+                <span>New Customer Info:</span>
+                <table>
+                  <tr>
+                    <td>First Name:</td>
+                    <td><span id="lblFirstName"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Last Name:</td>
+                    <td><span id="lblLastName"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Phone:</td>
+                    <td><span id="lblPhone"></span></td>
+                  </tr>
+                </table>
+              </div>
+
+
+              <div id="customer_dialog" style="display: none;" class="ui-widget-content">
+                <table>
+                  <tr>
+                    <td>First Name:</td>
+                    <td>
+                      <input id="txtFirstName" /></td>
+                  </tr>
+                  <tr>
+                    <td>Last Name:</td>
+                    <td>
+                      <input id="txtLastName" /></td>
+                  </tr>
+                  <tr>
+                    <td>Phone:</td>
+                    <td>
+                      <input id="txtPhone" /></td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div id="right_column">
+
+            <h2>Accordian Demo</h2>
+
+            <div id="accordion">
+
+              <h4>Jim Morrison (1943 - 1971)</h4>
+              <div>James Douglas Morrison was an American lead singer and lyricist of the American band The Doors. Morrison was ranked number 47 on Rolling Stone's "100 Greatest Singers of All Time" and is widely regarded as one of the most iconic frontmen in rock music history. To die-hard Doors fans, he is known as Mr Mojo Risin.</div>
+
+              <h4>Brian Jones (1942 - 1969)</h4>
+              <div>Lewis Brian Hopkins Jones was an English musician and a founding member of The Rolling Stones. His main instruments were the guitar and the harmonica, but he played a wide variety of other instruments. His innovative use of traditional or folk instruments, such as the sitar and marimba, was integral to the changing sound of the band.</div>
+
+              <h4>Keith Moon (1946 - 1978)</h4>
+              <div>Keith John Moon was an English musician, best known for being the drummer of English rock group The Who. He gained acclaim for his exuberant and innovative drumming style, and notoriety for his eccentric and often self-destructive behaviour, earning him the nickname "Moon the Loon". This is a man who lived on the edge.</div>
+
+              <h4>Jimi Hendrix (1942 - 1970)</h4>
+              <div>James Marshall Hendrix was an American guitarist and singer-songwriter. He is widely considered to be the greatest electric guitarist in musical history, and one of the most influential musicians of his era across a range of genres. His innovative use of feedback from his guitar amplifier was groundbreaking in the history of Rock music.</div>
+
+              
+              <h4>Janis Joplin (1943 - 1970)</h4>
+              <div>Janis Lyn Joplin was an American singer, songwriter, painter, dancer and music arranger. She rose to prominence in the late 1960s as the lead singer of Big Brother and the Holding Company and later as a solo artist. At the height of her career she was known as The Queen of Rock and Roll as well as The Queen of Psychedelic Soul.</div>
+
+            </div>
+
+
+
+          </div>
+
+          <div style="clear: both;"></div>
+
+        </div>
+      </div>
+
+    </div>
+</body>
+
+</html>

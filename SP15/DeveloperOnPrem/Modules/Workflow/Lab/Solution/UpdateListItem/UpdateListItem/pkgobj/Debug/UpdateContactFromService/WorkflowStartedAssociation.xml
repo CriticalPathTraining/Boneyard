@@ -1,0 +1,10 @@
+﻿<WorkflowAssociation xmlns="http://schemas.microsoft.com/sharepoint/2012/app/workflow">
+  <Description></Description>
+  <DisplayName>Update Contact From OData Service</DisplayName>
+  <Enabled>true</Enabled>
+  <EventSourceGUID>Lists/SalesLeads</EventSourceGUID>
+  <EventType>WorkflowStart</EventType>
+  <HistoryListId>Lists/WorkflowHistoryList</HistoryListId>
+  <Id>3bcef383-0186-4b1f-9d85-7c1cd465771c</Id>
+  <TaskListId>Lists/WorkflowTaskList</TaskListId>
+</WorkflowAssociation>

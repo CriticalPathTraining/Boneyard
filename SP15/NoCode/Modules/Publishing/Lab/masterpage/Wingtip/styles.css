@@ -1,0 +1,217 @@
+﻿body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #666666;
+	background-color: #FFFFFF;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+}
+
+
+form {
+	margin:0;
+	padding:0;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-bottom: 0; 
+}
+
+a, a:link, a:visited, a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+p {	
+	margin-top: 0px;	
+}
+img {
+	border: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Start Custom Page Layout Rules */
+
+.customPageWidth {
+	width: 960px;
+	height: 100%;
+	margin: auto;
+	padding-top: 10px;
+}
+
+.customPagePadding {
+	padding: 0px 20px;	
+}
+
+.customTop {
+	background-image: url('images/Top.gif');
+	background-color: transparent;
+	background-repeat: no-repeat;
+	height: 24px;
+	width: auto;
+}
+
+.customTop a {
+	color: white;
+	font-size: 8pt;
+	font-weight: bold;	
+}
+
+.customLogin {
+	background-image: none;
+	background-repeat: no-repeat;
+	float: right;
+	height: 10px;
+	position: relative;
+	top: 5px;
+}
+
+.customClear {
+	clear: both;
+}
+
+
+/* Complete Top Row */
+
+.customHead {
+	background-image: url('images/BannerBackground.jpg');
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	height: 96px;
+	width: auto;
+}
+
+.customHeaderRight {
+	float: right;
+}
+
+.customSearch {
+	float:right;
+	position:relative;
+	top:20px;
+}
+
+.customSearchBox {
+	background-image: none;
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 180px;
+	float: left;
+}
+
+.customSearch input {
+	background-color:white;
+	border:0 none;
+	font-size:93%;
+	padding:4px 0 0 4px;
+	width:95%;
+}
+
+.customSearchGo {
+	float: left;
+	background-image: none;
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 62px;
+	float: left;
+}
+
+/* Complete Banner Row */
+
+
+.customNav {
+	background-image: url('images/TopNavFill.gif');
+	background-repeat: repeat-x;
+	background-color: black;
+	height: 24px;
+	border-color: black;
+	border-style: solid;
+	border-width: 0px;
+	border-collapse: collapse;
+}
+
+.customTopNavHolder {
+	float: left;
+}
+
+.customTopNavItem {
+	float:left;
+	font-size: 10pt;
+	height:17px;
+	padding: 4px 16px 0px 0px;
+	border-style: none;
+}
+
+.customTopNavItem a {
+	color: #FFFFFF;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.customTopNavItem a:hover {
+	text-decoration:none;
+}
+
+.customTopNavItem:hover a {
+	color: yellow;
+}
+
+/* Complete Global Navigation Row */
+
+.customFooter {
+	background-image: url('images/Footer.gif');
+	background-color: transparent;
+	background-repeat: no-repeat;
+	color: white;
+	font-size: 7pt;
+	height:27px;
+	padding-top: 6px;
+}
+
+.customFooter a {
+	color: white;	
+}
+.customFooterLeft {
+	float: left;	
+}
+.customFooterRight {
+	float: right;
+	padding-right:0px;
+}
+
+/* Complete Footer Row */
+
+.customBody {
+	background-image: url('images/PageContentBackground.jpg');
+	background-color:#FFFFFF;
+	background-repeat: repeat-x;
+	min-height: 420px;
+	overflow:auto;
+	border-color:#bbbbbb;
+	border-style:solid;
+	border-width:0 1px;	
+	padding: 20px 8px 20px 8px;	
+	width: 942px !important;
+}
+
+.customBody h1 {
+	font-size: 14pt;
+	font-weight:normal;
+	margin:2px 0 10px;
+}
+
+.customBody p {
+	font-size: 10pt;
+	font-weight:normal;
+	margin:2px 0 10px;
+}
+
+.customBodyImage {
+	padding-left: 4px;
+}
+
+/* Complete Body Row */

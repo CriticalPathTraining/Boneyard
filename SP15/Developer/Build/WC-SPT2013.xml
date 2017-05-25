@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Code>WC-SPT2013</Code>
+  <ShortName></ShortName>
+  <LongName>Developing Solutions with SharePoint 2013 Webcast</LongName>
+  <ExcludedModules>
+    <ExcludedModule Id="GettingStarted" />
+    <ExcludedModule Id="DevPracticesTechniques" />
+    <ExcludedModule Id="ReusableTypeDefs" />
+    <ExcludedModule Id="DevServerSide" />    
+    <ExcludedModule Id="ECM" />
+    <ExcludedModule Id="OfficeServices" />
+  </ExcludedModules>
+  <Manual>
+    <FrontMatters>
+      <FrontMatter SortOrder="00A">AboutCourse_WC-SPT2013.docx</FrontMatter>
+      <FrontMatter SortOrder="00B">AboutLabs.docx</FrontMatter>
+    </FrontMatters>
+    <BackMatters />
+  </Manual>
+</Course>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="1ebc3893-3cfb-4c80-9353-f8af99368f85" Scope="Web" Title="WorkflowDebuggingFeature">
+  <ElementManifests>
+    <ElementManifest Location="Elements.xml" />
+  </ElementManifests>
+</Feature>

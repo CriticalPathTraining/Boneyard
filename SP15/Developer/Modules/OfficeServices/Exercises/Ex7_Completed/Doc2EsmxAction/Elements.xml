@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Id="32FB3F24-AD65-4A25-A142-BB47A5127E02"
+    RegistrationType="List"
+    RegistrationId="101"
+    Location="EditControlBlock"
+    Sequence="100"
+    Title="Translate to Spanish"
+    ImageUrl="/_layouts/15/images/ConvertDocument.gif">
+    <UrlAction Url="/_layouts/15/Doc2EsMx/Converter.aspx?SiteUrl={SiteUrl}&amp;ListId={ListId}&amp;ItemId={ItemId}"/>
+  </CustomAction>
+</Elements>

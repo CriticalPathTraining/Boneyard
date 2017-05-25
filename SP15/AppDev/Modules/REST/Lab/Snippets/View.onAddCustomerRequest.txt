@@ -1,0 +1,22 @@
+
+  $("#firstName").val("");
+  $("#lastName").val("");
+  $("#company").val("");
+  $("#workPhone").val("");
+  $("#homePhone").val("");
+  $("#email").val("");
+
+  var customer_dialog = $("#customer_dialog");
+
+  customer_dialog.dialog({
+    autoOpen: true,
+    title: "Add Customer",
+    width: 640,
+    buttons: {
+      "Add": function () {
+        onAddCustomer();
+        $(this).dialog("close");
+      },
+      "Cancel": function () { $(this).dialog("close"); },
+    }
+  });

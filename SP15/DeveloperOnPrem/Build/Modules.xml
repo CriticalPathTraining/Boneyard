@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Modules>
+    <Module Id="GettingStarted">
+      <SortOrder>01</SortOrder>
+      <Title>Understanding SharePoint 2013</Title>
+    </Module>
+    <Module Id="FullTrustSolutions">
+      <SortOrder>02</SortOrder>
+      <Title>Developing Full Trust Solutions</Title>
+    </Module>
+    <Module Id="SharePointHostedApps">
+      <SortOrder>03</SortOrder>
+      <Title>Developing SharePoint-hosted Add-ins</Title>
+    </Module>
+    <Module Id="SharePointRestAPI">
+      <SortOrder>04</SortOrder>
+      <Title>The SharePoint REST API</Title>
+    </Module>
+    <Module Id="Angular">
+      <SortOrder>05</SortOrder>
+      <Title>Developing SharePoint Add-ins with AngularJS</Title>
+    </Module>
+    <Module Id="AppSecurity">
+      <SortOrder>06</SortOrder>
+      <Title>SharePoint Add-in Security</Title>
+    </Module>
+    <Module Id="ProviderHostedApps">
+      <SortOrder>07</SortOrder>
+      <Title>Developing Provider-hosted Add-ins with MVC</Title>
+    </Module>
+    <Module Id="ListsAndEvents">
+      <SortOrder>08</SortOrder>
+      <Title>Working with Lists and Event Receivers</Title>
+    </Module>
+    <Module Id="CSOM">
+      <SortOrder>09</SortOrder>
+      <Title>CSOM Programming</Title>
+    </Module>
+    <Module Id="PublishingApps">
+      <SortOrder>10</SortOrder>
+      <Title>Publishing Add-ins in an On-premises Farm</Title>
+    </Module>    
+    <Module Id="Workflow">
+      <SortOrder>11</SortOrder>
+      <Title>Developing Workflows</Title>
+    </Module>
+    <Module Id="BCS">
+      <SortOrder>12</SortOrder>
+      <Title>Business Connectivity Services</Title>
+    </Module>
+    <Module Id="Search">
+      <SortOrder>13</SortOrder>
+      <Title>SharePoint Search</Title>
+    </Module>
+    <Module Id="ECM">
+      <SortOrder>14</SortOrder>
+      <Title>Enterprise Content Management</Title>
+    </Module>
+    <Module Id="WCM">
+      <SortOrder>15</SortOrder>
+      <Title>Web Content Management</Title>
+    </Module>
+  </Modules>
+</Course>

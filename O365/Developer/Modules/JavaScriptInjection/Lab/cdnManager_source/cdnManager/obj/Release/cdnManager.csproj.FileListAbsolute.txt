@@ -1,0 +1,3 @@
+D:\GitHub\ITUnity\dev\cdnManager\cdnManager\bin\Release\cdnManager.pdb
+D:\GitHub\ITUnity\dev\cdnManager\cdnManager\obj\Release\cdnManager.dll
+D:\GitHub\ITUnity\dev\cdnManager\cdnManager\obj\Release\cdnManager.pdb

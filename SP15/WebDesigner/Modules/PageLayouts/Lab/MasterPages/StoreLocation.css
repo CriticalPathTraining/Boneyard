@@ -1,0 +1,41 @@
+﻿
+#store_location_right_column {
+  float: right;
+  width: 32%;
+}
+
+#store_location_left_column {
+  margin-right: 34%;
+}
+
+#store_location_image {
+  float: left;
+  min-width: 120px;
+  margin-right: 12px;
+  margin-bottom: 6px;
+}
+
+#store_location_page_content {
+}
+
+
+#store_location_driving_directions, 
+#store_location_store_hours {
+  border: 1px solid #CCC;
+  padding: 0px;
+  background-color: #FFFFDD;
+  margin-bottom: 12px;
+}
+
+#contentBox #store_location_right_column h3 {
+  background-color: black;
+  color: white;
+  padding: 8px;
+}
+
+#store_location_right_column .ms-rtestate-field p {
+    padding: 8px;
+}
+
+#store_location_store_hours {
+}

@@ -1,0 +1,40 @@
+
+  $("#content_box").empty();
+
+  var odataResults = data.d;
+
+  // set rendering template
+  var tableHeader = "<thead>" +
+                      "<td>&nbsp;</td>" +
+                      "<td>&nbsp;</td>" +
+                      "<td>First Name</td>" +
+                      "<td>Last Name</td>" +
+                      "<td>Company</td>" +
+                      "<td>Work Phone</td>" +
+                      "<td>Home Phone</td>" +
+                      "<td>Email</td>" +
+                    "</thead>";
+
+  var table = $("<table>", { ID: "customersTable" }).append($(tableHeader));
+
+  // create rendering template for table row using jsRender syntax
+  var rowTemplateString = "<tr>" +
+                            "<td><a href='javascript: onUpdateCustomerRequest({{>ID}});'><img src='Content/img/EDITITEM.gif' alt='Edit' /></a></td>" +
+                            "<td><a href='javascript: onDeleteCustomer({{>ID}});'><img src='Content/img/DELITEM.gif' alt='Delete' /></a></td>" +
+                            "<td>{{>FirstName}}</td>" +
+                            "<td>{{>LastName}}</td>" +
+                            "<td>{{>Company}}</td>" +
+                            "<td>{{>WorkPhone}}</td>" +
+                            "<td>{{>HomePhone}}</td>" +
+                            "<td>{{>EmailAddress}}</td>" +
+                          "</tr>";
+
+  // load row template and give it a name of "rowTemplate"
+  $.templates({ "rowTemplate": rowTemplateString });
+
+  var renderedTable = $.render.rowTemplate(odataResults);
+  // render table rows using row template and OData data result
+  table.append(renderedTable);
+
+  // append table to div in DOM
+  $("#content_box").append(table);  

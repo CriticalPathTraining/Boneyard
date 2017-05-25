@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureApp", "SecureApp\SecureApp.csproj", "{33AD0B3E-E02C-4C6C-BF67-FE83DB29899A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureAppWeb", "SecureAppWeb\SecureAppWeb.csproj", "{83F70B18-7AB6-4BBC-A31C-9C13BC0715F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33AD0B3E-E02C-4C6C-BF67-FE83DB29899A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33AD0B3E-E02C-4C6C-BF67-FE83DB29899A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33AD0B3E-E02C-4C6C-BF67-FE83DB29899A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{33AD0B3E-E02C-4C6C-BF67-FE83DB29899A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33AD0B3E-E02C-4C6C-BF67-FE83DB29899A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33AD0B3E-E02C-4C6C-BF67-FE83DB29899A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{83F70B18-7AB6-4BBC-A31C-9C13BC0715F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83F70B18-7AB6-4BBC-A31C-9C13BC0715F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83F70B18-7AB6-4BBC-A31C-9C13BC0715F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83F70B18-7AB6-4BBC-A31C-9C13BC0715F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

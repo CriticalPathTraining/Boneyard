@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Course-Detail-Forms:-myXSD-2010-05-18T18-37-18" solutionVersion="1.0.0.24" productVersion="14.0.0.0" PIVersion="1.0.0.0" href="http://intranet.sharepointblackops.com/Courses/Course%20Detail%20Forms/Forms/template.xsn"?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:courseDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2010-05-18T18:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:title>Inside Windows SharePoint Services 3.0 Webcast </my:title>
+	<my:description>This intensive 5-day Webcast explores design and development techniques used when building business solutions with Windows SharePoint Services 3.0 (WSS). The very first lecture and lab exercise gets you started developing WSS features and programming against the WSS object model. The course then dives into deep developer topics such as creating page templates, provision pages and branding sites using Master Pages. You get hands on experience writing and testing Web Parts, Content Types, event handlers, custom workflows, site definitions and solution packages. Along the way, you will also learn how to write WSS event handlers that read, modify and generate Office 2007 documents using the Office Open XML File Formats as well as how to program security to manage users, groups and permissions on sites, lists and document libraries.</my:description>
+	<my:courseCode>WC-WSS401</my:courseCode>
+	<my:prerequisites>Attendees should have professional development experience with Visual Studio 2005, the .NET framework and ASP.NET as well as familiarity with Microsoft Office products such as Word and Excel. It is also recommended (but not required) that attendees have a background with the previous version of Windows SharePoint Services V2 and have experience working directly with XML files in Visual Studio 2005.</my:prerequisites>
+	<my:modules>
+		<my:moduleName>Roadmap to WSS Development </my:moduleName>
+		<my:moduleNumber>1</my:moduleNumber>
+		<my:moduleDescription>"to do"</my:moduleDescription>
+		<my:topicCovered>WSS as a site provisioning engine </my:topicCovered>
+	<my:topicCovered>Understanding Web Applications, Site Collections, Sites and Site Elements</my:topicCovered><my:topicCovered>Introduction to the WSS object model</my:topicCovered><my:topicCovered>Creating and testing your first Feature with Visual Studio 2005</my:topicCovered><my:topicCovered>Adding event handlers to a custom feature</my:topicCovered></my:modules>
+<my:modules>
+									<my:moduleName>SharePoint Architecture</my:moduleName>
+									<my:moduleNumber>2</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>How WSS integrates with ASP.NET 2.0</my:topicCovered>
+								<my:topicCovered>Configuring the web.config file for a Web Application </my:topicCovered><my:topicCovered>Understanding site pages versus application pages </my:topicCovered><my:topicCovered>Creating and debugging a business solution with custom application pages </my:topicCovered><my:topicCovered>Creating and testing a WSS solution package for staging and deployment</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Pages and Design </my:moduleName>
+									<my:moduleNumber>3</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Understanding page parsing and Safe Mode restrictions </my:topicCovered>
+								<my:topicCovered>Page templates versus pages instances (ghosting and unghosting)</my:topicCovered><my:topicCovered>Designing page templates using ASP.NET controls and Web Part Zones </my:topicCovered><my:topicCovered>Understanding the standard default.master page template</my:topicCovered><my:topicCovered>Creating and integrating a custom Master Page template </my:topicCovered><my:topicCovered>Understanding and extending the CSS classes in core.css</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Web Part Development </my:moduleName>
+									<my:moduleNumber>4</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Creating, deploying and debugging ASP.NET Web Parts in WSS </my:topicCovered>
+								<my:topicCovered>Adding Web Part verbs, persistent properties and developing custom editor parts</my:topicCovered><my:topicCovered>Creating Web Part assemblies with embedded resources </my:topicCovered><my:topicCovered>Creating connectable Web Parts</my:topicCovered><my:topicCovered>Asynchronous Web Part processing </my:topicCovered><my:topicCovered>Creating a Feature and a solution package for best-practice Web Part deployment</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>AJAX Web Parts </my:moduleName>
+									<my:moduleNumber>5</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Introduction to ASP.NET AJAX </my:topicCovered>
+								<my:topicCovered>Creating an AJAX-enabled ASP.NET Application</my:topicCovered><my:topicCovered>Creating the “Hello World” AJAX-enabled Web Part</my:topicCovered><my:topicCovered>Creating AJAX callbacks to custom .asmx Web Services </my:topicCovered><my:topicCovered>Creating AJAX callbacks that access the WSS object model</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Lists and Content Types </my:moduleName>
+									<my:moduleNumber>6</my:moduleNumber>
+									<my:moduleDescription>'to do"</my:moduleDescription>
+									<my:topicCovered>Programming and querying lists through the WSS object model </my:topicCovered>
+								<my:topicCovered>Using Features to define site columns and custom field types </my:topicCovered><my:topicCovered>Using Features to define custom content types</my:topicCovered><my:topicCovered>Using Features to define custom list schemas and custom list types </my:topicCovered><my:topicCovered>Using custom event receiver classes to write and wire up event handlers </my:topicCovered><my:topicCovered>Defining a content type with built-in event handlers</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Document Libraries </my:moduleName>
+									<my:moduleNumber>7</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Programming with the SPDocumentLibrary class</my:topicCovered>
+								<my:topicCovered>Provisioning document libraries with custom document templates</my:topicCovered><my:topicCovered>Forms Libraries and Microsoft InfoPath integration </my:topicCovered><my:topicCovered>Programming with the Office Open File Formats </my:topicCovered><my:topicCovered>Server-side generation of Word 2007 documents (i.e. docx files) </my:topicCovered><my:topicCovered>Binding content controls to custom XML files embedded within Word documents</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Developing SharePoint Workflows with Visual Studio</my:moduleName>
+									<my:moduleNumber>8</my:moduleNumber>
+									<my:moduleDescription>'to do"</my:moduleDescription>
+									<my:topicCovered>Windows Workflow Foundation (WF) Primer </my:topicCovered>
+								<my:topicCovered>Creating WF programs in Visual Studio with the workflow designer </my:topicCovered><my:topicCovered>SharePoint Workflow fundamentals: templates vs. associations vs. instances </my:topicCovered><my:topicCovered>Creating, deploying and debugging workflow templates in Visual Studio </my:topicCovered><my:topicCovered>Using WSS method activities to create history list entries and tasks</my:topicCovered><my:topicCovered>Creating custom association forms, initiation forms and task edit forms</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Creating and Testing Site Definitions </my:moduleName>
+									<my:moduleNumber>9</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Understanding the role of WSS site definitions</my:topicCovered>
+								<my:topicCovered>The Global Site Definition</my:topicCovered><my:topicCovered>Creating and testing a custom site definition </my:topicCovered><my:topicCovered>Aggregating Features in a site definition</my:topicCovered><my:topicCovered>Defining Feature activation dependencies and leverage Feature stapling</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Application Security </my:moduleName>
+									<my:moduleNumber>10</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Trust Levels, Web Parts and Code Access Security (CAS) </my:topicCovered>
+								<my:topicCovered>Windows Authentication versus Forms Authentication</my:topicCovered><my:topicCovered>WSS Identities and Security Contexts </my:topicCovered><my:topicCovered>Escalation of Privilege </my:topicCovered><my:topicCovered>Delegating User Credentials</my:topicCovered><my:topicCovered>Modifying permissions with the WSS object model</my:topicCovered></my:modules></my:courseDetails>

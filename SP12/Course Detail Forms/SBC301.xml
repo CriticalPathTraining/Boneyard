@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Course-Detail-Forms:-myXSD-2010-05-18T18-37-18" solutionVersion="1.0.0.24" productVersion="14.0.0.0" PIVersion="1.0.0.0" href="http://intranet.sharepointblackops.com/Courses/Course%20Detail%20Forms/Forms/template.xsn"?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:courseDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2010-05-18T18:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:title>SharePoint Brand Camp </my:title>
+	<my:description>SharePoint Brand Camp is an intensive 3-day course that teaches design techniques and best practices used in branding SharePoint sites. Emphasis is given to techniques that promote ease of deployment and reusability across site collections and across SharePoint farms. You will learn how to customize and extend the built-in CSS files that give SharePoint sites their standard look and feel. You will also learn how to design and implement master pages with modern page layouts using HTML 4.01 instead of the standard HTML 3.2 tables that SharePoint 2007 uses by default. Lab exercises will be completed using the SharePoint Designer, the Internet Explorer and Firefox and you will get hands-on experience using other helpful web design tools such as the IE developer toolbar, firebug and Photoshop. SharePoint Brand Camp will also take a deep dive into the SharePoint development techniques required to package up and deploy your master pages, CSS files and images using SharePoint features and solution packages. This will give you the greatest level of control and flexibility in SharePoint deployment, reusability and versioning. </my:description>
+	<my:courseCode>SBC301</my:courseCode>
+	<my:prerequisites>Students should have a basic knowledge of HTML and CSS and should have experience working with WSS 3.0 team sites and MOSS publishing portals. It is also recommended (but not required) that students have previous experience with a Web design tool such as the SharePoint Designer, ColdFusion or Dreamweaver. Previous experience with a professional graphics tool such as Adobe Photoshop is also helpful.</my:prerequisites>
+	<my:modules>
+		<my:moduleName>Introduction to SharePoint Branding</my:moduleName>
+		<my:moduleNumber>1</my:moduleNumber>
+		<my:moduleDescription>"to do"</my:moduleDescription>
+		<my:topicCovered>Anatomy of a WSS Team Site </my:topicCovered>
+	<my:topicCovered>Configuring a Site Icon</my:topicCovered><my:topicCovered>Applying A SharePoint Theme </my:topicCovered><my:topicCovered>Master Pages and the Master Page Gallery </my:topicCovered><my:topicCovered>Anatomy of a MOSS Publishing Portal </my:topicCovered><my:topicCovered>Switching the Master Page in a publishing portal</my:topicCovered></my:modules>
+<my:modules>
+									<my:moduleName>CSS Primer for SharePoint Designers </my:moduleName>
+									<my:moduleNumber>2</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>CSS Fundamentals: Cascade and Specificity</my:topicCovered>
+								<my:topicCovered>Overview of CSS rules defined in CORE.CSS</my:topicCovered><my:topicCovered>Discovering CSS class names using FireBug and IE Developer Toolbar </my:topicCovered><my:topicCovered>Adding custom CSS to a master page </my:topicCovered><my:topicCovered>Adding the HTML 4.01 DocType to a master page</my:topicCovered><my:topicCovered>Designing for a cross-browser experience</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Creating and Customizing Themes </my:moduleName>
+									<my:moduleNumber>3</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>How Themes work in SharePoint </my:topicCovered>
+								<my:topicCovered>Creating a new Theme based on an existing Theme</my:topicCovered><my:topicCovered>Customizing a Theme using the SharePoint Designer </my:topicCovered><my:topicCovered>Finalizing and deploying a Theme in a production farm </my:topicCovered><my:topicCovered>Tips and Tricks for working with Themes</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Working with Master Pages</my:moduleName>
+									<my:moduleNumber>4</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Overview of ASP.NET syntax used with Master Pages</my:topicCovered>
+								<my:topicCovered>Understanding the standard SharePoint Master Page (default.master) </my:topicCovered><my:topicCovered>Customizing Master Pages using the SharePoint Designer </my:topicCovered><my:topicCovered>Overriding standard placeholders from default.master </my:topicCovered><my:topicCovered>Understanding how to use delegate controls</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Designing a Brand for Publishing Portals</my:moduleName>
+									<my:moduleNumber>5</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Understanding the MOSS Publishing features </my:topicCovered>
+								<my:topicCovered>Overview of Page Layouts and the Pages library </my:topicCovered><my:topicCovered>Designing page layouts using content types and field controls </my:topicCovered><my:topicCovered>Uploading CSS files and images to the Style Library</my:topicCovered><my:topicCovered>Starting a design using a minimal master page </my:topicCovered><my:topicCovered>Deciding between field controls and web parts</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Migrating a Professional Branding Design into SharePoint</my:moduleName>
+									<my:moduleNumber>6</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>SharePoint design considerations</my:topicCovered>
+								<my:topicCovered>Moving from a wire frame into the design phase</my:topicCovered><my:topicCovered>Creating a design using Expressions Design 2</my:topicCovered><my:topicCovered>Creating a design using Adobe Photoshop</my:topicCovered><my:topicCovered>Moving design assets into SharePoint</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Deployment using Features and Solution Packages </my:moduleName>
+									<my:moduleNumber>7</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Developing SharePoint features using Visual Studio </my:topicCovered>
+								<my:topicCovered>Using features to deploy master pages, page layouts and custom CSS files</my:topicCovered><my:topicCovered>Linking to custom CSS files using the AlternateCssUrl property</my:topicCovered><my:topicCovered>Best practice deployment using solution packages </my:topicCovered><my:topicCovered>Walkthrough of a complete SharePoint branding solution</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Lighting up a SharePoint site using SilverLight 2 </my:moduleName>
+									<my:moduleNumber>8</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Understanding the Silverlight deployment and execution architecture</my:topicCovered>
+								<my:topicCovered>Deploying a .xap files using the Content Editor Web Part</my:topicCovered><my:topicCovered>Designing SilverLight components using Expressions Blend 2 </my:topicCovered><my:topicCovered>Using SilverLight to host video playback</my:topicCovered><my:topicCovered>Programming SilverLight components using Visual Sudio </my:topicCovered><my:topicCovered>Best practices in deployment using custom SilverLight components</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Using XSLT to Generate Formatted Output</my:moduleName>
+									<my:moduleNumber>9</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>World's Fastest Primer on XSLT </my:topicCovered>
+								<my:topicCovered>Working with the XML Web Part</my:topicCovered><my:topicCovered>Working with the DataView Web Parts</my:topicCovered><my:topicCovered>Working with the Content Query Web Part </my:topicCovered><my:topicCovered>Formatting MOSS Search Results using XSLT</my:topicCovered></my:modules></my:courseDetails>

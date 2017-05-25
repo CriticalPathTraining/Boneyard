@@ -1,0 +1,7 @@
+﻿/* Wingtip Toys - Red Content Border for Locations Pages */
+
+.content{
+	border: #840000 solid 1px;
+	border-left-width: 10px;
+	padding-left:20px;
+}

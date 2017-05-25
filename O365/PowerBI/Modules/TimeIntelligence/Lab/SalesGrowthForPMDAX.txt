@@ -1,0 +1,5 @@
+=IF(
+  ISFILTERED(Time[Month]), 
+  SUM(Sales[Sales Amount]) - CALCULATE(SUM(Sales[Sales Amount]), PREVIOUSMONTH(Time[Date]) ),
+  BLANK()
+)

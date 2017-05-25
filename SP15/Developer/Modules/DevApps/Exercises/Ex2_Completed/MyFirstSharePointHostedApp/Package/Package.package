@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="a19f0365-5759-4f88-a360-1a1e88237266" 
+        solutionId="a19f0365-5759-4f88-a360-1a1e88237266" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="MyFirstSharePointHostedApp"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="a6344ede-84b9-4f4f-81db-d211c2042a41" />
+  </features>
+</package>

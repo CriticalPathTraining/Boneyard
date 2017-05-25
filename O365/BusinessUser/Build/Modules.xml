@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Modules>
+    <Module Id="GettingStarted">
+      <SortOrder>01</SortOrder>
+      <Title>Getting Started</Title>
+    </Module>
+    <Module Id="Lists">
+      <SortOrder>02</SortOrder>
+      <Title>Lists</Title>
+    </Module>
+    <Module Id="Documents">
+      <SortOrder>03</SortOrder>
+      <Title>Documents</Title>
+    </Module>
+    <Module Id="Pages">
+      <SortOrder>04</SortOrder>
+      <Title>Pages</Title>
+    </Module>
+    <Module Id="Forms">
+      <SortOrder>05</SortOrder>
+      <Title>Forms</Title>
+    </Module>
+    <Module Id="Social">
+      <SortOrder>06</SortOrder>
+      <Title>Social</Title>
+    </Module>
+    <Module Id="SiteAdministration">
+      <SortOrder>07</SortOrder>
+      <Title>Site Administration</Title>
+    </Module>
+    <Module Id="ListDesign">
+      <SortOrder>08</SortOrder>
+      <Title>List Design</Title>
+    </Module>
+    <Module Id="Security">
+      <SortOrder>09</SortOrder>
+      <Title>Security</Title>
+    </Module>
+    <Module Id="Publishing">
+      <SortOrder>10</SortOrder>
+      <Title>Publishing Sites</Title>
+    </Module>
+    <Module Id="Search">
+      <SortOrder>11</SortOrder>
+      <Title>Search</Title>
+    </Module>
+    <Module Id="Workflow">
+      <SortOrder>12</SortOrder>
+      <Title>Workflow</Title>
+    </Module>
+  </Modules>
+</Course>

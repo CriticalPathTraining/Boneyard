@@ -1,0 +1,943 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AdventureWorks2012PersonModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="AdventureWorks2012PersonModelStoreContainer">
+          <EntitySet Name="Address" EntityType="AdventureWorks2012PersonModel.Store.Address" store:Type="Tables" Schema="Person" />
+          <EntitySet Name="AddressType" EntityType="AdventureWorks2012PersonModel.Store.AddressType" store:Type="Tables" Schema="Person" />
+          <EntitySet Name="BusinessEntity" EntityType="AdventureWorks2012PersonModel.Store.BusinessEntity" store:Type="Tables" Schema="Person" />
+          <EntitySet Name="BusinessEntityAddress" EntityType="AdventureWorks2012PersonModel.Store.BusinessEntityAddress" store:Type="Tables" Schema="Person" />
+          <EntitySet Name="BusinessEntityContact" EntityType="AdventureWorks2012PersonModel.Store.BusinessEntityContact" store:Type="Tables" Schema="Person" />
+          <EntitySet Name="ContactType" EntityType="AdventureWorks2012PersonModel.Store.ContactType" store:Type="Tables" Schema="Person" />
+          <EntitySet Name="CountryRegion" EntityType="AdventureWorks2012PersonModel.Store.CountryRegion" store:Type="Tables" Schema="Person" />
+          <EntitySet Name="EmailAddress" EntityType="AdventureWorks2012PersonModel.Store.EmailAddress" store:Type="Tables" Schema="Person" />
+          <EntitySet Name="Password" EntityType="AdventureWorks2012PersonModel.Store.Password" store:Type="Tables" Schema="Person" />
+          <EntitySet Name="Person" EntityType="AdventureWorks2012PersonModel.Store.Person" store:Type="Tables" Schema="Person" />
+          <EntitySet Name="PersonPhone" EntityType="AdventureWorks2012PersonModel.Store.PersonPhone" store:Type="Tables" Schema="Person" />
+          <EntitySet Name="PhoneNumberType" EntityType="AdventureWorks2012PersonModel.Store.PhoneNumberType" store:Type="Tables" Schema="Person" />
+          <EntitySet Name="StateProvince" EntityType="AdventureWorks2012PersonModel.Store.StateProvince" store:Type="Tables" Schema="Person" />
+          <AssociationSet Name="FK_Address_StateProvince_StateProvinceID" Association="AdventureWorks2012PersonModel.Store.FK_Address_StateProvince_StateProvinceID">
+            <End Role="StateProvince" EntitySet="StateProvince" />
+            <End Role="Address" EntitySet="Address" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BusinessEntityAddress_Address_AddressID" Association="AdventureWorks2012PersonModel.Store.FK_BusinessEntityAddress_Address_AddressID">
+            <End Role="Address" EntitySet="Address" />
+            <End Role="BusinessEntityAddress" EntitySet="BusinessEntityAddress" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BusinessEntityAddress_AddressType_AddressTypeID" Association="AdventureWorks2012PersonModel.Store.FK_BusinessEntityAddress_AddressType_AddressTypeID">
+            <End Role="AddressType" EntitySet="AddressType" />
+            <End Role="BusinessEntityAddress" EntitySet="BusinessEntityAddress" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" Association="AdventureWorks2012PersonModel.Store.FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID">
+            <End Role="BusinessEntity" EntitySet="BusinessEntity" />
+            <End Role="BusinessEntityAddress" EntitySet="BusinessEntityAddress" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" Association="AdventureWorks2012PersonModel.Store.FK_BusinessEntityContact_BusinessEntity_BusinessEntityID">
+            <End Role="BusinessEntity" EntitySet="BusinessEntity" />
+            <End Role="BusinessEntityContact" EntitySet="BusinessEntityContact" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BusinessEntityContact_ContactType_ContactTypeID" Association="AdventureWorks2012PersonModel.Store.FK_BusinessEntityContact_ContactType_ContactTypeID">
+            <End Role="ContactType" EntitySet="ContactType" />
+            <End Role="BusinessEntityContact" EntitySet="BusinessEntityContact" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BusinessEntityContact_Person_PersonID" Association="AdventureWorks2012PersonModel.Store.FK_BusinessEntityContact_Person_PersonID">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="BusinessEntityContact" EntitySet="BusinessEntityContact" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmailAddress_Person_BusinessEntityID" Association="AdventureWorks2012PersonModel.Store.FK_EmailAddress_Person_BusinessEntityID">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="EmailAddress" EntitySet="EmailAddress" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Password_Person_BusinessEntityID" Association="AdventureWorks2012PersonModel.Store.FK_Password_Person_BusinessEntityID">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="Password" EntitySet="Password" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Person_BusinessEntity_BusinessEntityID" Association="AdventureWorks2012PersonModel.Store.FK_Person_BusinessEntity_BusinessEntityID">
+            <End Role="BusinessEntity" EntitySet="BusinessEntity" />
+            <End Role="Person" EntitySet="Person" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PersonPhone_Person_BusinessEntityID" Association="AdventureWorks2012PersonModel.Store.FK_PersonPhone_Person_BusinessEntityID">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="PersonPhone" EntitySet="PersonPhone" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" Association="AdventureWorks2012PersonModel.Store.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID">
+            <End Role="PhoneNumberType" EntitySet="PhoneNumberType" />
+            <End Role="PersonPhone" EntitySet="PersonPhone" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StateProvince_CountryRegion_CountryRegionCode" Association="AdventureWorks2012PersonModel.Store.FK_StateProvince_CountryRegion_CountryRegionCode">
+            <End Role="CountryRegion" EntitySet="CountryRegion" />
+            <End Role="StateProvince" EntitySet="StateProvince" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="AddressID" />
+          </Key>
+          <Property Name="AddressID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="60" />
+          <Property Name="AddressLine2" Type="nvarchar" MaxLength="60" />
+          <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="StateProvinceID" Type="int" Nullable="false" />
+          <Property Name="PostalCode" Type="nvarchar" Nullable="false" MaxLength="15" />
+          <Property Name="SpatialLocation" Type="geography" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AddressType">
+          <Key>
+            <PropertyRef Name="AddressTypeID" />
+          </Key>
+          <Property Name="AddressTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BusinessEntity">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BusinessEntityAddress">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+            <PropertyRef Name="AddressID" />
+            <PropertyRef Name="AddressTypeID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="int" Nullable="false" />
+          <Property Name="AddressID" Type="int" Nullable="false" />
+          <Property Name="AddressTypeID" Type="int" Nullable="false" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="BusinessEntityContact">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+            <PropertyRef Name="PersonID" />
+            <PropertyRef Name="ContactTypeID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="int" Nullable="false" />
+          <Property Name="PersonID" Type="int" Nullable="false" />
+          <Property Name="ContactTypeID" Type="int" Nullable="false" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ContactType">
+          <Key>
+            <PropertyRef Name="ContactTypeID" />
+          </Key>
+          <Property Name="ContactTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CountryRegion">
+          <Key>
+            <PropertyRef Name="CountryRegionCode" />
+          </Key>
+          <Property Name="CountryRegionCode" Type="nvarchar" Nullable="false" MaxLength="3" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EmailAddress">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+            <PropertyRef Name="EmailAddressID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="int" Nullable="false" />
+          <Property Name="EmailAddressID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EmailAddress" Type="nvarchar" MaxLength="50" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Password">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="int" Nullable="false" />
+          <Property Name="PasswordHash" Type="varchar" Nullable="false" MaxLength="128" />
+          <Property Name="PasswordSalt" Type="varchar" Nullable="false" MaxLength="10" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="int" Nullable="false" />
+          <Property Name="PersonType" Type="nchar" Nullable="false" MaxLength="2" />
+          <Property Name="NameStyle" Type="bit" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="8" />
+          <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="50" />
+          <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Suffix" Type="nvarchar" MaxLength="10" />
+          <Property Name="EmailPromotion" Type="int" Nullable="false" />
+          <Property Name="AdditionalContactInfo" Type="xml" />
+          <Property Name="Demographics" Type="xml" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PersonPhone">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+            <PropertyRef Name="PhoneNumber" />
+            <PropertyRef Name="PhoneNumberTypeID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="int" Nullable="false" />
+          <Property Name="PhoneNumber" Type="nvarchar" Nullable="false" MaxLength="25" />
+          <Property Name="PhoneNumberTypeID" Type="int" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PhoneNumberType">
+          <Key>
+            <PropertyRef Name="PhoneNumberTypeID" />
+          </Key>
+          <Property Name="PhoneNumberTypeID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="StateProvince">
+          <Key>
+            <PropertyRef Name="StateProvinceID" />
+          </Key>
+          <Property Name="StateProvinceID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="StateProvinceCode" Type="nchar" Nullable="false" MaxLength="3" />
+          <Property Name="CountryRegionCode" Type="nvarchar" Nullable="false" MaxLength="3" />
+          <Property Name="IsOnlyStateProvinceFlag" Type="bit" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TerritoryID" Type="int" Nullable="false" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Address_StateProvince_StateProvinceID">
+          <End Role="StateProvince" Type="AdventureWorks2012PersonModel.Store.StateProvince" Multiplicity="1" />
+          <End Role="Address" Type="AdventureWorks2012PersonModel.Store.Address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StateProvince">
+              <PropertyRef Name="StateProvinceID" />
+            </Principal>
+            <Dependent Role="Address">
+              <PropertyRef Name="StateProvinceID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BusinessEntityAddress_Address_AddressID">
+          <End Role="Address" Type="AdventureWorks2012PersonModel.Store.Address" Multiplicity="1" />
+          <End Role="BusinessEntityAddress" Type="AdventureWorks2012PersonModel.Store.BusinessEntityAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Address">
+              <PropertyRef Name="AddressID" />
+            </Principal>
+            <Dependent Role="BusinessEntityAddress">
+              <PropertyRef Name="AddressID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BusinessEntityAddress_AddressType_AddressTypeID">
+          <End Role="AddressType" Type="AdventureWorks2012PersonModel.Store.AddressType" Multiplicity="1" />
+          <End Role="BusinessEntityAddress" Type="AdventureWorks2012PersonModel.Store.BusinessEntityAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AddressType">
+              <PropertyRef Name="AddressTypeID" />
+            </Principal>
+            <Dependent Role="BusinessEntityAddress">
+              <PropertyRef Name="AddressTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID">
+          <End Role="BusinessEntity" Type="AdventureWorks2012PersonModel.Store.BusinessEntity" Multiplicity="1" />
+          <End Role="BusinessEntityAddress" Type="AdventureWorks2012PersonModel.Store.BusinessEntityAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BusinessEntity">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="BusinessEntityAddress">
+              <PropertyRef Name="BusinessEntityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BusinessEntityContact_BusinessEntity_BusinessEntityID">
+          <End Role="BusinessEntity" Type="AdventureWorks2012PersonModel.Store.BusinessEntity" Multiplicity="1" />
+          <End Role="BusinessEntityContact" Type="AdventureWorks2012PersonModel.Store.BusinessEntityContact" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BusinessEntity">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="BusinessEntityContact">
+              <PropertyRef Name="BusinessEntityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BusinessEntityContact_ContactType_ContactTypeID">
+          <End Role="ContactType" Type="AdventureWorks2012PersonModel.Store.ContactType" Multiplicity="1" />
+          <End Role="BusinessEntityContact" Type="AdventureWorks2012PersonModel.Store.BusinessEntityContact" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ContactType">
+              <PropertyRef Name="ContactTypeID" />
+            </Principal>
+            <Dependent Role="BusinessEntityContact">
+              <PropertyRef Name="ContactTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BusinessEntityContact_Person_PersonID">
+          <End Role="Person" Type="AdventureWorks2012PersonModel.Store.Person" Multiplicity="1" />
+          <End Role="BusinessEntityContact" Type="AdventureWorks2012PersonModel.Store.BusinessEntityContact" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="BusinessEntityContact">
+              <PropertyRef Name="PersonID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmailAddress_Person_BusinessEntityID">
+          <End Role="Person" Type="AdventureWorks2012PersonModel.Store.Person" Multiplicity="1" />
+          <End Role="EmailAddress" Type="AdventureWorks2012PersonModel.Store.EmailAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="EmailAddress">
+              <PropertyRef Name="BusinessEntityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Password_Person_BusinessEntityID">
+          <End Role="Person" Type="AdventureWorks2012PersonModel.Store.Person" Multiplicity="1" />
+          <End Role="Password" Type="AdventureWorks2012PersonModel.Store.Password" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="Password">
+              <PropertyRef Name="BusinessEntityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Person_BusinessEntity_BusinessEntityID">
+          <End Role="BusinessEntity" Type="AdventureWorks2012PersonModel.Store.BusinessEntity" Multiplicity="1" />
+          <End Role="Person" Type="AdventureWorks2012PersonModel.Store.Person" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BusinessEntity">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="Person">
+              <PropertyRef Name="BusinessEntityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PersonPhone_Person_BusinessEntityID">
+          <End Role="Person" Type="AdventureWorks2012PersonModel.Store.Person" Multiplicity="1" />
+          <End Role="PersonPhone" Type="AdventureWorks2012PersonModel.Store.PersonPhone" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="PersonPhone">
+              <PropertyRef Name="BusinessEntityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID">
+          <End Role="PhoneNumberType" Type="AdventureWorks2012PersonModel.Store.PhoneNumberType" Multiplicity="1" />
+          <End Role="PersonPhone" Type="AdventureWorks2012PersonModel.Store.PersonPhone" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PhoneNumberType">
+              <PropertyRef Name="PhoneNumberTypeID" />
+            </Principal>
+            <Dependent Role="PersonPhone">
+              <PropertyRef Name="PhoneNumberTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StateProvince_CountryRegion_CountryRegionCode">
+          <End Role="CountryRegion" Type="AdventureWorks2012PersonModel.Store.CountryRegion" Multiplicity="1" />
+          <End Role="StateProvince" Type="AdventureWorks2012PersonModel.Store.StateProvince" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CountryRegion">
+              <PropertyRef Name="CountryRegionCode" />
+            </Principal>
+            <Dependent Role="StateProvince">
+              <PropertyRef Name="CountryRegionCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AdventureWorks2012PersonModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="AdventureWorks2012PersonModelEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Addresses" EntityType="AdventureWorks2012PersonModel.Address" />
+          <EntitySet Name="AddressTypes" EntityType="AdventureWorks2012PersonModel.AddressType" />
+          <EntitySet Name="BusinessEntities" EntityType="AdventureWorks2012PersonModel.BusinessEntity" />
+          <EntitySet Name="BusinessEntityAddresses" EntityType="AdventureWorks2012PersonModel.BusinessEntityAddress" />
+          <EntitySet Name="BusinessEntityContacts" EntityType="AdventureWorks2012PersonModel.BusinessEntityContact" />
+          <EntitySet Name="ContactTypes" EntityType="AdventureWorks2012PersonModel.ContactType" />
+          <EntitySet Name="CountryRegions" EntityType="AdventureWorks2012PersonModel.CountryRegion" />
+          <EntitySet Name="EmailAddresses" EntityType="AdventureWorks2012PersonModel.EmailAddress" />
+          <EntitySet Name="Passwords" EntityType="AdventureWorks2012PersonModel.Password" />
+          <EntitySet Name="People" EntityType="AdventureWorks2012PersonModel.Person" />
+          <EntitySet Name="PersonPhones" EntityType="AdventureWorks2012PersonModel.PersonPhone" />
+          <EntitySet Name="PhoneNumberTypes" EntityType="AdventureWorks2012PersonModel.PhoneNumberType" />
+          <EntitySet Name="StateProvinces" EntityType="AdventureWorks2012PersonModel.StateProvince" />
+          <AssociationSet Name="FK_Address_StateProvince_StateProvinceID" Association="AdventureWorks2012PersonModel.FK_Address_StateProvince_StateProvinceID">
+            <End Role="StateProvince" EntitySet="StateProvinces" />
+            <End Role="Address" EntitySet="Addresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BusinessEntityAddress_Address_AddressID" Association="AdventureWorks2012PersonModel.FK_BusinessEntityAddress_Address_AddressID">
+            <End Role="Address" EntitySet="Addresses" />
+            <End Role="BusinessEntityAddress" EntitySet="BusinessEntityAddresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BusinessEntityAddress_AddressType_AddressTypeID" Association="AdventureWorks2012PersonModel.FK_BusinessEntityAddress_AddressType_AddressTypeID">
+            <End Role="AddressType" EntitySet="AddressTypes" />
+            <End Role="BusinessEntityAddress" EntitySet="BusinessEntityAddresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" Association="AdventureWorks2012PersonModel.FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID">
+            <End Role="BusinessEntity" EntitySet="BusinessEntities" />
+            <End Role="BusinessEntityAddress" EntitySet="BusinessEntityAddresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" Association="AdventureWorks2012PersonModel.FK_BusinessEntityContact_BusinessEntity_BusinessEntityID">
+            <End Role="BusinessEntity" EntitySet="BusinessEntities" />
+            <End Role="BusinessEntityContact" EntitySet="BusinessEntityContacts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Person_BusinessEntity_BusinessEntityID" Association="AdventureWorks2012PersonModel.FK_Person_BusinessEntity_BusinessEntityID">
+            <End Role="BusinessEntity" EntitySet="BusinessEntities" />
+            <End Role="Person" EntitySet="People" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BusinessEntityContact_ContactType_ContactTypeID" Association="AdventureWorks2012PersonModel.FK_BusinessEntityContact_ContactType_ContactTypeID">
+            <End Role="ContactType" EntitySet="ContactTypes" />
+            <End Role="BusinessEntityContact" EntitySet="BusinessEntityContacts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_BusinessEntityContact_Person_PersonID" Association="AdventureWorks2012PersonModel.FK_BusinessEntityContact_Person_PersonID">
+            <End Role="Person" EntitySet="People" />
+            <End Role="BusinessEntityContact" EntitySet="BusinessEntityContacts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StateProvince_CountryRegion_CountryRegionCode" Association="AdventureWorks2012PersonModel.FK_StateProvince_CountryRegion_CountryRegionCode">
+            <End Role="CountryRegion" EntitySet="CountryRegions" />
+            <End Role="StateProvince" EntitySet="StateProvinces" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EmailAddress_Person_BusinessEntityID" Association="AdventureWorks2012PersonModel.FK_EmailAddress_Person_BusinessEntityID">
+            <End Role="Person" EntitySet="People" />
+            <End Role="EmailAddress" EntitySet="EmailAddresses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Password_Person_BusinessEntityID" Association="AdventureWorks2012PersonModel.FK_Password_Person_BusinessEntityID">
+            <End Role="Person" EntitySet="People" />
+            <End Role="Password" EntitySet="Passwords" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PersonPhone_Person_BusinessEntityID" Association="AdventureWorks2012PersonModel.FK_PersonPhone_Person_BusinessEntityID">
+            <End Role="Person" EntitySet="People" />
+            <End Role="PersonPhone" EntitySet="PersonPhones" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" Association="AdventureWorks2012PersonModel.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID">
+            <End Role="PhoneNumberType" EntitySet="PhoneNumberTypes" />
+            <End Role="PersonPhone" EntitySet="PersonPhones" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Address">
+          <Key>
+            <PropertyRef Name="AddressID" />
+          </Key>
+          <Property Name="AddressID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="AddressLine1" Type="String" Nullable="false" MaxLength="60" Unicode="true" FixedLength="false" />
+          <Property Name="AddressLine2" Type="String" MaxLength="60" Unicode="true" FixedLength="false" />
+          <Property Name="City" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="StateProvinceID" Type="Int32" Nullable="false" />
+          <Property Name="PostalCode" Type="String" Nullable="false" MaxLength="15" Unicode="true" FixedLength="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="StateProvince" Relationship="AdventureWorks2012PersonModel.FK_Address_StateProvince_StateProvinceID" FromRole="Address" ToRole="StateProvince" />
+          <NavigationProperty Name="BusinessEntityAddresses" Relationship="AdventureWorks2012PersonModel.FK_BusinessEntityAddress_Address_AddressID" FromRole="Address" ToRole="BusinessEntityAddress" />
+        </EntityType>
+        <EntityType Name="AddressType">
+          <Key>
+            <PropertyRef Name="AddressTypeID" />
+          </Key>
+          <Property Name="AddressTypeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="BusinessEntityAddresses" Relationship="AdventureWorks2012PersonModel.FK_BusinessEntityAddress_AddressType_AddressTypeID" FromRole="AddressType" ToRole="BusinessEntityAddress" />
+        </EntityType>
+        <EntityType Name="BusinessEntity">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="BusinessEntityAddresses" Relationship="AdventureWorks2012PersonModel.FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" FromRole="BusinessEntity" ToRole="BusinessEntityAddress" />
+          <NavigationProperty Name="BusinessEntityContacts" Relationship="AdventureWorks2012PersonModel.FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" FromRole="BusinessEntity" ToRole="BusinessEntityContact" />
+          <NavigationProperty Name="Person" Relationship="AdventureWorks2012PersonModel.FK_Person_BusinessEntity_BusinessEntityID" FromRole="BusinessEntity" ToRole="Person" />
+        </EntityType>
+        <EntityType Name="BusinessEntityAddress">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+            <PropertyRef Name="AddressID" />
+            <PropertyRef Name="AddressTypeID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="Int32" Nullable="false" />
+          <Property Name="AddressID" Type="Int32" Nullable="false" />
+          <Property Name="AddressTypeID" Type="Int32" Nullable="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Address" Relationship="AdventureWorks2012PersonModel.FK_BusinessEntityAddress_Address_AddressID" FromRole="BusinessEntityAddress" ToRole="Address" />
+          <NavigationProperty Name="AddressType" Relationship="AdventureWorks2012PersonModel.FK_BusinessEntityAddress_AddressType_AddressTypeID" FromRole="BusinessEntityAddress" ToRole="AddressType" />
+          <NavigationProperty Name="BusinessEntity" Relationship="AdventureWorks2012PersonModel.FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" FromRole="BusinessEntityAddress" ToRole="BusinessEntity" />
+        </EntityType>
+        <EntityType Name="BusinessEntityContact">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+            <PropertyRef Name="PersonID" />
+            <PropertyRef Name="ContactTypeID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="Int32" Nullable="false" />
+          <Property Name="PersonID" Type="Int32" Nullable="false" />
+          <Property Name="ContactTypeID" Type="Int32" Nullable="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="BusinessEntity" Relationship="AdventureWorks2012PersonModel.FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" FromRole="BusinessEntityContact" ToRole="BusinessEntity" />
+          <NavigationProperty Name="ContactType" Relationship="AdventureWorks2012PersonModel.FK_BusinessEntityContact_ContactType_ContactTypeID" FromRole="BusinessEntityContact" ToRole="ContactType" />
+          <NavigationProperty Name="Person" Relationship="AdventureWorks2012PersonModel.FK_BusinessEntityContact_Person_PersonID" FromRole="BusinessEntityContact" ToRole="Person" />
+        </EntityType>
+        <EntityType Name="ContactType">
+          <Key>
+            <PropertyRef Name="ContactTypeID" />
+          </Key>
+          <Property Name="ContactTypeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="BusinessEntityContacts" Relationship="AdventureWorks2012PersonModel.FK_BusinessEntityContact_ContactType_ContactTypeID" FromRole="ContactType" ToRole="BusinessEntityContact" />
+        </EntityType>
+        <EntityType Name="CountryRegion">
+          <Key>
+            <PropertyRef Name="CountryRegionCode" />
+          </Key>
+          <Property Name="CountryRegionCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="StateProvinces" Relationship="AdventureWorks2012PersonModel.FK_StateProvince_CountryRegion_CountryRegionCode" FromRole="CountryRegion" ToRole="StateProvince" />
+        </EntityType>
+        <EntityType Name="EmailAddress">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+            <PropertyRef Name="EmailAddressID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="Int32" Nullable="false" />
+          <Property Name="EmailAddressID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="EmailAddress1" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Person" Relationship="AdventureWorks2012PersonModel.FK_EmailAddress_Person_BusinessEntityID" FromRole="EmailAddress" ToRole="Person" />
+        </EntityType>
+        <EntityType Name="Password">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="Int32" Nullable="false" />
+          <Property Name="PasswordHash" Type="String" Nullable="false" MaxLength="128" Unicode="false" FixedLength="false" />
+          <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Person" Relationship="AdventureWorks2012PersonModel.FK_Password_Person_BusinessEntityID" FromRole="Password" ToRole="Person" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="Int32" Nullable="false" />
+          <Property Name="PersonType" Type="String" Nullable="false" MaxLength="2" Unicode="true" FixedLength="true" />
+          <Property Name="NameStyle" Type="Boolean" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="8" Unicode="true" FixedLength="false" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="MiddleName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Suffix" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+          <Property Name="EmailPromotion" Type="Int32" Nullable="false" />
+          <Property Name="AdditionalContactInfo" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Demographics" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="BusinessEntity" Relationship="AdventureWorks2012PersonModel.FK_Person_BusinessEntity_BusinessEntityID" FromRole="Person" ToRole="BusinessEntity" />
+          <NavigationProperty Name="BusinessEntityContacts" Relationship="AdventureWorks2012PersonModel.FK_BusinessEntityContact_Person_PersonID" FromRole="Person" ToRole="BusinessEntityContact" />
+          <NavigationProperty Name="EmailAddresses" Relationship="AdventureWorks2012PersonModel.FK_EmailAddress_Person_BusinessEntityID" FromRole="Person" ToRole="EmailAddress" />
+          <NavigationProperty Name="Password" Relationship="AdventureWorks2012PersonModel.FK_Password_Person_BusinessEntityID" FromRole="Person" ToRole="Password" />
+          <NavigationProperty Name="PersonPhones" Relationship="AdventureWorks2012PersonModel.FK_PersonPhone_Person_BusinessEntityID" FromRole="Person" ToRole="PersonPhone" />
+        </EntityType>
+        <EntityType Name="PersonPhone">
+          <Key>
+            <PropertyRef Name="BusinessEntityID" />
+            <PropertyRef Name="PhoneNumber" />
+            <PropertyRef Name="PhoneNumberTypeID" />
+          </Key>
+          <Property Name="BusinessEntityID" Type="Int32" Nullable="false" />
+          <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+          <Property Name="PhoneNumberTypeID" Type="Int32" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Person" Relationship="AdventureWorks2012PersonModel.FK_PersonPhone_Person_BusinessEntityID" FromRole="PersonPhone" ToRole="Person" />
+          <NavigationProperty Name="PhoneNumberType" Relationship="AdventureWorks2012PersonModel.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" FromRole="PersonPhone" ToRole="PhoneNumberType" />
+        </EntityType>
+        <EntityType Name="PhoneNumberType">
+          <Key>
+            <PropertyRef Name="PhoneNumberTypeID" />
+          </Key>
+          <Property Name="PhoneNumberTypeID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="PersonPhones" Relationship="AdventureWorks2012PersonModel.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" FromRole="PhoneNumberType" ToRole="PersonPhone" />
+        </EntityType>
+        <EntityType Name="StateProvince">
+          <Key>
+            <PropertyRef Name="StateProvinceID" />
+          </Key>
+          <Property Name="StateProvinceID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="StateProvinceCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="true" />
+          <Property Name="CountryRegionCode" Type="String" Nullable="false" MaxLength="3" Unicode="true" FixedLength="false" />
+          <Property Name="IsOnlyStateProvinceFlag" Type="Boolean" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="TerritoryID" Type="Int32" Nullable="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Addresses" Relationship="AdventureWorks2012PersonModel.FK_Address_StateProvince_StateProvinceID" FromRole="StateProvince" ToRole="Address" />
+          <NavigationProperty Name="CountryRegion" Relationship="AdventureWorks2012PersonModel.FK_StateProvince_CountryRegion_CountryRegionCode" FromRole="StateProvince" ToRole="CountryRegion" />
+        </EntityType>
+        <Association Name="FK_Address_StateProvince_StateProvinceID">
+          <End Role="StateProvince" Type="AdventureWorks2012PersonModel.StateProvince" Multiplicity="1" />
+          <End Role="Address" Type="AdventureWorks2012PersonModel.Address" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StateProvince">
+              <PropertyRef Name="StateProvinceID" />
+            </Principal>
+            <Dependent Role="Address">
+              <PropertyRef Name="StateProvinceID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BusinessEntityAddress_Address_AddressID">
+          <End Role="Address" Type="AdventureWorks2012PersonModel.Address" Multiplicity="1" />
+          <End Role="BusinessEntityAddress" Type="AdventureWorks2012PersonModel.BusinessEntityAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Address">
+              <PropertyRef Name="AddressID" />
+            </Principal>
+            <Dependent Role="BusinessEntityAddress">
+              <PropertyRef Name="AddressID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BusinessEntityAddress_AddressType_AddressTypeID">
+          <End Role="AddressType" Type="AdventureWorks2012PersonModel.AddressType" Multiplicity="1" />
+          <End Role="BusinessEntityAddress" Type="AdventureWorks2012PersonModel.BusinessEntityAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AddressType">
+              <PropertyRef Name="AddressTypeID" />
+            </Principal>
+            <Dependent Role="BusinessEntityAddress">
+              <PropertyRef Name="AddressTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID">
+          <End Role="BusinessEntity" Type="AdventureWorks2012PersonModel.BusinessEntity" Multiplicity="1" />
+          <End Role="BusinessEntityAddress" Type="AdventureWorks2012PersonModel.BusinessEntityAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BusinessEntity">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="BusinessEntityAddress">
+              <PropertyRef Name="BusinessEntityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BusinessEntityContact_BusinessEntity_BusinessEntityID">
+          <End Role="BusinessEntity" Type="AdventureWorks2012PersonModel.BusinessEntity" Multiplicity="1" />
+          <End Role="BusinessEntityContact" Type="AdventureWorks2012PersonModel.BusinessEntityContact" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="BusinessEntity">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="BusinessEntityContact">
+              <PropertyRef Name="BusinessEntityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Person_BusinessEntity_BusinessEntityID">
+          <End Role="BusinessEntity" Type="AdventureWorks2012PersonModel.BusinessEntity" Multiplicity="1" />
+          <End Role="Person" Type="AdventureWorks2012PersonModel.Person" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="BusinessEntity">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="Person">
+              <PropertyRef Name="BusinessEntityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BusinessEntityContact_ContactType_ContactTypeID">
+          <End Role="ContactType" Type="AdventureWorks2012PersonModel.ContactType" Multiplicity="1" />
+          <End Role="BusinessEntityContact" Type="AdventureWorks2012PersonModel.BusinessEntityContact" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ContactType">
+              <PropertyRef Name="ContactTypeID" />
+            </Principal>
+            <Dependent Role="BusinessEntityContact">
+              <PropertyRef Name="ContactTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_BusinessEntityContact_Person_PersonID">
+          <End Role="Person" Type="AdventureWorks2012PersonModel.Person" Multiplicity="1" />
+          <End Role="BusinessEntityContact" Type="AdventureWorks2012PersonModel.BusinessEntityContact" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="BusinessEntityContact">
+              <PropertyRef Name="PersonID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StateProvince_CountryRegion_CountryRegionCode">
+          <End Role="CountryRegion" Type="AdventureWorks2012PersonModel.CountryRegion" Multiplicity="1" />
+          <End Role="StateProvince" Type="AdventureWorks2012PersonModel.StateProvince" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CountryRegion">
+              <PropertyRef Name="CountryRegionCode" />
+            </Principal>
+            <Dependent Role="StateProvince">
+              <PropertyRef Name="CountryRegionCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EmailAddress_Person_BusinessEntityID">
+          <End Role="Person" Type="AdventureWorks2012PersonModel.Person" Multiplicity="1" />
+          <End Role="EmailAddress" Type="AdventureWorks2012PersonModel.EmailAddress" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="EmailAddress">
+              <PropertyRef Name="BusinessEntityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Password_Person_BusinessEntityID">
+          <End Role="Person" Type="AdventureWorks2012PersonModel.Person" Multiplicity="1" />
+          <End Role="Password" Type="AdventureWorks2012PersonModel.Password" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="Password">
+              <PropertyRef Name="BusinessEntityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PersonPhone_Person_BusinessEntityID">
+          <End Role="Person" Type="AdventureWorks2012PersonModel.Person" Multiplicity="1" />
+          <End Role="PersonPhone" Type="AdventureWorks2012PersonModel.PersonPhone" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="BusinessEntityID" />
+            </Principal>
+            <Dependent Role="PersonPhone">
+              <PropertyRef Name="BusinessEntityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID">
+          <End Role="PhoneNumberType" Type="AdventureWorks2012PersonModel.PhoneNumberType" Multiplicity="1" />
+          <End Role="PersonPhone" Type="AdventureWorks2012PersonModel.PersonPhone" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PhoneNumberType">
+              <PropertyRef Name="PhoneNumberTypeID" />
+            </Principal>
+            <Dependent Role="PersonPhone">
+              <PropertyRef Name="PhoneNumberTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AdventureWorks2012PersonModelStoreContainer" CdmEntityContainer="AdventureWorks2012PersonModelEntities">
+          <EntitySetMapping Name="Addresses">
+            <EntityTypeMapping TypeName="AdventureWorks2012PersonModel.Address">
+              <MappingFragment StoreEntitySet="Address">
+                <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="StateProvinceID" ColumnName="StateProvinceID" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AddressTypes">
+            <EntityTypeMapping TypeName="AdventureWorks2012PersonModel.AddressType">
+              <MappingFragment StoreEntitySet="AddressType">
+                <ScalarProperty Name="AddressTypeID" ColumnName="AddressTypeID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BusinessEntities">
+            <EntityTypeMapping TypeName="AdventureWorks2012PersonModel.BusinessEntity">
+              <MappingFragment StoreEntitySet="BusinessEntity">
+                <ScalarProperty Name="BusinessEntityID" ColumnName="BusinessEntityID" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BusinessEntityAddresses">
+            <EntityTypeMapping TypeName="AdventureWorks2012PersonModel.BusinessEntityAddress">
+              <MappingFragment StoreEntitySet="BusinessEntityAddress">
+                <ScalarProperty Name="BusinessEntityID" ColumnName="BusinessEntityID" />
+                <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+                <ScalarProperty Name="AddressTypeID" ColumnName="AddressTypeID" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="BusinessEntityContacts">
+            <EntityTypeMapping TypeName="AdventureWorks2012PersonModel.BusinessEntityContact">
+              <MappingFragment StoreEntitySet="BusinessEntityContact">
+                <ScalarProperty Name="BusinessEntityID" ColumnName="BusinessEntityID" />
+                <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+                <ScalarProperty Name="ContactTypeID" ColumnName="ContactTypeID" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ContactTypes">
+            <EntityTypeMapping TypeName="AdventureWorks2012PersonModel.ContactType">
+              <MappingFragment StoreEntitySet="ContactType">
+                <ScalarProperty Name="ContactTypeID" ColumnName="ContactTypeID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CountryRegions">
+            <EntityTypeMapping TypeName="AdventureWorks2012PersonModel.CountryRegion">
+              <MappingFragment StoreEntitySet="CountryRegion">
+                <ScalarProperty Name="CountryRegionCode" ColumnName="CountryRegionCode" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmailAddresses">
+            <EntityTypeMapping TypeName="AdventureWorks2012PersonModel.EmailAddress">
+              <MappingFragment StoreEntitySet="EmailAddress">
+                <ScalarProperty Name="BusinessEntityID" ColumnName="BusinessEntityID" />
+                <ScalarProperty Name="EmailAddressID" ColumnName="EmailAddressID" />
+                <ScalarProperty Name="EmailAddress1" ColumnName="EmailAddress" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Passwords">
+            <EntityTypeMapping TypeName="AdventureWorks2012PersonModel.Password">
+              <MappingFragment StoreEntitySet="Password">
+                <ScalarProperty Name="BusinessEntityID" ColumnName="BusinessEntityID" />
+                <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+                <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="People">
+            <EntityTypeMapping TypeName="AdventureWorks2012PersonModel.Person">
+              <MappingFragment StoreEntitySet="Person">
+                <ScalarProperty Name="BusinessEntityID" ColumnName="BusinessEntityID" />
+                <ScalarProperty Name="PersonType" ColumnName="PersonType" />
+                <ScalarProperty Name="NameStyle" ColumnName="NameStyle" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Suffix" ColumnName="Suffix" />
+                <ScalarProperty Name="EmailPromotion" ColumnName="EmailPromotion" />
+                <ScalarProperty Name="AdditionalContactInfo" ColumnName="AdditionalContactInfo" />
+                <ScalarProperty Name="Demographics" ColumnName="Demographics" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PersonPhones">
+            <EntityTypeMapping TypeName="AdventureWorks2012PersonModel.PersonPhone">
+              <MappingFragment StoreEntitySet="PersonPhone">
+                <ScalarProperty Name="BusinessEntityID" ColumnName="BusinessEntityID" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="PhoneNumberTypeID" ColumnName="PhoneNumberTypeID" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PhoneNumberTypes">
+            <EntityTypeMapping TypeName="AdventureWorks2012PersonModel.PhoneNumberType">
+              <MappingFragment StoreEntitySet="PhoneNumberType">
+                <ScalarProperty Name="PhoneNumberTypeID" ColumnName="PhoneNumberTypeID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StateProvinces">
+            <EntityTypeMapping TypeName="AdventureWorks2012PersonModel.StateProvince">
+              <MappingFragment StoreEntitySet="StateProvince">
+                <ScalarProperty Name="StateProvinceID" ColumnName="StateProvinceID" />
+                <ScalarProperty Name="StateProvinceCode" ColumnName="StateProvinceCode" />
+                <ScalarProperty Name="CountryRegionCode" ColumnName="CountryRegionCode" />
+                <ScalarProperty Name="IsOnlyStateProvinceFlag" ColumnName="IsOnlyStateProvinceFlag" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="TerritoryID" ColumnName="TerritoryID" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

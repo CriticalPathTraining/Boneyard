@@ -1,0 +1,232 @@
+﻿/* Wingtip Toys - Feb 2014 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	background-color: transparent;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  END CSS Reset  */
+
+
+/*  BEGIN Document Styles  */
+html{
+	background:url(img/background.jpg) no-repeat fixed;
+	font-size:100%;
+}
+
+body{
+	font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+	font-size:0.9em;
+	margin:auto 0;
+}
+
+.ms-backgroundImage{
+	background-image:url(img/stripe.png);
+	background-size:auto;
+	background-repeat:repeat;
+}
+
+.ms-core-overlay{
+	background:transparent;
+}
+/*  END Document Styles  */
+
+
+/*  BEGIN Text Styles  */
+h1{
+	font-size:3em;
+	color:#002157;
+	font-weight:normal;
+	padding:0 0 15px 0;
+}
+
+.masthead h1{
+	padding-top:35px;
+}
+
+h2, .ms-rtestate-field h2, h2.ms-rteElement-H2{
+	font-size:1.5em;
+	padding-bottom:20px;
+	color:#002157;
+	padding:10px 0;
+}
+
+h3.ms-linksection-title{
+	font-size:1.35em;
+	color:#666;
+}
+
+p{
+	padding-bottom:5px;
+	line-height:1.8em;
+}
+
+a{
+	color:#002157;
+}
+
+ul.links{
+	padding-left:15px;
+}
+
+ul.links li{
+	padding:6px;
+}
+
+ul.links a{
+	border-left:dotted 2px #002157;
+	padding:0 4px;
+	text-decoration:none;
+}
+
+ul.links a:hover{
+	border-left:solid 2px #840000;
+}
+/*  END Text Styles  */
+
+
+/*  BEGIN Masthead Styles  */
+.masthead{
+	height:100px;
+	background-color:rgba(0, 33, 87, 0.85);
+	padding-top:15px;
+}
+
+#s4-titlerow{
+	padding-top:0px;
+	height:100px;
+}
+
+#siteIcon {
+	background-repeat: no-repeat;
+}
+
+#siteIcon img, .ms-siteicon-img{
+	max-width:154px;
+	max-height:87px;
+}
+
+.ms-mpSearchBox {
+	display: none;
+}
+
+.ms-core-pageTitle, .ms-core-pageTitle a{
+	color:#fff;
+}
+
+.ms-breadcrumb-top .ms-core-navigation{
+	float:right;
+	font-family:'Trebuchet MS', Helvetica, Arial, sans-serif;
+	font-size:1.15em;
+}
+
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover,
+a.ms-tv-item:hover, a.ms-tv-header:hover,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:hover,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link,
+.ms-tv-selected:link, .ms-breadcrumb-top .ms-core-navigation a:hover,
+.ms-breadcrumb-top .ms-core-navigation a:hover{
+	color:#fff;
+}
+
+.ms-breadcrumb-top .ms-core-navigation a{
+	color:#dcdcdc;
+	text-decoration:none;
+}
+
+.ms-breadcrumb-top .ms-core-navigation ul.dynamic a{
+	font-size:.8em;
+	color:#666;
+	padding:5px 10px;
+}
+
+.ms-breadcrumb-top .ms-core-navigation ul.dynamic li:hover{
+	background-color:rgba(0, 33, 87, 0.45);
+}
+
+.ms-breadcrumb-top .ms-core-navigation ul.dynamic a:hover{
+	color:#fff;
+}
+
+.ms-core-sideNavBox-removeLeftMargin{
+	background:#fff;
+	padding:10px 0;
+	margin-left:0;
+	margin-top:30px;
+}
+
+li > a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, li > a.ms-core-listMenu-item:hover, li > a.ms-core-listMenu-item:active{
+	background-color:rgba(0, 33, 87, 0.45);
+}
+
+li > a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, li > a.ms-core-listMenu-item:hover, li > a.ms-core-listMenu-item:active a{
+	color:#fff;
+}
+/*  END Masthead Styles  */
+
+
+/*  BEGIN Content Layout Styles  */
+.content{
+	padding:10px 30px;
+	margin:auto;
+	background-color:#fff;
+	margin:30px;
+}
+
+.ms-siteSettings-root{
+	padding-top:5px;
+}
+/*  END Content Layout Styles  */
+
+
+/*  BEGIN Footer Styles  */
+.footer{
+	font-size:0.75em;
+	color:#fff;
+	padding:20px 0px;
+	margin:auto;
+	text-align:center;
+}
+/*  END Footer Styles  */

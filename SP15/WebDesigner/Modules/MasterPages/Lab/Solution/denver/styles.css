@@ -1,0 +1,183 @@
+/*
+body {
+  margin-top: 50px;
+  background-color: red;
+}
+*/
+
+
+#suiteBarLeft {
+  background-color: #000044;
+}
+
+
+#DeltaSuiteLinks {
+  display: none;
+}
+
+
+
+#ms-help {
+  display: none;
+}
+
+.ms-promotedActionButton {
+  display: none !important;
+}
+
+.ms-navedit-editSpan {
+  display: none;
+}
+
+.ms-core-listMenu-verticalBox > a.ms-core-listMenu-item[href$="viewlsts.aspx"] {
+  display: none;
+}
+
+#s4-titlerow{
+  margin-top: 0px;
+  padding-top: 0px;
+  height: 80px;
+}
+
+.ms-siteicon-img {
+  display: none;
+}
+
+#siteIcon {
+  margin-top: 8px;
+  margin-left: 20px;
+  background-image: url('img/wingtip-logo-small.png');
+  background-repeat: no-repeat;
+}
+
+#siteIcon, .ms-siteicon-a {
+  width: 132px;
+  height: 80px;
+}
+
+#DeltaPlaceHolderSearchArea{
+  margin-top: 16px;
+  margin-right: 8px;
+}
+
+body.ms-backgroundImage{
+  background-image: url("img/RainyWindow.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+#page_width {
+  width: 1024px;
+  margin: auto;
+  background-color: white;
+}
+
+#s4-bodyContainer{
+ width: 960px;
+ margin:auto;
+}
+
+.ms-dialog #s4-workspace{
+  background-color: white;
+}
+
+.ms-dialog #s4-bodyContainer{
+   margin: 0px;
+  width: auto;
+}
+
+.ms-dlgContent #s4-bodyContainer{
+  width: auto;
+}
+
+
+#DeltaTopNavigation .ms-core-listMenu-horizontalBox {
+  margin: 0px;
+  width: 100%;
+  height: 20px;
+  background-color: #000044;
+  padding: 4px 8px 6px 8px;
+  padding-left: 6px;
+  border-bottom-left-radius: 5px;
+  width: 100%;
+}
+
+#DeltaTopNavigation .static > li > .ms-core-listMenu-item,
+#DeltaTopNavigation .dynamic > li > .ms-core-listMenu-item {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  height: 18px;
+  line-height: 16px;
+  padding: 2px 12px 0px 8px;
+  margin-right: 0px !important;
+  color: white;
+}
+
+#DeltaTopNavigation ul {
+  margin: 0px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+#DeltaTopNavigation .root > li {
+  border-right: 1px solid #555;
+  border-style: none;
+  margin-right: 4px;
+  border-radius: 4px;
+}
+
+  #DeltaTopNavigation .root > li > .ms-core-listMenu-selected {
+    color: #880909;
+    background-color: #FFFFCC;
+    border-radius: 4px;
+  }
+
+.ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+  padding-right: 26px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected a.ms-core-listMenu-item:hover,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected .dynamic-children.additional-background {
+  background-image: url("/_layouts/15/images/menu-down.GIF?rev=23");
+}
+
+#DeltaTopNavigation a.ms-core-listMenu-item:hover .dynamic-children.additional-background {
+  background-image: url("/_layouts/15/images/menu-down.GIF?rev=23");
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+#DeltaTopNavigation a.ms-core-listMenu-item:hover {
+  text-decoration: none;
+  background-color: #FFFFCC;
+  color: black;
+  border-radius: 4px;
+}
+
+#DeltaTopNavigation .ms-core-listMenu-selected:hover {
+  color: DarkBlue !important;
+  background-color: orange !important;
+}
+
+
+#DeltaTopNavigation ul.dynamic {
+  min-width: 160px;
+  border: 0px none;
+  padding-top: 1px;
+  margin-left: 0px;
+  margin-top: 1px;
+  background-color: #FFFFCC;
+}
+
+  #DeltaTopNavigation ul.dynamic .ms-core-listMenu-item {
+    display: block;
+    border: 1px solid #000044;
+    border-top: 0px;
+    color: #880909;
+    padding: 4px;
+    padding-left: 8px;
+  }

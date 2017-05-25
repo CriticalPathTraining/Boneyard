@@ -1,0 +1,62 @@
+﻿
+body {
+  background-color: #DDD;
+  padding: 0px;
+  margin: 0px;
+  background-image: url('img/pebbles.jpg');
+  background-repeat: repeat;
+}
+
+#page_width {
+  width: 960px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+#nav_bar {
+  background-color: black;
+  padding: 4px;
+}
+
+#page_header {
+  height: 72px;
+}
+
+#site_logo {
+  float: left;
+  background-image: url("img/AppIcon.gif");
+  width: 75px;
+  height: 75px;
+}
+
+#site_title {
+  margin: 0px;
+  margin-top: 12px;
+  float: left;
+  font-size: 40px;
+  color: #000;
+}
+
+#toolbar {
+  margin: 4px;
+  padding: 4px;
+  background-color: black;
+  border-radius: 8px;
+}
+
+  #toolbar input {
+    margin: 2px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: black;
+  }
+
+#content_box {
+  margin: 4px;
+  min-height: 480px;
+  border: 1px solid #AAA;
+  border-radius: 8px;
+  background-color: #DDD;
+  padding: 8px;
+}

@@ -1,0 +1,721 @@
+﻿
+
+
+/* edit and edit mode links */
+
+
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover,
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover,
+a.ms-tv-item:hover,
+a.ms-tv-header:hover {
+  background-color: transparent;
+  /* [ReplaceColor(themeColor:"NavigationHover")] */ color: #0072c6;
+}
+
+.ms-core-header .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover,
+.ms-core-header a.ms-tv-item:hover,
+.ms-core-header a.ms-tv-header:hover {
+  /* [ReplaceColor(themeColor:"HeaderNavigationHoverText")] */ color: #0072c6;
+}
+
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:active,
+a.ms-tv-item:active,
+a.ms-tv-header:active {
+  background-color: transparent;
+  /* [ReplaceColor(themeColor:"NavigationPressed")] */ color: #004d85;
+}
+
+.ms-core-header .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:active,
+.ms-core-header a.ms-tv-item:active,
+.ms-core-header a.ms-tv-header:active {
+  /* [ReplaceColor(themeColor:"HeaderNavigationPressedText")] */ color: #004d85;
+}
+
+.ms-core-listMenu-selected:link,
+.ms-core-listMenu-selected:visited,
+.ms-core-listMenu-selected {
+  /* [ReplaceColor(themeColor:"NavigationSelectedBackground",opacity:"1")] */ background-color: #efefef;
+  /* [ReplaceColor(themeColor:"NavigationSelectedBackground")] */ background-color: rgba( 239,239,239,0.78 );
+}
+
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected,
+.ms-tv-selected:link {
+  background-color: transparent;
+  /* [ReplaceColor(themeColor:"NavigationAccent")] */ color: #0072c6;
+}
+
+.ms-core-header .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link,
+.ms-core-header .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited,
+.ms-core-header .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected,
+.ms-core-header .ms-tv-selected:link {
+  /* [ReplaceColor(themeColor:"HeaderNavigationSelectedText")] */ color: #0072c6;
+}
+
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover,
+.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover,
+a.ms-tv-item:hover,
+a.ms-tv-header:hover {
+  color: #000044;
+}
+
+.ms-core-header .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover,
+.ms-core-header a.ms-tv-item:hover,
+.ms-core-header a.ms-tv-header:hover {
+  color: #000044;
+}
+
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited,
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected,
+.ms-tv-selected:link {
+  color: #000044;
+}
+
+.ms-core-header .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link,
+.ms-core-header .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited,
+.ms-core-header .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected,
+.ms-core-header .ms-tv-selected:link {
+  color: #000044;
+}
+
+
+
+
+
+/* menu styles */
+
+.ms-core-listMenu-verticalBox > .ms-core-listMenu-root > li > .ms-core-listMenu-item,
+.ms-core-listMenu-verticalBox > .ms-core-listMenu-root > li > .ms-core-listMenuEdit,
+.ms-core-listMenu-heading,
+.ms-tv-header {
+  font-size: 0.85em;
+  color: #333;
+  vertical-align: middle;
+  font-family: Arial, sans-serif;
+  display: block;
+}
+
+.ms-core-listMenu-root {
+  margin: 0px;
+  margin-left: 12px;
+}
+
+.ms-navedit-hiddenLink.ms-core-listMenu-item,
+.ms-navedit-hiddenLink.ms-core-listMenu-item:link,
+.ms-navedit-hiddenLink.ms-core-listMenu-item:visited {
+  color: red;
+  font-style: italic;
+}
+
+.ms-core-header .ms-navedit-hiddenLink.ms-core-listMenu-item,
+.ms-core-header .ms-navedit-hiddenLink.ms-core-listMenu-item:link,
+.ms-core-header .ms-navedit-hiddenLink.ms-core-listMenu-item:visited {
+  color: red;
+}
+
+.ms-core-listMenu-verticalBox .ms-core-listMenu-item,
+ul.dynamic .ms-core-listMenu-item {
+  display: block;
+}
+
+.ms-core-listMenu-verticalBox > .ms-core-listMenu-item,
+.ms-core-listMenu-verticalBox li.static > .ms-core-listMenu-item {
+  display: block;
+  padding: 3px 12px;
+}
+
+ul.dynamic .ms-core-listMenuEdit .ms-core-listMenu-item,
+.ms-core-listMenu-verticalBox .ms-core-listMenuEdit .ms-core-listMenu-item {
+  padding: 6px 5px;
+}
+
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > .ms-core-listMenu-item {
+  padding-left: 32px;
+}
+
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > span table.ms-core-listMenuEdit,
+.ms-core-listMenu-verticalBox li.static > ul.static > li.static > table.ms-core-listMenuEdit {
+  padding-left: 20px;
+}
+
+.ms-core-listMenu-item,
+.ms-core-listMenu-item:link,
+.ms-core-listMenu-item:visited,
+.ms-tv-item:link,
+.ms-tv-item:visited,
+.ms-tv-header:link,
+.ms-tv-header:visited {
+  color: black;
+  text-decoration: none;
+  font-size: 0.75em;
+}
+
+.ms-core-header .ms-core-listMenu-item,
+.ms-core-header .ms-core-listMenu-item:link,
+.ms-core-header .ms-core-listMenu-item:visited,
+.ms-core-header .ms-tv-item:link,
+.ms-core-header .ms-tv-item:visited,
+.ms-core-header .ms-tv-header:link,
+.ms-core-header .ms-tv-header:visited {
+  /* [ReplaceColor(themeColor:"HeaderNavigationText")] */ color: #666;
+}
+
+li > a.ms-core-listMenu-item.ms-core-listMenu-selected:hover,
+li > a.ms-core-listMenu-item:hover,
+li > a.ms-core-listMenu-item:active {
+  /* [ReplaceColor(themeColor:"NavigationHoverBackground",opacity:"1")] */ background-color: #cde6f7;
+  /* [ReplaceColor(themeColor:"NavigationHoverBackground")] */ background-color: rgba( 205,230,247,0.5 );
+}
+
+.ms-core-listMenu-disabled,
+.ms-core-listMenu-disabled:link,
+.ms-core-listMenu-disabled:visited,
+.ms-core-listMenu-disabled:hover,
+.ms-core-listMenu-disabled:active {
+  /* [ReplaceColor(themeColor:"DisabledText")] */ color: #b1b1b1;
+}
+
+.ms-core-header .ms-core-listMenu-disabled,
+.ms-core-header .ms-core-listMenu-disabled:link,
+.ms-core-header .ms-core-listMenu-disabled:visited,
+.ms-core-header .ms-core-listMenu-disabled:hover,
+.ms-core-header .ms-core-listMenu-disabled:active {
+  /* [ReplaceColor(themeColor:"HeaderDisableText")] */ color: #b1b1b1;
+}
+
+li.hover, li.hover-off {
+  position: relative;
+}
+
+ul.dynamic {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  z-index: 50;
+  background-color: #FFFFEE;
+  white-space: normal;
+  word-wrap: break-word;
+  padding: 10px;
+  border: 1px solid #EEE;
+  box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.47);
+}
+
+  ul.dynamic.ms-droppable {
+    min-width: 195px;
+    padding: 5px;
+  }
+
+li.dynamic {
+  display: list-item;
+}
+
+.ms-core-listMenu-ghost,
+.ms-core-listMenu-ghost:link,
+.ms-core-listMenu-ghost:visited,
+.ms-core-listMenu-ghost:hover,
+.ms-core-listMenu-ghost:active {
+  color: red;
+  opacity: 0.8;
+}
+
+.ms-core-header .ms-core-listMenu-ghost,
+.ms-core-header .ms-core-listMenu-ghost:link,
+.ms-core-header .ms-core-listMenu-ghost:visited,
+.ms-core-header .ms-core-listMenu-ghost:hover,
+.ms-core-header .ms-core-listMenu-ghost:active {
+  color: red;
+}
+
+.ms-core-needIEFilter .ms-core-listMenu-ghost,
+.ms-core-needIEFilter .ms-core-listMenu-ghost:link,
+.ms-core-needIEFilter .ms-core-listMenu-ghost:visited,
+.ms-core-needIEFilter .ms-core-listMenu-ghost:hover,
+.ms-core-needIEFilter .ms-core-listMenu-ghost:active {
+  background-color: transparent;
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+}
+
+.ms-core-listMenuEdit {
+  border: 1px solid transparent;
+}
+
+  .ms-core-listMenuEdit:hover {
+    /* [ReplaceColor(themeColor:"DialogBorder")] */ border: 1px solid #d1d1d1;
+  }
+
+.ms-core-listMenu-verticalBox li.static > .ms-core-listMenuEdit .ms-navedit-linkCell,
+.dynamic .ms-core-listMenuEdit {
+  width: 100%;
+}
+
+
+.ms-navedit-editLinksText:hover > span > .ms-metadata,
+.ms-core-listMenuEdit:hover > tr > .ms-navedit-linkCell > .ms-core-listMenu-item {
+  color: yellow;
+}
+
+.ms-navedit-editLinksText:active > span > .ms-metadata,
+.ms-core-listMenuEdit:active > tr > .ms-navedit-linkCell > .ms-core-listMenu-item {
+  color: yellow;
+}
+
+.ms-navedit-editLinksIconWrapper {
+  display: none;
+}
+
+.ms-core-header .ms-core-listMenuEdit > tr > td > .ms-core-listMenu-item:hover,
+.ms-core-header .ms-core-listMenuEdit > tr > td > .ms-core-listMenu-item:active {
+  /* [ReplaceColor(themeColor:"HeaderNavigationText")] */ color: #666;
+}
+
+.ms-core-listMenuEdit > tr > td > .ms-core-listMenu-item:active {
+  background-color: transparent;
+}
+
+.ms-navedit-titleBoxListItem {
+  min-width: 185px;
+}
+
+.ms-navedit-titleBoxContainer,
+.ms-navedit-titleBoxContainer ms-core-listMenu-selected,
+.ms-navedit-titleBoxContainer:hover,
+.ms-navedit-titleBoxContainer ms-core-listMenu-selected:hover {
+  width: 100%;
+  /* [ReplaceColor(themeColor:"BackgroundOverlay",opacity:"1")] */ background-color: #fff;
+  /* [ReplaceColor(themeColor:"AccentLines")] */ border: 1px solid #2a8dd4;
+  /* [ReplaceColor(themeColor:"Navigation")] */ color: #666666;
+}
+
+
+.menu-horizontal .menu-item-text {
+  white-space: nowrap;
+}
+
+
+
+.sp-peoplepicker-autoFillContainer .ms-core-menu-item {
+  white-space: nowrap;
+  padding: 1px 5px 3px 5px;
+}
+
+
+
+
+.ms-core-menu-item > .ms-core-menu-box > .ms-core-menu-list {
+  padding: 0px;
+}
+
+.ms-core-menu-item {
+  margin: 0px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.ms-core-menu-hasIcons > .ms-core-menu-list > .ms-core-menu-item {
+  min-height: 24px;
+}
+
+.ms-core-menu-hasIcons.ms-core-menu-boxBig > .ms-core-menu-list > .ms-core-menu-item {
+  min-height: 40px;
+}
+
+.ms-core-menu-iconLarge,
+.ms-core-menu-icon {
+  line-height: 1.5em;
+  float: left;
+}
+
+.ms-core-menu-icon {
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.ms-core-menu-iconLarge {
+  min-width: 32px;
+  min-height: 32px;
+}
+
+.ms-core-menu-label,
+.ms-core-menu-labelCompact {
+  border: 1px solid transparent;
+  word-wrap: break-word;
+}
+
+.ms-core-menu-hasIcons > .ms-core-menu-list > .ms-core-menu-item > .ms-core-menu-link > .ms-core-menu-label,
+.ms-core-menu-hasIcons > .ms-core-menu-list > .ms-core-menu-item > .ms-core-menu-link > .ms-core-menu-labelCompact {
+  padding-left: 21px;
+}
+
+.ms-core-menu-hasIcons.ms-core-menu-boxBig > .ms-core-menu-list > .ms-core-menu-item > .ms-core-menu-link > .ms-core-menu-label,
+.ms-core-menu-hasIcons.ms-core-menu-boxBig > .ms-core-menu-list > .ms-core-menu-item > .ms-core-menu-link > .ms-core-menu-labelCompact {
+  padding-left: 37px;
+}
+
+.ms-core-menu-icon > img {
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+}
+
+.ms-core-menu-iconLarge > img {
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+}
+
+a.ms-core-menu-link {
+  padding: 6px 8px;
+  /* [ReplaceColor(themeColor:"BodyText")] */ color: #444;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+  a.ms-core-menu-link:focus {
+    outline: 1px dotted transparent;
+  }
+
+a.ms-core-menu-indent {
+  padding-left: 27px;
+}
+
+.ms-core-menu-item:hover,
+.ms-core-menu-itemSelected {
+  /* [ReplaceColor(themeColor:"HoverBackground")] */ background-color: rgba( 205,230,247,0.5 );
+}
+
+.ms-core-menu-item[disabled=true]:hover,
+.ms-core-menu-itemDisabled.ms-core-menu-item:hover,
+.ms-core-menu-itemDisabled.ms-core-menu-itemSelected {
+  background-color: transparent;
+}
+
+.ms-core-needIEFilter .ms-core-menu-item:hover,
+.ms-core-needIEFilter .ms-core-menu-itemSelected {
+  /* [ReplaceColor(THEME_COLOR_BACKGROUND_SOLID,opacity:"1")] */ background-color: #cde6f7;
+}
+
+.ms-core-needIEFilter .ms-core-menu-item[disabled=true]:hover,
+.ms-core-needIEFilter .ms-core-menu-itemDisabled.ms-core-menu-item:hover,
+.ms-core-needIEFilter .ms-core-menu-itemDisabled.ms-core-menu-itemSelected {
+  background-color: transparent;
+}
+
+.ms-core-menu-item[disabled=true] > .ms-core-menu-link > .ms-core-menu-label > .ms-core-menu-title,
+.ms-core-menu-itemDisabled > .ms-core-menu-link > .ms-core-menu-label > .ms-core-menu-title {
+  /* [ReplaceColor(themeColor:"DisabledText")] */ color: #b1b1b1;
+}
+
+.ms-core-menu-item[disabled=true],
+.ms-core-menu-item[disabled=true] > .ms-core-menu-link,
+.ms-core-menu-itemDisabled,
+.ms-core-menu-itemDisabled > .ms-core-menu-link {
+  cursor: default;
+}
+
+.ms-core-menu-staticItemSelected,
+.ms-core-menu-staticItemSelected:hover {
+  /* [ReplaceColor(themeColor:"SelectionBackground")] */ background-color: rgba( 156,206,240,0.5 );
+}
+
+.ms-core-needIEFilter .ms-core-menu-staticItemSelected,
+.ms-core-needIEFilter .ms-core-menu-staticItemSelected:hover {
+  background-color: transparent;
+  /* [ReplaceColor(THEME_COLOR_SELECTION_BACKGROUND_SOLID,opacity:"1")] */ background-color: #9ccef0;
+}
+
+.ms-core-menu-arrowBox {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 5px;
+}
+
+.ms-core-menu-arrow {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ms-core-menu-hasArrow > .ms-core-menu-link {
+  padding-right: 15px;
+}
+
+.ms-core-menu-separator:first-child {
+  display: none;
+}
+
+.ms-core-menu-separatorHr {
+  margin: 2px 0px;
+  /* [ReplaceColor(themeColor:"SubtleLines")] */ color: #c6c6c6;
+}
+
+.ms-core-menu-button {
+  cursor: pointer;
+}
+
+.ms-core-menu-link:link,
+.ms-core-menu-link:visited {
+  /* [ReplaceColor(themeColor:"BodyText")] */ color: #444;
+}
+
+.ms-core-menu-closebutton {
+  text-align: right;
+  padding: 8px 10px;
+}
+
+
+
+
+
+
+
+/* switch out yucky blue with a better blue */
+input.ms-button-emphasize, button.ms-button-emphasize {
+  border-color: #0067b0;
+  background-color: #000044;
+  background-color: #000044;
+  color: #fff;
+}
+
+a, .ms-link:visited {
+  color: #000044;
+  text-decoration: none;
+}
+
+.ms-core-needIEFilter .ms-welcome-root {
+  border-left-color: #000044;
+}
+
+.ms-core-form-heading {
+  color: #000044;
+}
+
+.ms-core-form-title {
+  font-size: inherit;
+  color: #000044;
+}
+
+.ms-storefront-appiconspan {
+  background-color: #000044;
+}
+
+.ms-accentText, .ms-accentText:visited {
+  color: #000044;
+}
+
+.ms-subtleLink:hover,
+.ms-atMention:hover,
+.ms-hashTag:hover {
+  color: #000044;
+}
+
+.ms-heroCommandLink,
+.ms-heroCommandLink:visited {
+  color: #000044;
+}
+
+
+.ms-webpart-titleText > a:hover {
+  color: #000044;
+}
+
+.ms-emphasis {
+  color: #fff;
+  background-color: #000044;
+}
+
+.ms-subtleEmphasisCommand:hover {
+  color: #000044;
+}
+
+.ms-ContentAccent1-fontColor {
+  color: #000044;
+}
+
+.ms-ContentAccent1-bgColor {
+  background-color: #000044;
+}
+
+.ms-EmphasisBackground-bgColor {
+  background-color: #000044;
+}
+
+.ms-ContentAccent1-borderColor {
+  border-color: #000044;
+}
+
+.ms-RowAccent-borderColor {
+  border-color: #000044;
+}
+
+.ms-rteThemeForeColor-5-0 {
+  color: #000044;
+}
+
+.ms-rteThemeBackColor-5-0 {
+  background-color: #000044;
+}
+
+
+.ms-rtestate-field h1,
+h1.ms-rteElement-H1,
+.ms-rtestate-field h2,
+h2.ms-rteElement-H2 {
+  color: #000044;
+}
+
+.ms-rteStyle-Emphasis,
+.ms-rteStyle-IntenseEmphasis {
+  color: #000044;
+}
+
+.ms-rteStyle-Comment,
+.ms-rteStyle-Accent1 {
+  color: #000044;
+}
+
+.ms-acal-rootdiv a:visited {
+  color: #000044;
+}
+
+tr td div.ms-acal-today {
+  color: #000044;
+}
+
+.ms-acal-item {
+  background-color: #000044;
+}
+
+.ms-acal-color2 {
+  background-color: #000044;
+}
+
+.ms-acal-apanel-item {
+  background-color: #000044;
+}
+
+.ms-acal-apanel-color2 {
+  background-color: #000044;
+}
+
+.ms-fb-selected {
+  background-color: #000044;
+}
+
+.ms-picker-footer a {
+  color: #000044;
+}
+
+.RemoveConnectionLink {
+  color: #000044;
+}
+
+.s4-wpActive .ms-WPTitle, .s4-wpActive .ms-WPTitle a {
+  color: #000044;
+}
+
+
+.s4-itm-selected > .ms-vb-imgFirstCell.ms-vb-imgFirstCell {
+  background-color: #000044;
+}
+
+.ms-sectionheader {
+  color: #000044;
+}
+
+  .ms-sectionheader a, .ms-sectionheader a:hover, .ms-sectionheader a:visited {
+    color: #000044;
+  }
+
+
+div.ms-viewselector a, div.ms-viewselectorhover a.ms-menu-a span {
+  color: #000044;
+}
+
+.ms-vb a:visited, .ms-vb2 a:visited, .ms-vb-user a:visited {
+  color: #000044;
+}
+
+  .ms-vb a:visited:hover, .ms-vb2 a:visited:hover, .ms-vb-user a:visited:hover {
+    color: #000044;
+  }
+
+.ms-alternatingstrong .ms-vb a:link, .ms-alternatingstrong .ms-vb2 a:link, .ms-alternatingstrong .ms-vb-user a:link, .ms-alternatingstrong .ms-vb a:visited, .ms-alternatingstrong .ms-vb2 a:visited, .ms-alternatingstrong .ms-vb-user a:visited, .ms-alternatingstrong .ms-vb a:visited:hover, .ms-alternatingstrong .ms-vb2 a:visited:hover, .ms-alternatingstrong .ms-vb-user a:visited:hover {
+  color: #000044;
+}
+
+
+.ms-pivotControl-surfacedOpt:hover,
+.ms-pivotControl-overflowDot:hover,
+.ms-pivotControl-surfacedOpt-selected {
+  color: #000044;
+}
+
+
+.ms-storMeUsed {
+  background-color: #000044;
+}
+
+div.ms-designgallery-item-current a.ms-designgallery-packagename {
+  color: #000044;
+}
+
+a.ms-designbuilder-navbutton:hover,
+a.ms-designbuilder-navbutton:focus {
+  color: #000044;
+}
+
+.ms-blog-postBoxDate {
+  background-color: #000044;
+}
+
+a.ms-missinglink {
+  border-bottom: 1px dashed #000044;
+}
+
+.ms-tileview-tile-content {
+  background-color: #000044;
+}
+
+.ms-tileview-tile-selected, .ms-tileview-tile-selectionBox, .ms-tileview-tile-selectionBox > *, .ms-tileview-tile-selectionBox:hover > * {
+  background-color: #000044;
+}
+
+/* swap out yucky yellow */
+
+
+.ms-cui-cg-or.ms-cui-cg {
+  border-top-color: #880909;
+}
+
+.ms-cui-ct-topBar-or, .ms-cui-tabBody-or {
+  border-color: #880909 !important;
+  border-bottom-style: none;
+}
+
+.ms-cui-cg-or .ms-cui-ct-ul {
+  border-color: #880909;
+}
+
+.ms-cui-cg-or.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a, .ms-cui-cg-or.ms-cui-cg-s .ms-cui-tt-s .ms-cui-tt-a:hover {
+  border-color: #880909;
+}
+
+.ms-cui-cg-or .ms-cui-ct-first > .ms-cui-tt-a, .ms-cui-cg-or .ms-cui-ct-first > .ms-cui-tt-a:hover {
+  border-left-color: #880909;
+}
+
+.ms-cui-cg-or .ms-cui-ct-last > .ms-cui-tt-a, .ms-cui-cg-or .ms-cui-ct-last > .ms-cui-tt-a:hover {
+  border-right-color: #880909;
+}
+
+
+.ms-cui-cg-or .ms-cui-tt-s > .ms-cui-tt-a > .ms-cui-tt-span,
+.ms-cui-cg-or .ms-cui-tt > .ms-cui-tt-a:hover > .ms-cui-tt-span {
+  color: #880909 !important;
+}
+
+

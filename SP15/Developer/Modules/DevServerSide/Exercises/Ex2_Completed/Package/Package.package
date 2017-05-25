@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9c02fb0e-43ab-4984-9242-c3b208cc94df" solutionId="9c02fb0e-43ab-4984-9242-c3b208cc94df" resetWebServer="false" sharePointProductVersion="15.0" name="ListCreator" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="d4767d1b-8b09-48a2-8670-d06064ad9a9f" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="06516577-4711-4dc9-af35-b33ad51373e5" />
+  </projectItems>
+</package>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Course-Detail-Forms:-myXSD-2010-05-18T18-37-18" solutionVersion="1.0.0.24" productVersion="14.0.0.0" PIVersion="1.0.0.0" href="http://intranet.sharepointblackops.com/Courses/Course%20Detail%20Forms/Forms/template.xsn"?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:courseDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2010-05-18T18:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:title>Developing Solutions with SharePoint Server 2007 </my:title>
+	<my:description>This 4-day survey course explores the development opportunities with Microsoft’s most recent release of SharePoint Products and Technologies. The first half of the course focuses on Windows SharePoint Services 3.0 (WSS) where you will learn how develop fundamental WSS building blocks such as features, application pages, site pages, Web Parts, custom list types, site columns, content types and custom workflow programs. The second half of the course focuses on Microsoft Office SharePoint Server 2007 (MOSS). You will learn how to assemble and configure business solutions by using and extending the portal and web content management features of MOSS as well as other server-side services such as the Business Data Catalog, Forms Services, Excel Services and Report Center.</my:description>
+	<my:courseCode>SPT401</my:courseCode>
+	<my:prerequisites>Attendees should have professional development experience with Visual Studio 2008, the .NET framework and ASP.NET as well as familiarity with Microsoft Office products such as Word and Excel. It is also recommended (but not required) that attendees have a background with the previous version of Windows SharePoint Services V2 and have experience working directly with XML files in Visual Studio 2008.</my:prerequisites>
+	<my:modules>
+		<my:moduleName>SharePoint 2007 Developer Roadmap </my:moduleName>
+		<my:moduleNumber>1</my:moduleNumber>
+		<my:moduleDescription>"to do"</my:moduleDescription>
+		<my:topicCovered>Architectural overview of SharePoint and the Office 2007 system </my:topicCovered>
+	<my:topicCovered>WSS as a collaboration solution </my:topicCovered><my:topicCovered>WSS as a server-side development platform </my:topicCovered><my:topicCovered>Overview of MOSS components and services </my:topicCovered><my:topicCovered>Creating and testing your first WSS feature</my:topicCovered></my:modules>
+<my:modules>
+									<my:moduleName>SharePoint Architecture </my:moduleName>
+									<my:moduleNumber>2</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>WSS Integration with ASP.NET 2.0 </my:topicCovered>
+								<my:topicCovered>The configuration database and content databases </my:topicCovered><my:topicCovered>Configuring the web.config file for a Web application </my:topicCovered><my:topicCovered>Understanding site pages versus application pages</my:topicCovered><my:topicCovered>Creating and debugging custom application pages</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Pages and Site Branding </my:moduleName>
+									<my:moduleNumber>3</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Understanding page parsing and Safe Mode restrictions</my:topicCovered>
+								<my:topicCovered>Creating a feature with custom page templates</my:topicCovered><my:topicCovered>Designing page templates using controls and Web Part Zones </my:topicCovered><my:topicCovered>Understanding the standard default.master page template</my:topicCovered><my:topicCovered>Creating a feature to apply branding at the site collection level </my:topicCovered><my:topicCovered>Understanding and extending the CSS classes in core.css</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Developing Web Parts </my:moduleName>
+									<my:moduleNumber>4</my:moduleNumber>
+									<my:moduleDescription>"to do</my:moduleDescription>
+									<my:topicCovered>Creating, deploying and debugging ASP.NET Web Parts in WSS</my:topicCovered>
+								<my:topicCovered>Designing Web Parts with persistent properties</my:topicCovered><my:topicCovered>Web Part Description files and the Web Part Gallery </my:topicCovered><my:topicCovered>Creating a feature to import Web Parts into the Web Part Gallery </my:topicCovered><my:topicCovered>Backwards compatibility with WSS V2-style Web Parts</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Lists and Content Types </my:moduleName>
+									<my:moduleNumber>5</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>New WSS 3.0 enhancements to lists and document libraries </my:topicCovered>
+								<my:topicCovered>Defining site columns, custom field types and content types</my:topicCovered><my:topicCovered>Provisioning document libraries using a feature</my:topicCovered><my:topicCovered>Defining a custom list type using a feature </my:topicCovered><my:topicCovered>Creating event handlers using custom event receiver classes</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Forms Services with InfoPath 2007 </my:moduleName>
+									<my:moduleNumber>6</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Creating input forms with InfoPath </my:topicCovered>
+								<my:topicCovered>InfoPath integration with WSS forms libraries</my:topicCovered><my:topicCovered>Forms Services Architecture</my:topicCovered><my:topicCovered>Designing server-side forms with InfoPath 2007</my:topicCovered><my:topicCovered>User deployment of server-side forms versus administrator deployment</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>SharePoint Workflows </my:moduleName>
+									<my:moduleNumber>7</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Windows Workflow Foundation (WF) Primer </my:topicCovered>
+								<my:topicCovered>Creating WF programs in Visual Studio with the workflow designer </my:topicCovered><my:topicCovered>Creating, deploying and debugging workflow templates for WSS</my:topicCovered><my:topicCovered>Creating workflow associations and workflow instances </my:topicCovered><my:topicCovered>Developing workflows which create and wait on WSS tasks </my:topicCovered><my:topicCovered>Creating workflow input forms for MOSS using Microsoft InfoPath</my:topicCovered><my:topicCovered></my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Extending MOSS Portal and Search </my:moduleName>
+									<my:moduleNumber>8</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Shared Service Provider (SSP) Architecture </my:topicCovered>
+								<my:topicCovered>Creating sites from the MOSS Collaboration Portal site template </my:topicCovered><my:topicCovered>User Profiles and Audience Targeting </my:topicCovered><my:topicCovered>MOSS infrastructure for creating MySites </my:topicCovered><my:topicCovered>Configuring and extending MOSS Search</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>The Business Data Catalog (BDC) </my:moduleName>
+									<my:moduleNumber>9</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Working with BDC Application Definition Files </my:topicCovered>
+								<my:topicCovered>Application, Entities, Methods and Associations</my:topicCovered><my:topicCovered>Surfacing backend data using BDC Web Parts </my:topicCovered><my:topicCovered>BDC integration with MOSS search</my:topicCovered><my:topicCovered>Creating custom Web Parts that execute BDC queries</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Web Content Management </my:moduleName>
+									<my:moduleNumber>10</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Customizing sites creating from the MOSS Publishing Site template </my:topicCovered>
+								<my:topicCovered>Creating content types and custom page layouts for Web content </my:topicCovered><my:topicCovered>Understanding the MOSS content approval process</my:topicCovered><my:topicCovered>Converting Office documents into Web-ready formats </my:topicCovered><my:topicCovered>Optimizing performance with MOSS caching features</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Excel Services and Report Center </my:moduleName>
+									<my:moduleNumber>11</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Introduction to Excel Services </my:topicCovered>
+								<my:topicCovered>Publishing Excel spreadsheets that render in the browser</my:topicCovered><my:topicCovered>Trusted locations, connections and user-defined functions (UDFs) </my:topicCovered><my:topicCovered>Creating Dashboard pages with Report Center</my:topicCovered><my:topicCovered>Creating Key Performance Indicators (KPIs) and filters</my:topicCovered><my:topicCovered>MOSS integration with SQL Reporting Services</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>SharePoint Application Security </my:moduleName>
+									<my:moduleNumber>12</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Windows Authentication versus Forms Authentication </my:topicCovered>
+								<my:topicCovered>WSS Identities and Security Contexts </my:topicCovered><my:topicCovered>Escalation of Privilege </my:topicCovered><my:topicCovered>Delegating User Credentials </my:topicCovered><my:topicCovered>Configuring Securable objects within a site </my:topicCovered><my:topicCovered>Using the MOSS Single Sign On (SSO) Service</my:topicCovered></my:modules></my:courseDetails>

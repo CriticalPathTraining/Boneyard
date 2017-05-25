@@ -1,0 +1,5 @@
+=SWITCH([InvoiceType], 
+  "Online", "Online Purchases", 
+  "InPerson", "Store Location Purchases",
+  "MailOrder", "Mail Order Purchases"
+)

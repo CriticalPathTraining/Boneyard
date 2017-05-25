@@ -1,0 +1,96 @@
+﻿<XmlDocuments>
+
+  <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/sharedfields">
+    <SharedFields xmlns="http://schemas.microsoft.com/office/documentsets/sharedfields" />
+  </XmlDocument>
+
+  <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/welcomepagefields">
+    <WelcomePageFields xmlns="http://schemas.microsoft.com/office/documentsets/welcomepagefields" />
+  </XmlDocument>
+
+  <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/welcomepageview">
+    <WelcomePageView xmlns="http://schemas.microsoft.com/office/documentsets/welcomepageview" />
+  </XmlDocument>
+
+  <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+    <spe:Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+      <Receiver>
+        <Name>DocumentSet ItemUpdated</Name>
+        <Synchronization>Synchronous</Synchronization>
+        <Type>10002</Type>
+        <SequenceNumber>100</SequenceNumber>
+        <Url></Url>
+        <Assembly>Microsoft.Office.DocumentManagement, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+        <Class>Microsoft.Office.DocumentManagement.DocumentSets.DocumentSetEventReceiver</Class>
+        <Data></Data>
+        <Filter></Filter>
+      </Receiver>
+      <Receiver>
+        <Name>DocumentSet ItemAdded</Name>
+        <Synchronization>Synchronous</Synchronization>
+        <Type>10001</Type>
+        <SequenceNumber>100</SequenceNumber>
+        <Url></Url>
+        <Assembly>Microsoft.Office.DocumentManagement, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+        <Class>Microsoft.Office.DocumentManagement.DocumentSets.DocumentSetItemsEventReceiver</Class>
+        <Data></Data>
+        <Filter></Filter>
+      </Receiver>
+
+      <Receiver>
+        <Name>DocumentSet ItemAdding</Name>
+        <Synchronization>Synchronous</Synchronization>
+        <Type>1</Type>
+        <SequenceNumber>100</SequenceNumber>
+        <Url></Url>
+        <Assembly>Microsoft.Office.DocumentManagement, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+        <Class>Microsoft.Office.DocumentManagement.DocumentSets.DocumentSetItemsEventReceiver</Class>
+        <Data></Data>
+        <Filter></Filter>
+      </Receiver>
+
+      <Receiver>
+        <Name>DocumentSet ItemUpdating</Name>
+        <Synchronization>Synchronous</Synchronization>
+        <Type>2</Type>
+        <SequenceNumber>100</SequenceNumber>
+        <Url></Url>
+        <Assembly>Microsoft.Office.DocumentManagement, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+        <Class>Microsoft.Office.DocumentManagement.DocumentSets.DocumentSetItemsEventReceiver</Class>
+        <Data></Data>
+        <Filter></Filter>
+      </Receiver>
+
+    </spe:Receivers>
+
+  </XmlDocument>
+
+  <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes">
+    <act:AllowedContentTypes xmlns:act="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes">
+      <AllowedContentType id="0x0101" />
+      <AllowedContentType id="0x01010036cb12d94d921a4fb56774321c1ebde7" />
+    </act:AllowedContentTypes>
+  </XmlDocument>
+
+  <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/defaultdocuments">
+    <dd:DefaultDocuments xmlns:dd="http://schemas.microsoft.com/office/documentsets/defaultdocuments" AddSetName="True">
+      <DefaultDocument name="/Product Design Specification.docx" idContentType="0x0101" />
+      <DefaultDocument name="/Product Plan Schedule.xlsx" idContentType="0x0101" />
+    </dd:DefaultDocuments>
+  </XmlDocument>
+
+  <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+    <FormTemplates xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+      <Display>ListForm</Display>
+      <Edit>ListForm</Edit>
+      <New>DocSetDisplayForm</New>
+    </FormTemplates>
+  </XmlDocument>
+
+  <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+    <FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+      <New>_layouts/15/NewDocSet.aspx</New>
+    </FormUrls>
+  </XmlDocument>
+
+</XmlDocuments>

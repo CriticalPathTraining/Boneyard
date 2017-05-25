@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Course-Detail-Forms:-myXSD-2010-05-18T18-37-18" solutionVersion="1.0.0.24" productVersion="14.0.0.0" PIVersion="1.0.0.0" href="http://intranet.sharepointblackops.com/Courses/Course%20Detail%20Forms/Forms/template.xsn"?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:courseDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2010-05-18T18:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:title>Enterprise Content Management with SharePoint Server 2007 Webcast </my:title>
+	<my:description>This intensive 5-day Webcast explores the Enterprise Content Management (ECM) features of Microsoft Office SharePoint Server 2007 (MOSS). You will learn to identify the specific content patterns that drive business processes, enabling you to build comprehensive solutions that manage all aspects of the ECM lifecycle, including document security, check-in/check-out, information rights management (IRM), official records and holds, and workflow. You will also learn how SharePoint Content Types can encapsulate and extend your own custom content management components, which can then be used to support data gathering via electronic forms (InfoPath 2007), business process automation (Windows Workflow Foundation) and document generation (Open XML).</my:description>
+	<my:courseCode>WC-ECM401</my:courseCode>
+	<my:prerequisites>Attendees should have professional development experience with Visual Studio 2005, the .NET framework and ASP.NET as well as familiarity with Microsoft Office products such as Word and Excel. It is also recommended (but not required) that attendees have a working knowledge of the Windows Workflow Foundation and creating declarative workflows using Microsoft Office SharePoint Designer 2007.</my:prerequisites>
+	<my:modules>
+		<my:moduleName>MOSS and the ECM Lifecycle</my:moduleName>
+		<my:moduleNumber>1</my:moduleNumber>
+		<my:moduleDescription>"to do"</my:moduleDescription>
+		<my:topicCovered>Understanding the Enterprise Content lifecycle </my:topicCovered>
+	<my:topicCovered>Managing the document creation process using content types and document templates</my:topicCovered><my:topicCovered>Tracking and controlling document editing, check-in, check-out and versioning</my:topicCovered><my:topicCovered>Controlling when and how content is published and consumed</my:topicCovered><my:topicCovered>Using event receivers to manage the content lifecycle</my:topicCovered></my:modules>
+<my:modules>
+									<my:moduleName>Document Libraries and Content Types</my:moduleName>
+									<my:moduleNumber>2</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Introduction to document libraries and content types</my:topicCovered>
+								<my:topicCovered>Role-based content modeling and effective metadata design </my:topicCovered><my:topicCovered>Extending content types with custom schemas to enforce document integrity </my:topicCovered><my:topicCovered>Strategies for sharing metadata among several document types</my:topicCovered><my:topicCovered>Dealing with changes to metadata after content has been deployed</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Content Tracking, Auditing and Security</my:moduleName>
+									<my:moduleNumber>3</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Audit ability as a core ECM requirement </my:topicCovered>
+								<my:topicCovered>Leveraging the built-in auditing framework in WSS and MOSS </my:topicCovered><my:topicCovered>Special considerations when extending the auditing framework</my:topicCovered><my:topicCovered>Introduction to Windows Rights Management Services</my:topicCovered><my:topicCovered>Understanding Information Rights Management</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Information Management Policy</my:moduleName>
+									<my:moduleNumber>4</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Understanding the MOSS Information Policy architecture </my:topicCovered>
+								<my:topicCovered>Creating and using custom policy features and resources </my:topicCovered><my:topicCovered>How content types and policy features work together to enforce policy </my:topicCovered><my:topicCovered>Using built-in policies for bar coding and labeling </my:topicCovered><my:topicCovered>Creating custom policies to control the document lifecycle</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Managing Official Records </my:moduleName>
+									<my:moduleNumber>5</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Defining the core requirements for any records management system</my:topicCovered>
+								<my:topicCovered>Understanding the MOSS records management architecture</my:topicCovered><my:topicCovered>Strategies for setting up and configuring a records repository </my:topicCovered><my:topicCovered>Working with the SharePoint OfficialFile web service</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Maintaining Record Integrity</my:moduleName>
+									<my:moduleNumber>6</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Record integrity as a core ECM requirement </my:topicCovered>
+								<my:topicCovered>Understanding the MOSS record routing architecture </my:topicCovered><my:topicCovered>Building and configuring custom routers</my:topicCovered><my:topicCovered>Strategies for ensuring record integrity</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Gathering Data with InfoPath</my:moduleName>
+									<my:moduleNumber>7</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Overview of InfoPath and the structure of an electronic form </my:topicCovered>
+								<my:topicCovered>Understanding the InfoPath security model</my:topicCovered><my:topicCovered>Making the most of InfoPath Forms Services</my:topicCovered><my:topicCovered>Leveraging the power of schematized data</my:topicCovered><my:topicCovered>Integrating InfoPath into ECM solutions</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Building SharePoint Workflows</my:moduleName>
+									<my:moduleNumber>8</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Understanding Windows Workflow Foundation in the context of ECM </my:topicCovered>
+								<my:topicCovered>Working with the built-in MOSS workflows</my:topicCovered><my:topicCovered>Designing and building custom ECM activity libraries </my:topicCovered><my:topicCovered>Using workflow to drive ECM solutions</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Web Publishing in MOSS </my:moduleName>
+									<my:moduleNumber>9</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Understanding the MOSS publishing architecture and data flow</my:topicCovered>
+								<my:topicCovered>Master Pages, Page Layouts, Fields and Field Controls</my:topicCovered><my:topicCovered>Customizing the WCM authoring experience </my:topicCovered><my:topicCovered>Creating and deploying custom WCM solutions</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Generating Enterprise Content</my:moduleName>
+									<my:moduleNumber>10</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Introduction to Office Open XML Formats</my:topicCovered>
+								<my:topicCovered>Understanding the Microsoft SDK for Open XML Formats</my:topicCovered><my:topicCovered>Building SharePoint solutions that leverage the power of Open XML </my:topicCovered><my:topicCovered>Generating documents from data stored in SharePoint lists</my:topicCovered></my:modules></my:courseDetails>

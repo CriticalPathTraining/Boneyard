@@ -1,0 +1,16 @@
+<%@ Page language="C#" MasterPageFile="~masterurl/default.master" %> 
+    
+<asp:Content ContentPlaceHolderId="PlaceHolderAdditionalPageHead" runat="server">
+  <style type="text/css">
+    #MSO_ContentTable {padding-top: 2px;padding-left:8px;}
+    h2{color:Blue;}
+    p{color:Green;}
+    .s4-specialNavLinkList a.s4-rcycl {display:none;}
+    .s4-specialNavLinkList LI {min-height:0px;}
+  </style>
+</asp:Content>    
+         
+<asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
+  <h2>Page 3</h2>
+  <p>This page has been enhanced with a little CSS formatting</p>
+</asp:Content>

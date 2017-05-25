@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Code>SPT2013</Code>
+  <ShortName></ShortName>
+  <LongName>Developing Solutions and Apps with SharePoint 2013</LongName>
+  <ExcludedModules>
+    <ExcludedModule Id="OfficeServices" />
+  </ExcludedModules>
+  <Manual>
+    <FrontMatters>
+      <FrontMatter SortOrder="00A">AboutCourse_SPT2013.docx</FrontMatter>
+      <FrontMatter SortOrder="00B">AboutLabs.docx</FrontMatter>
+    </FrontMatters>
+    <BackMatters />
+  </Manual>
+</Course>

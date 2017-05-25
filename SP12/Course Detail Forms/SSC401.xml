@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Course-Detail-Forms:-myXSD-2010-05-18T18-37-18" solutionVersion="1.0.0.24" productVersion="14.0.0.0" PIVersion="1.0.0.0" href="http://intranet.sharepointblackops.com/Courses/Course%20Detail%20Forms/Forms/template.xsn"?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:courseDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2010-05-18T18:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:title>SharePoint Administrators Survival Camp </my:title>
+	<my:description>This exclusive training course is a one-time event led by SharePoint industry-leading experts Shane Young and Todd Klindt. You will spend 5 intensive days as they drill down on the most important topics and best practices associated with managing and architecting SharePoint Server 2007 farms. You'll learn how to avoid the most common pitfalls and how to design scalable and reliable SharePoint solutions. If you've been waiting for hands-on training with depth and real-world experience to help accelerate your deployment, wait no longer. From capacity planning and Governance to deploying extranets with forms based authentication, don't miss this one time offering packed into a single week.</my:description>
+	<my:courseCode>SSC401</my:courseCode>
+	<my:prerequisites>This training course requires all attendees to bring their own laptop computer with Virtual PC 2007 pre-installed and with at least 2GB of RAM. Each attendee laptop should have at least 20GB of free disk space on an internal or external hard drive. All campers should have professional experience with system administration in a Windows network environment and experience installing and configuring Windows Server 2003, Active Directory and SQL Server. SharePoint Administration with WSS 2.0/3.0 or SPS2003/MOSS 2007 is highly recommended. Note that this training is not designed for developers.</my:prerequisites>
+	<my:modules>
+		<my:moduleName>SharePoint 2007 Components and Services </my:moduleName>
+		<my:moduleNumber>1</my:moduleNumber>
+		<my:moduleDescription>"to do"</my:moduleDescription>
+		<my:topicCovered>Overview of WSS and the different MOSS SKUs </my:topicCovered>
+	<my:topicCovered>Overview of a Shared Service Provider (SSP) </my:topicCovered><my:topicCovered>The role of Windows Server 2003 </my:topicCovered><my:topicCovered>The role of Active Directory and the authentication stores </my:topicCovered><my:topicCovered>The role of SQL Server</my:topicCovered><my:topicCovered>Upgrading from SharePoint 2003</my:topicCovered></my:modules>
+<my:modules>
+									<my:moduleName>Installing SharePoint Server 2007 </my:moduleName>
+									<my:moduleNumber>2</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Different install options</my:topicCovered>
+								<my:topicCovered>Farm Topologies</my:topicCovered><my:topicCovered>Server Prerequisites</my:topicCovered><my:topicCovered>Required accounts and permissions</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Configuring Load balancing and Clustering </my:moduleName>
+									<my:moduleNumber>3</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Windows Network Load Balancing </my:topicCovered>
+								<my:topicCovered>Hardware Load Balancing </my:topicCovered><my:topicCovered>Microsoft Cluster Services</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>SharePoint Administrative Tools</my:moduleName>
+									<my:moduleNumber>4</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>The SharePoint Central Administration Application </my:topicCovered>
+								<my:topicCovered>Determining server roles and configuring SharePoint services </my:topicCovered><my:topicCovered>Understanding the Farm vs. Web Applications vs. Site Collections vs. Sites </my:topicCovered><my:topicCovered>Creating and administrating a Shared Service Provider </my:topicCovered><my:topicCovered>Using the SSP Administration Application </my:topicCovered><my:topicCovered>Farm Administrator vs. SSP Administrator vs. Site/Site Collection Administrator</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>STSADM Scripting and Automated Administration </my:moduleName>
+									<my:moduleNumber>5</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Automating Installation </my:topicCovered>
+								<my:topicCovered>Scripting Daily Tasks </my:topicCovered><my:topicCovered>STSADM Extensions</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>SharePoint Governance and Business Planning </my:moduleName>
+									<my:moduleNumber>6</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Building a Service </my:topicCovered>
+								<my:topicCovered>Customization Policies </my:topicCovered><my:topicCovered>Development Life Cycle</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Creating and Configuring SharePoint Sites </my:moduleName>
+									<my:moduleNumber>7</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Creating and configuring Web Applications </my:topicCovered>
+								<my:topicCovered>Site collections as a scope of ownership and administrative control</my:topicCovered><my:topicCovered>Site templates included with WSS and MOSS </my:topicCovered><my:topicCovered>Creating and configuring teams sites, wikis and blogs</my:topicCovered><my:topicCovered>Creating and configuring a collaboration portal </my:topicCovered><my:topicCovered>Creating SharePoint groups and configuring permissions</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Configuring SharePoint Sites and Features </my:moduleName>
+									<my:moduleNumber>8</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Using the Navigation controls to customize the UI </my:topicCovered>
+								<my:topicCovered>Options for Branding SharePoint sites </my:topicCovered><my:topicCovered>Creating and using site templates (STP files) </my:topicCovered><my:topicCovered>Adding/removing functionality using SharePoint Features </my:topicCovered><my:topicCovered>Adding and deploying Solution Packages</my:topicCovered><my:topicCovered>Deploying and administrating 3rd party Web Parts </my:topicCovered><my:topicCovered>Configuring SafeControls and trust levels in the web.config file (Code Access Security or CAS)</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Configuring and Customizing Search </my:moduleName>
+									<my:moduleNumber>9</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Site collection search admin vs. Central Admin search admin </my:topicCovered>
+								<my:topicCovered>Search center, web parts, keywords, and best bets </my:topicCovered><my:topicCovered>Discussion of the customizing options you have </my:topicCovered><my:topicCovered>The SSP search admin experience </my:topicCovered><my:topicCovered>Content sources, schedules, scopes, usage reports, relevancy </my:topicCovered><my:topicCovered>IFilters, allowed file types, site hit frequency rules</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Profiles, Audiences, and My Sites </my:moduleName>
+									<my:moduleNumber>10</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Importing data from the profile store</my:topicCovered>
+								<my:topicCovered>Using it to build audience and then targeting content with audiences </my:topicCovered><my:topicCovered>Using My Sites for social networking and personal organization</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Creating and configuring Internet-facing Sites   </my:moduleName>
+									<my:moduleNumber>11</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Creating a Web Application that support anonymous access, multiple host headers, and Alternate Access Mappings </my:topicCovered>
+								<my:topicCovered>Forms Based Authentication (FBA) in SharePoint </my:topicCovered><my:topicCovered>Overview of MOSS WCM Features </my:topicCovered><my:topicCovered>Creating a new SSP </my:topicCovered><my:topicCovered>Creating a Publishing Portal site </my:topicCovered><my:topicCovered>Firewall Considerations </my:topicCovered><my:topicCovered>SharePoint Extranet Toolkit</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Planning and Optimizing SharePoint 2007 Performance </my:moduleName>
+									<my:moduleNumber>12</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Estimating hardware and software needs </my:topicCovered>
+								<my:topicCovered>Planning for growth </my:topicCovered><my:topicCovered>Hard limits </my:topicCovered><my:topicCovered>Tuning tips </my:topicCovered><my:topicCovered>Configuring Caching in SharePoint Server 2007</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Import/Exporting and Upgrading SharePoint </my:moduleName>
+									<my:moduleNumber>13</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Using the Manage Content and Structure tool</my:topicCovered>
+								<my:topicCovered>Save site as template and Export Web Parts </my:topicCovered><my:topicCovered>STSADM.EXE Import and Export</my:topicCovered><my:topicCovered>Content Deployment Jobs</my:topicCovered></my:modules><my:modules>
+									<my:moduleName> High Availability, Backups, and Disaster Recovery </my:moduleName>
+									<my:moduleNumber>14</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Using Antivirus to protect SharePoint </my:topicCovered>
+								<my:topicCovered>ISA Server in front of your farm </my:topicCovered><my:topicCovered>Discussion of high availability options</my:topicCovered><my:topicCovered>SQL Log Shipping and SQL DB Mirroring</my:topicCovered><my:topicCovered>Network Load Balancing </my:topicCovered><my:topicCovered>Backups/Restores and Disaster Recovery</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Understanding Storage and SharePoint's SQL databases </my:moduleName>
+									<my:moduleNumber>15</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Site Collections and Database Sizing </my:topicCovered>
+								<my:topicCovered>SharePoint Database Maintenance and Performance Optimization </my:topicCovered><my:topicCovered>Mirroring</my:topicCovered></my:modules></my:courseDetails>

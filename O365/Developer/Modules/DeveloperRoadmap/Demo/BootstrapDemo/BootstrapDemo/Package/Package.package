@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="e4fde7ce-3566-4d21-8e34-b4aa972fc313" 
+        solutionId="e4fde7ce-3566-4d21-8e34-b4aa972fc313" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="BootstrapDemo"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="34a300fe-9caa-466a-9a53-a89200981a1b" />
+  </features>
+</package>

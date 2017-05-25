@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="eb11e88f-f4b3-4d14-b2ce-326dd136b681" solutionId="eb11e88f-f4b3-4d14-b2ce-326dd136b681" resetWebServer="false" sharePointProductVersion="15.0" name="ExcelOData" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="8509092b-1491-40d6-8a82-ff69bd8853ee" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="16c3e7b4-eaea-410b-8439-d313cd516714" />
+  </projectItems>
+</package>

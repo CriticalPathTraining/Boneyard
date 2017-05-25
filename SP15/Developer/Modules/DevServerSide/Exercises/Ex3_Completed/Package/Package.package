@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="aca7eddb-23dc-4c43-a982-1442235f55c4" solutionId="aca7eddb-23dc-4c43-a982-1442235f55c4" resetWebServer="false" sharePointProductVersion="15.0" name="CamlQueryWebPart" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="cd7c6477-bf3e-409b-b086-c90f90b9491b" />
+  </features>
+</package>

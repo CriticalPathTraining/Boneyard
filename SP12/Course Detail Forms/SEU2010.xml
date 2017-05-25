@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Course-Detail-Forms:-myXSD-2010-05-18T18-37-18" solutionVersion="1.0.0.24" productVersion="14.0.0.0" PIVersion="1.0.0.0" href="http://intranet.sharepointblackops.com/Courses/Course%20Detail%20Forms/Forms/template.xsn"?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:courseDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2010-05-18T18:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:title>SharePoint 2010 for End Users</my:title>
+	<my:description>New to SharePoint? Know how to use a Web browser like Internet Explorer or FireFox? Then this class is for you! It is designed for people with little or zero SharePoint experience who need to get up to speed with SharePoint sites.
+
+Attendees will first start out learning the basics and getting an overview of the entire landscape of a SharePoint site. This begins with a tour of the Web-based interface and exploring the various types of lists and libraries available for collaboration such as Contacts, Tasks, Links, Calendar and document libraries.
+
+Next users will dive into working with the Document Workspace and Meeting Workspace template as well as how to publish from each of these types of sites.
+Microsoft significantly improved the social networking capabilities in SharePoint 2010 specifically around the areas of blogs and wikis. Attendees will see how they can leverage these types of sites and lists as well as how to take advantage of the new tagging infrastructure. 
+
+Finally, attendees will learn how to personalize SharePoint so they can work in an environment that enables them to be the most efficient and productive. To this point the course covers how to leverage alerts, RSS feeds customizing search, personalizing the search experience and taking SharePoint content offline using SharePoint 2010 Workspace.
+
+This course is for anyone who has little to no experience with SharePoint from an end user perspective. This includes users, power users, Web masters, site administrators, site collection administrators, project managers, information workers and business analysts.</my:description>
+	<my:courseCode>SEU2010</my:courseCode>
+	<my:prerequisites>Attendees should have experience using a Web browser and interacting with Web-based systems. Some experience with Microsoft Office (any version) as well as experience with a previous version of SharePoint is a plus, but not required.</my:prerequisites>
+	<my:modules>
+		<my:moduleName>Introducing SharePoint 2010</my:moduleName>
+		<my:moduleNumber>1</my:moduleNumber>
+		<my:moduleDescription>In this module, you will learn to recognize the business needs that can be met by a community-based system and how SharePoint 2010 delivers on productivity and improved communication.  You will also take a look at basic methods of accessing and navigating the web-based user interface of SharePoint 2010.  At the end of this module you will be able to list specific SharePoint 2010 features that benefit business information workers and perform a hands-on lab negotiating existing sites.</my:moduleDescription>
+		<my:topicCovered>Understanding the purpose of community-based systems</my:topicCovered>
+		<my:topicCovered>Navigating the Web interface of SharePoint</my:topicCovered><my:topicCovered>Becoming familiar with the SharePoint ribbon</my:topicCovered><my:topicCovered>Features available in SharePoint for the information worker</my:topicCovered><my:labExercise></my:labExercise>
+	</my:modules>
+<my:modules>
+									<my:moduleName>Lists and Libraries</my:moduleName>
+									<my:moduleNumber>2</my:moduleNumber>
+									<my:moduleDescription>Learn the purpose of SharePoint 2010's core data repository, the list, as well as the purpose and function of metadata.  After a tour of the default lists and libraries offered in SharePoint 2010, you will learn how powerful views can make even complex lists more efficient to navigate and how to distinguish a list from a library.  At the end of this module you will be able to identify various list and library templates according to purpose while explaining the difference between a list and its corresponding web part.  You will also perform a hands-on lab in which you will contribute to a list, create personal views, and engage the list-centric ribbon in SharePoint 2010.</my:moduleDescription>
+									<my:topicCovered>Lists, list metadata &amp; item metadata</my:topicCovered>
+									<my:topicCovered>Understanding of the out-of-the-box lists and libraries</my:topicCovered><my:topicCovered>How views can change the way you interact with lists</my:topicCovered><my:topicCovered>Adding items to a list vs. adding items to a library </my:topicCovered><my:topicCovered>Recovering deleted content with the recycle bin</my:topicCovered><my:topicCovered>Working with relational lists</my:topicCovered><my:labExercise></my:labExercise>
+								</my:modules><my:modules>
+									<my:moduleName>Document Libraries and Form Libraries</my:moduleName>
+									<my:moduleNumber>3</my:moduleNumber>
+									<my:moduleDescription>In this module, you will identify specific business needs satisfied by document and form libraries in SharePoint 2010.  You will learn to manage individual items in a library using the contextual item ribbon and become proficient with item check out, version control and approval processes.  At the end of this module you will be able to explain the differences between documents and forms and perform a hands-on lab editing and managing documents and forms in various existing libraries.</my:moduleDescription>
+									<my:topicCovered>Document management and form management </my:topicCovered>
+									<my:topicCovered>Managing individual items in libraries</my:topicCovered><my:topicCovered>Item versioning, check-in and check-out</my:topicCovered><my:topicCovered>Item content approval process</my:topicCovered><my:topicCovered>Working with document sets</my:topicCovered><my:labExercise></my:labExercise>
+								</my:modules><my:modules>
+									<my:moduleName>Document and Meeting Workspaces</my:moduleName>
+									<my:moduleNumber>4</my:moduleNumber>
+									<my:moduleDescription>Take a tour of powerful workspace sites available in SharePoint 2010 to organize information pertaining to specific documents in progress or meetings.  After exploring the various workspace templates offered in SharePoint 2010, you will learn to publish a finished document from its document workspace to a more exposed SharePoint site and to schedule a meeting for a meeting workspace.  Upon completing this module you will be able to explain the differences between the various document and meeting workspace site templates and the business criteria for choosing each as well as perform a hands-on lab in which you create workspaces and populate them.</my:moduleDescription>
+									<my:topicCovered>Difference between document workspace and meeting workspace</my:topicCovered>
+									<my:topicCovered>Understanding the default document and meeting workspaces</my:topicCovered><my:topicCovered>Publishing from workspaces</my:topicCovered><my:labExercise></my:labExercise>
+								</my:modules><my:modules>
+									<my:moduleName>Social Networking: Blogs &amp; Wikis</my:moduleName>
+									<my:moduleNumber>5</my:moduleNumber>
+									<my:moduleDescription>In this module, you will examine the purpose of blog sites and wiki sites available in SharePoint 2010.  You will tour the default blog and wiki site templates and learn the business needs that predicate each.  Additionally, you will learn to post to a blog and add powerful wiki pages to a wiki.  At the end of this module you will be able to differentiate blogs from wikis and perform a hands-on lab in which you will contribute to existing blog and wiki sites.</my:moduleDescription>
+									<my:topicCovered>Understanding blogs and wikis</my:topicCovered>
+									<my:topicCovered>Creating and managing content in blogs</my:topicCovered><my:topicCovered>Creating and managing content in wikis</my:topicCovered><my:topicCovered>Tagging and rating content</my:topicCovered><my:labExercise></my:labExercise>
+								</my:modules><my:modules>
+									<my:moduleName>Personalizing SharePoint</my:moduleName>
+									<my:moduleNumber>6</my:moduleNumber>
+									<my:moduleDescription>Learn to mold your SharePoint experience into one that best benefits your work style and productivity.  Explore notification, personalization and offline opportunities native to SharePoint 2010 that make data easier to find, manage, and access.  Upon completing this module you will be able to list several features in SharePoint that can be customized by business information workers and explain the process of taking SharePoint content offline.  Additionally, you will perform a hands-on lab in which you will set up an existing SharePoint environment to your liking.</my:moduleDescription>
+									<my:topicCovered>Staying informed with alerts and RSS</my:topicCovered>
+									<my:topicCovered>Personalizing the Web interface</my:topicCovered><my:topicCovered>Understanding search and people search</my:topicCovered><my:topicCovered>Working with SharePoint offline</my:topicCovered><my:labExercise></my:labExercise>
+								</my:modules></my:courseDetails>

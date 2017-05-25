@@ -1,0 +1,13 @@
+<%@ Page MasterPageFile="~masterurl/default.master" %> 
+    
+<asp:Content ContentPlaceHolderId="PlaceHolderAdditionalPageHead" runat="server">
+  <style type="text/css">
+    #MSO_ContentTable {padding-top: 2px;padding-left:8px;}
+  </style>
+</asp:Content>    
+
+<asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
+  <h2>Page 2</h2>
+  <p>This page has been enhanced with a little CSS formatting</p>
+</asp:Content>
+

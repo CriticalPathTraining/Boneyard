@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="04779500-b956-40c9-8f21-6291787f696c" 
+        solutionId="04779500-b956-40c9-8f21-6291787f696c" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="jsFiesta"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="7706b886-b092-4150-83a7-ada7c62746cb" />
+  </features>
+</package>

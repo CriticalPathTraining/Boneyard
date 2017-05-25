@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5edac31e-e1e8-45bd-864d-91a17dc65f5b" solutionId="5edac31e-e1e8-45bd-864d-91a17dc65f5b" resetWebServer="false" sharePointProductVersion="15.0" name="AnnouncementListEventChecker" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="2c9d840e-391e-4ffb-b6df-50707d99d2bb" />
+  </features>
+</package>

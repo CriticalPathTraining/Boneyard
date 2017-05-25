@@ -1,0 +1,2 @@
+obj\Debug\Workflow.g.xaml
+obj\Debug\UpdateListItem.Update_Contact_From_Service_Workflow_BeforeInitializeComponentHelper.txt

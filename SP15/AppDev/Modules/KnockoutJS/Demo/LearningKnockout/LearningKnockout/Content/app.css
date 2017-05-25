@@ -1,0 +1,156 @@
+﻿body {
+  background-color: orange;
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+#page_width {
+  width: 960px;
+  margin: auto;
+  background-color: white;
+}
+
+#banner {
+  background-color: #EEE;
+  height: 58px;
+  padding-left: 20px;
+}
+
+#site_title {
+  font-size: 48px;
+  color: blue;
+}
+
+#navbar {
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+  height: 28px;
+}
+
+  #navbar ul {
+    padding: 0px;
+    margin: 0px;
+  }
+
+    #navbar ul li {
+      list-style-type: none;
+      float: left;
+      padding: 6px;
+      color: white;
+    }
+
+      #navbar ul li a:link, #navbar ul li a:visited, #navbar ul li a:hover, #navbar ul li a:active {
+        padding: 4px;
+        text-decoration: none;
+        color: white;      
+        font-weight: bold;  
+        background-color: black;
+      }
+
+
+#contentBox {
+  min-height: 640px;
+  padding: 10px;
+}
+
+#right_panel
+{
+  padding: 20px;
+  float: right;
+  width: 50%;
+  min-height: 200px;
+  background-color: #DDD;
+}
+
+h2 {
+  color: blue;
+  border-bottom: solid 2px blue;
+  font-size: 20px;
+}
+
+
+h3 {
+  color: #999;
+  border-bottom: solid 2px #999;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+
+
+fieldset {
+  border: 1px solid #CCC;
+  border-radius: 10px;
+  padding: 8px;
+  padding-bottom: 16px;
+}
+
+legend {
+  color: #333;
+  background-color: #EEE;
+  border: 1px solid #CCC;
+  padding: 4px;
+  border-radius: 5px;
+  font-size: 0.7em;
+}
+
+fieldset
+{
+  background-color: white;
+}
+
+fieldset > label {
+  float: left;
+  width: 132px;
+  clear: both;
+  font-weight: bold;
+  padding: 5px;
+}
+
+fieldset > input, fieldset > span  {
+  margin-top: 8px;
+  width: 240px;
+  clear: both;
+  font-weight: bold;
+  padding: 5px;
+}
+
+
+#customersTable {
+  background-color: #999;
+  border-collapse: collapse;
+}
+
+#customersTable td {
+  color: #222;
+  border: 1px black solid;
+  padding: 4px;
+  background-color: White;
+  border-collapse: collapse;
+}
+
+
+#customersTable thead td {
+  background-color: #333;
+  color: White;
+}
+
+.customersDiv
+{
+  display: inline-block;
+  width: 240px;
+  min-height: 40px;
+  background-color: #DDD;
+  border: 1px solid #AAA;
+  color: #030;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 12px;
+  padding: 18px;
+  text-align: center;
+
+}

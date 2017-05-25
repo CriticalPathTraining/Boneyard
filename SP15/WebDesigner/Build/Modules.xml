@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Modules>
+    <Module Id="BrandingIntro">
+      <SortOrder>01</SortOrder>
+      <Title>Branding and Website Design</Title>
+    </Module>
+    <Module Id="TeamVersusPublishing">
+      <SortOrder>02</SortOrder>
+      <Title>Team Sites versus Publishing Site</Title>
+    </Module>
+    <Module Id="SharePointBrandingAssets">
+      <SortOrder>03</SortOrder>
+      <Title>SharePoint and Branding Assets Overview</Title>
+    </Module>
+    <Module Id="SharePointCSS">
+      <SortOrder>04</SortOrder>
+      <Title>Using CSS in SharePoint 2013</Title>
+    </Module>
+    <Module Id="DesignManager">
+      <SortOrder>05</SortOrder>
+      <Title>Design Manager</Title>
+    </Module>
+    <Module Id="MasterPages">
+      <SortOrder>06</SortOrder>
+      <Title>Master Pages</Title>
+    </Module>
+    <Module Id="PageLayouts">
+      <SortOrder>07</SortOrder>
+      <Title>Page Layouts</Title>
+    </Module>
+    <Module Id="WebParts">
+      <SortOrder>08</SortOrder>
+      <Title>Web Parts and XSLT</Title>
+    </Module>
+    <Module Id="DisplayTemplates">
+      <SortOrder>09</SortOrder>
+      <Title>Display Templates and Content by Search Web Part</Title>
+    </Module>
+    <Module Id="ResponsiveDesign">
+      <SortOrder>10</SortOrder>
+      <Title>Responsive Design and Device Channels</Title>
+    </Module>
+    <Module Id="ComposedLooks">
+      <SortOrder>11</SortOrder>
+      <Title>Composed Looks</Title>
+    </Module>
+    <Module Id="AdvancedPublishingFeatures">
+      <SortOrder>12</SortOrder>
+      <Title>Advanced Publishing Features in SharePoint 2013</Title>
+    </Module>
+  </Modules>
+</Course>

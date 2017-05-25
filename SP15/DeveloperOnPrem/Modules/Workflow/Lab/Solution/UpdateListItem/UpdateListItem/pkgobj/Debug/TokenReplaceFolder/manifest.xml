@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="0d97b7dc-7f5f-4576-99aa-9e7858976631" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="WF624971317e1f47a7a9e7fb73bffd493e\Feature.xml" />
+    <FeatureManifest Location="UpdateListItem_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

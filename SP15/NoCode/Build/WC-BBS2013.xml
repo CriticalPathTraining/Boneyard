@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Code>WC-BBS2013</Code>
+  <ShortName></ShortName>
+  <LongName></LongName>
+  <ExcludedModules>
+    <ExcludedModule Id="Reporting" />
+    <ExcludedModule Id="AccessServices" />
+  </ExcludedModules>
+  <Manual>
+    <FrontMatters>
+      <FrontMatter SortOrder="00A">AboutCourse_WC-BBS2013.docx</FrontMatter>
+      <FrontMatter SortOrder="00B">AboutLabs.docx</FrontMatter>
+    </FrontMatters>
+    <BackMatters />
+  </Manual>
+</Course>

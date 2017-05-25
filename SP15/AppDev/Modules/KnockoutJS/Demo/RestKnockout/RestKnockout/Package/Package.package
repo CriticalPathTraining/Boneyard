@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="dd31b022-7662-4e2f-81a0-031da1602d71" 
+        solutionId="dd31b022-7662-4e2f-81a0-031da1602d71" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="RestKnockout"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="d5467a9e-9d52-4ab1-8a5b-c2116056d2d3" />
+  </features>
+</package>

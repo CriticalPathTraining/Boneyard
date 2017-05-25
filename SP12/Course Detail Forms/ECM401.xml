@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Course-Detail-Forms:-myXSD-2010-05-18T18-37-18" solutionVersion="1.0.0.24" productVersion="14.0.0.0" PIVersion="1.0.0.0" href="http://intranet.sharepointblackops.com/Courses/Course%20Detail%20Forms/Forms/template.xsn"?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:courseDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2010-05-18T18:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:title>Enterprise Content Management with SharePoint Server 2007</my:title>
+	<my:description>This developer-intensive 4-day course explores the Enterprise Content Management (ECM) features of Microsoft Office SharePoint Server 2007 (MOSS). You will learn to identify the specific content patterns that drive business processes, enabling you to build comprehensive solutions that manage all aspects of the ECM lifecycle, including document auditin, versioning and security, check-in/check-out, information policy, official records and holds, and workflow. You will also learn to use MOSS and Visual Studio to build your own custom content management components, which can then be used to support metadata gathering via electronic forms (InfoPath 2007), business process automation via Windows Workflow Foundation and document automation using Open XML.</my:description>
+	<my:courseCode>ECM401</my:courseCode>
+	<my:prerequisites>Attendees should have professional development experience with Visual Studio 2005 or 2008, the .NET framework and ASP.NET as well as familiarity with Microsoft Office products such as Word and Excel. It is also recommended (but not required) that attendees have a working knowledge of the Windows Workflow Foundation and creating declarative workflows using Microsoft Office SharePoint Designer 2007.</my:prerequisites>
+	<my:modules>
+		<my:moduleName>WSS, MOSS and the ECM Lifecycle </my:moduleName>
+		<my:moduleNumber>1</my:moduleNumber>
+		<my:moduleDescription>"to do"</my:moduleDescription>
+		<my:topicCovered>Understanding the Enterprise Content lifecycle </my:topicCovered>
+	<my:topicCovered>Managing the document creation process using content types and document templates </my:topicCovered><my:topicCovered>Tracking and controlling document editing, check-in, check-out and versioning </my:topicCovered><my:topicCovered>Controlling when and how content is published and consumed </my:topicCovered><my:topicCovered>Using event receivers to manage the content lifecycle</my:topicCovered></my:modules>
+<my:modules>
+									<my:moduleName>Document Libraries and Content Types </my:moduleName>
+									<my:moduleNumber>2</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Role-based content modeling and effective metadata design</my:topicCovered>
+								<my:topicCovered>Extending content types with custom schemas to enforce document integrity</my:topicCovered><my:topicCovered>Strategies for sharing metadata among several document types</my:topicCovered><my:topicCovered>Dealing with changes to metadata after content has been deployed</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Content Auditing, Versioning and Security </my:moduleName>
+									<my:moduleNumber>3</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Understanding auditing in WSS and MOSS </my:topicCovered>
+								<my:topicCovered>Check-in, check-out and versioning </my:topicCovered><my:topicCovered>SharePoint groups, permissions and permission levels</my:topicCovered><my:topicCovered>Information Rights Management in SharePoint</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Information Management Policy</my:moduleName>
+									<my:moduleNumber>4</my:moduleNumber>
+									<my:moduleDescription>'to do"</my:moduleDescription>
+									<my:topicCovered>The SharePoint Information Management Policy Architecture</my:topicCovered>
+								<my:topicCovered>Creating and custom policy features and resources </my:topicCovered><my:topicCovered>Using policies to manage the content lifecycle </my:topicCovered><my:topicCovered>Using policies to enforce document integrity</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Managing Official Records </my:moduleName>
+									<my:moduleNumber>5</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>General requirements records management </my:topicCovered>
+								<my:topicCovered>Understanding the Records Center site template </my:topicCovered><my:topicCovered>Configuring SharePoint for records management </my:topicCovered><my:topicCovered>Using the Official File web service</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Maintaining Record Integrity </my:moduleName>
+									<my:moduleNumber>6</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Implementing and deploying custom routers </my:topicCovered>
+								<my:topicCovered>Processing official records using the Search and Process API</my:topicCovered><my:topicCovered>Suspending records management policies using holds </my:topicCovered><my:topicCovered>Strategies for deploying multiple repositories</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Gathering Metadata using InfoPath 2007</my:moduleName>
+									<my:moduleNumber>7</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Working with InfoPath form templates</my:topicCovered>
+								<my:topicCovered>Managing form data using custom schemas</my:topicCovered><my:topicCovered>Understanding the InfoPath Security Model </my:topicCovered><my:topicCovered>Getting up to speed with InfoPath Forms Services</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Web Publishing in MOSS </my:moduleName>
+									<my:moduleNumber>8</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Introduction to Web Content Management in MOSS</my:topicCovered>
+								<my:topicCovered>Creating web content on the server and the client </my:topicCovered><my:topicCovered>Setting up and using automatic document conversion</my:topicCovered><my:topicCovered>Building multi-lingual sites using variations</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Generating Enterprise Content </my:moduleName>
+									<my:moduleNumber>9</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Introduction to Open XML File formats</my:topicCovered>
+								<my:topicCovered>Working with the Microsoft SDK for Open XML</my:topicCovered><my:topicCovered>Generating documents from data stored in SharePoint lists</my:topicCovered><my:topicCovered>Building an extensible framework for content generation in MOSS</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Understanding Workflow in MOSS </my:moduleName>
+									<my:moduleNumber>10</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Overview of Windows Workflow Foundation and Workflow Markup</my:topicCovered>
+								<my:topicCovered>Understanding how workflows are hosted within the MOSS environment </my:topicCovered><my:topicCovered> Working with the MOSS Enterprise ECM workflows </my:topicCovered><my:topicCovered>Designing and building custom activity libraries</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Content Modeling and Metadata Design </my:moduleName>
+									<my:moduleNumber>11</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Introduction to Role/Activity Modeling</my:topicCovered>
+								<my:topicCovered>Developing File Plans from Content Models </my:topicCovered><my:topicCovered>Effective strategies for content management</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Integrating SharePoint ECM with Office 2007 </my:moduleName>
+									<my:moduleNumber>12</my:moduleNumber>
+									<my:moduleDescription>'to do"</my:moduleDescription>
+									<my:topicCovered>Building and using Document Information Panels</my:topicCovered>
+								<my:topicCovered>Publishing Web Content using Office Client Applications</my:topicCovered><my:topicCovered>Information Rights Management in Office 2007 </my:topicCovered><my:topicCovered>Integrating Office, Workflow and Records Management</my:topicCovered></my:modules></my:courseDetails>

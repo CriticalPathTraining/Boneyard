@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Course-Detail-Forms:-myXSD-2010-05-18T18-37-18" solutionVersion="1.0.0.24" productVersion="14.0.0.0" PIVersion="1.0.0.0" href="http://intranet.sharepointblackops.com/Courses/Course%20Detail%20Forms/Forms/template.xsn"?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:courseDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2010-05-18T18:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:title>Developing SharePoint Workflow Templates with Visual Studio </my:title>
+	<my:description>This intensive 4-day course explores design and development techniques to create SharePoint Workflow Templates using Visual Studio. The course quickly moves beyond fundamental programming techniques with WSS and Windows Workflow Foundation and gets into the meat of creating real-world workflow templates for SharePoint-based business solutions. You will learn how to program against the SharePoint Workflow API as well as how to integrate input forms using both .ASPX pages and InfoPath forms. The course will also discuss developing custom activities which can be integrated with SharePoint Designer 2007.</my:description>
+	<my:courseCode>SPW401</my:courseCode>
+	<my:prerequisites>Attendees should have attended WSS401 or GSA401 or have equivalent knowledge as professional developer already comfortable with Windows SharePoint Services development. It is recommended that attendees have experience developing of the Windows Workflow Foundation platform within Visual Studio.</my:prerequisites>
+	<my:modules>
+		<my:moduleName>Introduction to SharePoint Workflows</my:moduleName>
+		<my:moduleNumber>1</my:moduleNumber>
+		<my:moduleDescription>"to do"</my:moduleDescription>
+		<my:topicCovered>What is a Reactive Program?</my:topicCovered>
+	<my:topicCovered>Why is workflow beneficial</my:topicCovered><my:topicCovered>Introduction to Workflow in SharePoint </my:topicCovered><my:topicCovered>Introduction to Windows Workflow Foundation</my:topicCovered></my:modules>
+<my:modules>
+									<my:moduleName>Windows Workflow Foundation Primer</my:moduleName>
+									<my:moduleNumber>2</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>The Visual Studio Workflow Designer </my:topicCovered>
+								<my:topicCovered>The Windows Workflow Runtime</my:topicCovered><my:topicCovered>Simple Workflow Creation </my:topicCovered><my:topicCovered>Built in Workflow Activities</my:topicCovered><my:topicCovered>Debugging and Error Handling</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Understanding the Windows Workflow Foundation Runtime </my:moduleName>
+									<my:moduleNumber>3</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Sequential vs. State Machine Workflows</my:topicCovered>
+								<my:topicCovered>What are Activities? </my:topicCovered><my:topicCovered>Understanding WinWF Runtime </my:topicCovered><my:topicCovered>Runtime Service (ex. Persistence, Tracking, etc...)</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Windows Workflow Foundation Integration with SharePoint 2007</my:moduleName>
+									<my:moduleNumber>4</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Integration of WinWF with SharePoint</my:topicCovered>
+								<my:topicCovered>Attaching Workflow to Lists and Content Types </my:topicCovered><my:topicCovered>SharePoint/Workflow Communication</my:topicCovered><my:topicCovered>Managing Workflow Instances </my:topicCovered><my:topicCovered>Integration with Office 2007</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Programming with SharePoint Workflow API</my:moduleName>
+									<my:moduleNumber>5</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Attaching Workflows using the API </my:topicCovered>
+								<my:topicCovered>Starting Workflows using the API </my:topicCovered><my:topicCovered>API Access to Workflow Instances</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Developing SharePoint Workflow Templates with Visual Studio 2008 </my:moduleName>
+									<my:moduleNumber>6</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Create Simple Workflows in VS 2008</my:topicCovered>
+								<my:topicCovered>Installing workflows using Features</my:topicCovered><my:topicCovered>Passing parameters to new Workflow Instances </my:topicCovered><my:topicCovered>Interact with SharePoint inside a Workflow</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Creating and Waiting on SharePoint Tasks </my:moduleName>
+									<my:moduleNumber>7</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Using SharePoint Task Activities</my:topicCovered>
+								<my:topicCovered>Blocking until Task Modification/Correlation</my:topicCovered><my:topicCovered>Resuming on Task Modification </my:topicCovered><my:topicCovered>Accessing the Modified Task </my:topicCovered><my:topicCovered>Creating a custom Task Forms in ASP.NET</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Creating Workflow Association Forms </my:moduleName>
+									<my:moduleNumber>8</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Creating an Association Form in ASP.NET </my:topicCovered>
+								<my:topicCovered>Attaching workflow to Lists &amp; Content Types</my:topicCovered><my:topicCovered>Installing Association forms using Features</my:topicCovered><my:topicCovered>Using custom Association data in workflows</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Creating Workflow Instantiation and Modification Forms</my:moduleName>
+									<my:moduleNumber>9</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Creating an Instantiation Form in ASP.NET</my:topicCovered>
+								<my:topicCovered>Enabling modifications in a SharePoint Workflow </my:topicCovered><my:topicCovered>Creating a custom Modification Form</my:topicCovered><my:topicCovered>Installing Instantiation and Modification forms using Features</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Integrating InfoPath Forms into a SharePoint Workflow Template </my:moduleName>
+									<my:moduleNumber>10</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>What is InfoPath Forms Services? </my:topicCovered>
+								<my:topicCovered>Creating Association, Initiation, and Modification InfoPath Forms </my:topicCovered><my:topicCovered>Create custom Task Forms in InfoPath </my:topicCovered><my:topicCovered>Passing data to and from InfoPath Forms </my:topicCovered><my:topicCovered>Installing InfoPath Workflow Forms using Features</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Developing Custom Activities for a SharePoint Workflow </my:moduleName>
+									<my:moduleNumber>11</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>The lifecycle of an Activity </my:topicCovered>
+								<my:topicCovered>Creating Simple Activities </my:topicCovered><my:topicCovered>Creating Composite Activities</my:topicCovered><my:topicCovered>Using Activity Validators</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Developing Custom Activities to extend the SharePoint Designer </my:moduleName>
+									<my:moduleNumber>12</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>SharePoint Designer vs. VS 2008 </my:topicCovered>
+								<my:topicCovered>Building Workflows in SharePoint Designer </my:topicCovered><my:topicCovered>Extending SharePoint Designer with Custom Activities</my:topicCovered></my:modules></my:courseDetails>

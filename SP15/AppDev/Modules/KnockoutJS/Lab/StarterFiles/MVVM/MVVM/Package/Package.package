@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="49f6cfb1-31d9-41c3-9822-791741e3b346" 
+        solutionId="49f6cfb1-31d9-41c3-9822-791741e3b346" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="MVVM"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="74375360-5be5-40aa-aa33-217eee40e37c" />
+  </features>
+</package>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Modules>
+    <Module Id="AppModel">
+      <SortOrder>01</SortOrder>
+      <Title>SharePoint App Model Architecture</Title>
+    </Module>
+    <Module Id="JavaScript">
+      <SortOrder>02</SortOrder>
+      <Title>JavaScript and jQuery Primer</Title>
+    </Module>
+    <Module Id="SharePointHostedApps">
+      <SortOrder>03</SortOrder>
+      <Title>Developing SharePoint-hosted Apps</Title>
+    </Module>
+    <Module Id="REST">
+      <SortOrder>04</SortOrder>
+      <Title>Programming with REST and OData</Title>
+    </Module>
+    <Module Id="SharePointREST">
+      <SortOrder>05</SortOrder>
+      <Title>The SharePoint REST API</Title>
+    </Module>
+    <Module Id="KnockoutJS">
+      <SortOrder>06</SortOrder>
+      <Title>Developing Apps using MVVM and the KnockoutJS Library</Title>
+    </Module>
+    <Module Id="Angular">
+      <SortOrder>07</SortOrder>
+      <Title>Developing Apps using the AngularJS Framework</Title>
+    </Module>
+    <Module Id="ProviderHostedApps">
+      <SortOrder>08</SortOrder>
+      <Title>Developing Provider-hosted Apps</Title>
+    </Module>
+    <Module Id="AppSecurity">
+      <SortOrder>09</SortOrder>
+      <Title>App Security and Authentication</Title>
+    </Module>
+    <Module Id="CSOM">
+      <SortOrder>10</SortOrder>
+      <Title>CSOM Programming</Title>
+    </Module>
+    <Module Id="MVC">
+      <SortOrder>11</SortOrder>
+      <Title>Developing SharePoint Apps with ASP.NET MVC</Title>
+    </Module>
+    <Module Id="WebAPI">
+      <SortOrder>12</SortOrder>
+      <Title>Creating Custom Web Services using the Web API</Title>
+    </Module>
+    <Module Id="SharePointServices">
+      <SortOrder>13</SortOrder>
+      <Title>Building Apps with SharePoint Services</Title>
+    </Module>
+     <Module Id="PublishingApps">
+      <SortOrder>14</SortOrder>
+      <Title>Publishing, Installing and Verioning Apps</Title>
+    </Module>
+    <Module Id="Office365">
+      <SortOrder>15</SortOrder>
+      <Title>Developing for Office 365 and Windows Azure</Title>
+    </Module>
+  </Modules>
+</Course>

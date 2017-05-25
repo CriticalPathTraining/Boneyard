@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Code>SPA2013</Code>
+  <ShortName></ShortName>
+  <LongName>Professional Administration with SharePoint 2013</LongName>
+  <Manual>
+    <FrontMatters>
+      <FrontMatter SortOrder="00A">AboutCourse_SPA2013.docx</FrontMatter>
+      <FrontMatter SortOrder="00B">AboutLabs.docx</FrontMatter>
+      <FrontMatter SortOrder="00C">CertificationExam-70-331.docx</FrontMatter>
+      <FrontMatter SortOrder="00D">CertificationExam-70-332.docx</FrontMatter>
+      <FrontMatter SortOrder="00E">SettingUpTheLabEnvironment.docx</FrontMatter>
+    </FrontMatters>
+    <BackMatters />
+  </Manual>
+</Course>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="SocialFeedViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBox Name="AccountNameTextBox" Width="400" />
+            <Button Name="GetActivitiesButton" Content="Get Activties" Width="100" Click="GetActivitiesButton_Click" />
+        </StackPanel>
+        <ListBox Name="FeedThreadsListBox" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="507" Height="263" Margin="5,10,5,0" />
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <TextBox Name="ThreadCountTextBox" Width="100" />
+            <TextBox Name="ThreadResponseTextBox" Width="300" />
+            <Button Name="PostReplyButton" Content="Post Reply" Width="100" Click="PostReplyButton_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

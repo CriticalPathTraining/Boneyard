@@ -1,0 +1,1 @@
+=Right([ProductCategory], (LEN([ProductCategory])-Find("> ", [ProductCategory])))

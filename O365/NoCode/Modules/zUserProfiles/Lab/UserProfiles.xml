@@ -1,0 +1,213 @@
+<Users>
+  <User>
+    <Name>ClydeB</Name>
+	<AboutMe>I was born in Austin and spent my life here. I love Dog House Toys. I started at the bottom and quickly got ahead with tenacity that prooves great things come in small packages. Got an idea? Let me know. I am all ears.</AboutMe>
+	<Responsabilities>The Company</Responsabilities>
+	<Skills>Jai Alli;</Skills>
+	<Interests>Raquetball;Knitting</Interests>
+	<HireDate>6/14/2001</HireDate>
+	<TimeZone>11</TimeZone>
+	<PastProjects>Employee Manual;Product Placement</PastProjects>
+	<School>UC Davis</School>
+	<Birthday></Birthday>
+	<OfficeLocation>Austin</OfficeLocation>
+	<Status>Even CEOs get the blues, though we focus on Red and Black!</Status>
+	<EMail>ClydeB@wingtip.com</EMail>
+  </User>
+  <User>
+    <Name>TedP</Name>
+	<AboutMe>Born in Louisiana and raised in Austin, I am a Texas Cajun. I love to swim and do anything that involves outdoor activities.</AboutMe>
+	<Responsabilities>Exchange;SharePoint;SQL Server</Responsabilities>
+	<Skills>Exchange;PowerShell</Skills>
+	<Interests>Outdoor Activities;Hiking</Interests>
+	<HireDate>1/19/2001</HireDate>
+	<TimeZone>11</TimeZone>
+	<PastProjects>Exchange Migration</PastProjects>
+	<School>Brighton Puppy Academy</School>
+	<Birthday>2/14/1998</Birthday>
+	<OfficeLocation>Houston</OfficeLocation>
+	<Status>Cables, Wires and Users...oh my!</Status>
+	<EMail>TedP@wingtip.com</EMail>
+  </User>
+  <User>
+    <Name>MattMcD</Name>
+	<AboutMe>I was raised in Monterey, CA. I have held many varied jobs, most associated with the ocean or technology (or both). As a diver, I worked in Alaska for a fish hatchery, for a cruise line as a hyperbaric chamber operator and dive boat captain in the Caribbean, and for the University of California, Santa Cruz as a dive technician at Long Marine Laboratory. My wife, Mary Jane, and I met on that cruise ship in the Caribbean and moved to Austin in '98 for the live music and food (and for the chance to work with Sam and Liam). We enjoy spending our weekends outdoors usually swimming my dog in Barton Creek and "beer tasting" at one of the local dog-friendly watering holes. 
+	I enjoy anything related to the outdoors, especially if it involves my wife, my dog, frosty cold beverages or shooting, but not necessarily at the same time or in that order.</AboutMe>
+	<Responsabilities>Search Services;SharePoint;Training</Responsabilities>
+	<Skills>Search;Recovery;SharePoint</Skills>
+	<Interests>Outdoor Activities;Swimming</Interests>
+	<HireDate>9/11/2001</HireDate>
+	<TimeZone>11</TimeZone>
+	<PastProjects>SharePoint Intranet;Search SOP</PastProjects>
+	<School>Lions Agility</School>
+	<Birthday>4/16/2009</Birthday>
+	<OfficeLocation>Austin</OfficeLocation>
+	<Status>Thinking about swimming in Barton Creek, bring on the weekend!</Status>
+	<EMail>MattMcD@wingtip.com</EMail>
+  </User>
+  <User>
+    <Name>AC</Name>
+	<AboutMe>I was born in Navarre Florida and whisked away to start my Search and Rescue training in Austin, TX. I am excited to be trained by my sister, Willa who works in Recovery. What I lack in experience I make up for in exuberance and a "Great Nose".</AboutMe>
+	<Responsabilities>Search;Toy Cleanup</Responsabilities>
+	<Skills>Agility;Search</Skills>
+	<Interests>Outdoor Activities;Swimming;Chewing Sticks</Interests>
+	<HireDate>2/14/2009</HireDate>
+	<TimeZone>11</TimeZone>
+	<PastProjects>Search Training Manual</PastProjects>
+	<School>Humaner Trainer Academy</School>
+	<Birthday>11/14/2008</Birthday>
+	<OfficeLocation>Austin</OfficeLocation>
+	<Status>Looking forward to staring at the bottom of a steel food bowl!</Status>
+	<EMail>ac@wingtip.com</EMail>
+  </User>
+  <User>
+    <Name>JohnH</Name>
+	<AboutMe>I am originally from Corpus Christi, TX and moved to Austin in 1988 to attend UT. I then moved to Denton, TX to attend the Univ. of North Texas in 1994. After grad school, I moved down to Dallas where I started working in computer technology. I then moved back to Austin in Dec. 99 to be closer to family and friends and started working for DHT in Jan 2001.</AboutMe>
+	<Responsabilities>Security;Tennis Ball Recovery</Responsabilities>
+	<Skills>Security;</Skills>
+	<Interests>Outdoor Activities;Music</Interests>
+	<HireDate>7/21/2005</HireDate>
+	<TimeZone>9</TimeZone>
+	<PastProjects>Badge Photos;Perimeter Security</PastProjects>
+	<School>Cedar Park Academy</School>
+	<Birthday>5/21/2009</Birthday>
+	<OfficeLocation>Denver</OfficeLocation>
+	<Status>Can we all get out of here and go to the beach already!</Status>
+	<EMail>JohnH@wingtip.com</EMail>
+</User>
+  <User>
+    <Name>MauriceP</Name>
+	<AboutMe>Born and raised in San Antonio. After I retired from work for the Air Force I joined Dog House Toys because I love the pack mentality. You don't see a lot of "peeing in corners" around here. If there is anything I can help you with just let me know, my crate door is always open.</AboutMe>
+	<Responsabilities>Search;Training</Responsabilities>
+	<Skills>SharePoint;Search</Skills>
+	<Interests>Outdoor Activities;Long Walks</Interests>
+	<HireDate>5/16/2009</HireDate>
+	<TimeZone>11</TimeZone>
+	<PastProjects>SharePoint Intranet</PastProjects>
+	<School>Air Force Academy</School>
+	<Birthday>2/14/1996</Birthday>
+	<OfficeLocation>Austin</OfficeLocation>
+	<Status>Working on the search training and other fun stuff!</Status>
+	<EMail>MauriceP@wingtip.com</EMail>
+  </User>
+  <User>
+    <Name>ScotH</Name>
+	<AboutMe>I was born into the Air Force and live in Schertz, TX now. I always keep my ears open for new ideas and oprotunities. Recovery is my life, if you think you have what it takes let me know and we can talk about the team.</AboutMe>
+	<Responsabilities>Recovery;Search</Responsabilities>
+	<Skills>Search;Ball Chasing</Skills>
+	<Interests>Outdoor Activities;Swimming</Interests>
+	<HireDate>11/1/2005</HireDate>
+	<TimeZone>15</TimeZone>
+	<PastProjects>Search SOP</PastProjects>
+	<School>Police Academy</School>
+	<Birthday></Birthday>
+	<OfficeLocation>Tampa</OfficeLocation>
+	<Status>On duty this weekend...</Status>
+	<EMail>ScotH@wingtip.com</EMail>
+  </User>
+  <User>
+    <Name>ChandlerB</Name>
+	<AboutMe>I am the pointy-eared girl in a pack of floppy eard boys. I love my pack and take my duties very seroiusly.</AboutMe>
+	<Responsabilities>Recovery;Security</Responsabilities>
+	<Skills>Search;Recovery;New Product Development</Skills>
+	<Interests>Outdoor Activities;Swimming</Interests>
+	<HireDate></HireDate>
+	<TimeZone>11</TimeZone>
+	<PastProjects>Search SOP</PastProjects>
+	<School></School>
+	<Birthday></Birthday>
+	<OfficeLocation>San Antonio</OfficeLocation>
+	<Status>Chasing squirrels, chilling in the shade. How great!</Status>
+	<EMail>ChandlerB@wingtip.com</EMail>
+  </User>
+  <User>
+    <Name>KenS</Name>
+	<AboutMe>I was born just North of Austin. My dad picked me out for my "dashing good looks" but my spirit is what keeps me going. I love to chase tennis balls and swim in the lake. Even though I love DHT, Willa and I spend weekends working Search and Rescue.</AboutMe>
+	<Responsabilities>SharePoint;Search;Recovery</Responsabilities>
+	<Skills>Recovery;Search</Skills>
+	<Interests>Outdoor Activities;Swimming</Interests>
+	<HireDate>2/21/2002</HireDate>
+	<TimeZone>11</TimeZone>
+	<PastProjects>SharePoint Intranet;Search SOP</PastProjects>
+	<School>Tripple Crown Dog Academy</School>
+	<Birthday></Birthday>
+	<OfficeLocation>Austin</OfficeLocation>
+	<Status>BBQ and Swimming, bring on the weekend!</Status>
+	<EMail>KenS@wingtip.com</EMail>
+  </User>
+  <User>
+    <Name>KeithM</Name>
+	<AboutMe>I am from Grapevine, Texas (near DFW). I graduated with my Masters in Accounting from Texas Tech, got married to Tim and moved to Austin all in May 2003. I have worked in public accounting for KPMG and a local company, Calhoun and Co. I came to Catapult from BearingPoint. </AboutMe>
+	<Responsabilities>Humane Resources;SharePoint</Responsabilities>
+	<Skills>SharePoint;</Skills>
+	<Interests>Outdoor Activities;Swimming</Interests>
+	<HireDate>9/8/2003</HireDate>
+	<TimeZone>9</TimeZone>
+	<PastProjects>SharePoint HR Portal</PastProjects>
+	<School>Home Schooled</School>
+	<Birthday></Birthday>
+	<OfficeLocation>Denver</OfficeLocation>
+	<Status>Texas, here I come!</Status>
+	<EMail>KeithM@wingtip.com</EMail>
+  </User>
+  <User>
+    <Name>DavidM</Name>
+	<AboutMe></AboutMe>
+	<Responsabilities></Responsabilities>
+	<Skills></Skills>
+	<Interests>Outdoor Activities;Swimming</Interests>
+	<HireDate></HireDate>
+	<TimeZone>15</TimeZone>
+	<PastProjects></PastProjects>
+	<School></School>
+	<Birthday></Birthday>
+	<OfficeLocation>Tampa</OfficeLocation>
+	<Status>Swimming, eating, working, eating...</Status>
+	<EMail>DavidM@wingtip.com</EMail>
+  </User>
+  <User>
+    <Name>WilsonP</Name>
+	<AboutMe>I am a Texas girl at heart. I love to rip up my mom's bed when she works late. Weekends at Grandma's House are the best, they really know how to spoil a dog.</AboutMe>
+	<Responsabilities></Responsabilities>
+	<Skills></Skills>
+	<Interests>Outdoor Activities;Swimming</Interests>
+	<HireDate></HireDate>
+	<TimeZone>11</TimeZone>
+	<PastProjects></PastProjects>
+	<School></School>
+	<Birthday></Birthday>
+	<OfficeLocation>Austin</OfficeLocation>
+	<Status>Time to go to grandma's again!</Status>
+	<EMail>WilsonP@wingtip.com</EMail>
+  </User>
+  <User>
+    <Name>SpencerR</Name>
+	<AboutMe></AboutMe>
+	<Responsabilities></Responsabilities>
+	<Skills></Skills>
+	<Interests>Outdoor Activities;Swimming</Interests>
+	<HireDate></HireDate>
+	<TimeZone>9</TimeZone>
+	<PastProjects></PastProjects>
+	<School></School>
+	<Birthday></Birthday>
+	<OfficeLocation>Denver</OfficeLocation>
+	<Status>Thinking about chasing deer, chasing sea gulls, chasing ....</Status>
+	<EMail>SpencerR@wingtip.com</EMail>
+  </User>
+  <User>
+    <Name>BernieM</Name>
+	<AboutMe>You name it, I do it. I am a jack of all trade and master of a few. I am not what you would call "classicly trained" but I do kee things running smoothly around here.</AboutMe>
+	<Responsabilities></Responsabilities>
+	<Skills></Skills>
+	<Interests>Outdoor Activities;Swimming</Interests>
+	<HireDate></HireDate>
+	<TimeZone>11</TimeZone>
+	<PastProjects></PastProjects>
+	<School></School>
+	<Birthday></Birthday>
+	<OfficeLocation>Austin</OfficeLocation>
+	<Status>It's warm in Austin.</Status>
+	<EMail>BernieM@wingtip.com</EMail>
+  </User>
+ </Users>

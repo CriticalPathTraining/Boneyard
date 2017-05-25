@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Id="B8B3A0FD-CB68-4D3F-AB37-E5F4D83D1DBE"
+    RegistrationType="List"
+    RegistrationId="101"
+    Location="EditControlBlock"
+    Sequence="100"
+    Title="Convert Word to PDF">
+    <UrlAction Url="/_layouts/15/Doc2Pdf/Converter.aspx?SiteUrl={SiteUrl}&amp;ListId={ListId}&amp;ItemId={ItemId}"/>
+  </CustomAction>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.RemoteEventReceiver" DefaultFile="AnnRemoteEventReceiver.cs" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="AnnRemoteEventReceiver\" Type="ElementManifest" />
+  </Files>
+  <ExtensionData>
+    <ExtensionDataItem Key="DefaultWcfServiceTemplateName" Value="$DefaultWcfServiceTemplateName$" />
+    <ExtensionDataItem Key="RemoteEventReceiverCategory" Value="ItemEventReceiver" />
+    <ExtensionDataItem Key="WcfServiceRelativePath" Value="AnnRemoteEventReceiver.svc" />
+  </ExtensionData>
+</ProjectItem>

@@ -1,0 +1,28 @@
+<script language="javascript">
+(function () {
+
+  // create and intialize object to override context
+  var overrideCtx = {};
+  overrideCtx.BaseViewID = 1;
+  overrideCtx.ListTemplateType = 105;
+
+  // initialize template 
+  overrideCtx.Templates = {};
+  overrideCtx.Templates.Header = "<ol>";
+  overrideCtx.Templates.Item = customItem;
+  overrideCtx.Templates.Footer = "</ol>";
+
+  // register with page template manager
+  SPClientTemplates.TemplateManager.RegisterTemplateOverrides(overrideCtx);
+})();
+
+function customItem(ctx) {
+  // create item style
+  var itemStyle = "color:blue;";
+
+  // create and return HTML for each item
+  return "<li style='" + itemStyle + "' >" +
+           ctx.CurrentItem.FirstName + " " + ctx.CurrentItem.Title +
+         "</li>";
+}
+</script>

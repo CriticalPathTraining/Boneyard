@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Code>SEU2013</Code>
+  <ShortName></ShortName>
+  <LongName></LongName>
+  <ExcludedModules>
+  </ExcludedModules>
+  <Manual>
+    <FrontMatters>
+      <FrontMatter SortOrder="00A">AboutCourse_SEU2013.docx</FrontMatter>
+      <FrontMatter SortOrder="00B">AboutLabs.docx</FrontMatter>
+    </FrontMatters>
+    <BackMatters />
+  </Manual>
+</Course>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <PropertyBag ParentType="Web">
+    <Property Name="WorkflowAppSetting.RedirectBaseAddress" Value="http://wingtipserver.wingtip.com:12292/" Type="string"/>
+  </PropertyBag>
+</Elements>

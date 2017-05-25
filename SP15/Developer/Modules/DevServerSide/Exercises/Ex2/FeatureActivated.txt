@@ -1,0 +1,45 @@
+SPWeb spWeb = properties.Feature.Parent as SPWeb;
+
+//Projects List
+Guid pListGuid = spWeb.Lists.Add("Projects", "Company Projects", SPListTemplateType.GenericList);
+spWeb.Update();
+
+//Projects List columns
+SPList pList = spWeb.Lists[pListGuid];
+pList.OnQuickLaunch = true;
+SPField pTitleIDField = pList.Fields["Title"];
+FixupField(pList, pList.Fields.Add("Description", SPFieldType.Text, false));
+FixupField(pList, pList.Fields.Add("Due Date", SPFieldType.DateTime, false));
+SPFieldDateTime dueDateField = pList.Fields["Due Date"] as SPFieldDateTime;
+dueDateField.DisplayFormat = SPDateTimeFieldFormatType.DateOnly;
+
+dueDateField.Update();
+pList.Update();
+
+// Employees List
+Guid eListGuid = spWeb.Lists.Add("Employees", "Employees", SPListTemplateType.GenericList);
+spWeb.Update();
+
+// Employees List columns
+SPList eList = spWeb.Lists[eListGuid];
+eList.OnQuickLaunch = true;
+SPField titleIDField = eList.Fields["Title"];
+titleIDField.Title = "Fullname";
+titleIDField.Update();
+
+FixupField(eList, eList.Fields.Add("JobTitle", SPFieldType.Text, false));
+FixupField(eList, eList.Fields.Add("Team", SPFieldType.Text, false));
+FixupField(eList, eList.Fields.Add("Contribution (in Milestones)", SPFieldType.Number, false));
+
+string projectFieldInternalName = eList.Fields.AddLookup("Project", pListGuid, false);
+SPFieldLookup projectField = eList.Fields.GetFieldByInternalName(projectFieldInternalName) as SPFieldLookup;
+projectField.LookupField = pTitleIDField.InternalName;
+FixupField(projectField);
+eList.Update();
+
+// Project Manager field (Project to Employee lookup)
+string employeeFieldInternalName = pList.Fields.AddLookup("Primary Contact", eListGuid, false);
+SPFieldLookup managerField = pList.Fields.GetFieldByInternalName(employeeFieldInternalName) as SPFieldLookup;
+managerField.LookupField = titleIDField.InternalName;
+FixupField(managerField);
+pList.Update();

@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="WingtipSalesModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="WingtipSalesModelStoreContainer">
+    <EntitySet Name="Customers" EntityType="WingtipSalesModel.Store.Customers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Invoices" EntityType="WingtipSalesModel.Store.Invoices" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="InvoiceDetails" EntityType="WingtipSalesModel.Store.InvoiceDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Products" EntityType="WingtipSalesModel.Store.Products" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="CustomerInvoice" Association="WingtipSalesModel.Store.CustomerInvoice">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Invoice" EntitySet="Invoices" />
+    </AssociationSet>
+    <AssociationSet Name="InvoiceInvoiceDetail" Association="WingtipSalesModel.Store.InvoiceInvoiceDetail">
+      <End Role="Invoice" EntitySet="Invoices" />
+      <End Role="InvoiceDetail" EntitySet="InvoiceDetails" />
+    </AssociationSet>
+    <AssociationSet Name="ProductInvoiceDetail" Association="WingtipSalesModel.Store.ProductInvoiceDetail">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="InvoiceDetail" EntitySet="InvoiceDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Company" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="EmailAddress" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="WorkPhone" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="HomePhone" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="City" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="State" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ZipCode" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="Gender" Type="nvarchar" Nullable="true" MaxLength="1" />
+    <Property Name="BirthDate" Type="datetime" Nullable="false" />
+    <Property Name="FirstPurchaseDate" Type="datetime" Nullable="true" />
+    <Property Name="LastPurchaseDate" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Invoices">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InvoiceNumber" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="InvoiceDate" Type="datetime" Nullable="false" />
+    <Property Name="InvoiceAmount" Type="decimal" Nullable="false" Precision="9" Scale="2" />
+    <Property Name="InvoiceType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InvoiceDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Price" Type="decimal" Nullable="false" Precision="9" Scale="2" />
+    <Property Name="InvoiceId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductCode" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="ProductCategory" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="UnitCost" Type="decimal" Nullable="true" />
+    <Property Name="ListPrice" Type="decimal" Nullable="false" Precision="9" Scale="2" />
+    <Property Name="Color" Type="nvarchar(max)" Nullable="true" />
+    <Property Name="MinimumAge" Type="int" Nullable="true" />
+    <Property Name="MaximumAge" Type="int" Nullable="true" />
+  </EntityType>
+  <Association Name="CustomerInvoice">
+    <End Role="Customer" Type="WingtipSalesModel.Store.Customers" Multiplicity="1" />
+    <End Role="Invoice" Type="WingtipSalesModel.Store.Invoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Invoice">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="InvoiceInvoiceDetail">
+    <End Role="Invoice" Type="WingtipSalesModel.Store.Invoices" Multiplicity="1" />
+    <End Role="InvoiceDetail" Type="WingtipSalesModel.Store.InvoiceDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Invoice">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InvoiceDetail">
+        <PropertyRef Name="InvoiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductInvoiceDetail">
+    <End Role="Product" Type="WingtipSalesModel.Store.Products" Multiplicity="1" />
+    <End Role="InvoiceDetail" Type="WingtipSalesModel.Store.InvoiceDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="InvoiceDetail">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="WingtipSalesModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="WingtipSalesModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Customers" EntityType="WingtipSalesModel.Customer" />
+          <EntitySet Name="Invoices" EntityType="WingtipSalesModel.Invoice" />
+          <EntitySet Name="InvoiceDetails" EntityType="WingtipSalesModel.InvoiceDetail" />
+          <EntitySet Name="Products" EntityType="WingtipSalesModel.Product" />
+          <AssociationSet Name="CustomerInvoice" Association="WingtipSalesModel.CustomerInvoice">
+            <End Role="Customer" EntitySet="Customers" />
+            <End Role="Invoice" EntitySet="Invoices" />
+          </AssociationSet>
+          <AssociationSet Name="InvoiceInvoiceDetail" Association="WingtipSalesModel.InvoiceInvoiceDetail">
+            <End Role="Invoice" EntitySet="Invoices" />
+            <End Role="InvoiceDetail" EntitySet="InvoiceDetails" />
+          </AssociationSet>
+          <AssociationSet Name="ProductInvoiceDetail" Association="WingtipSalesModel.ProductInvoiceDetail">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="InvoiceDetail" EntitySet="InvoiceDetails" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" Nullable="false" />
+          <Property Name="LastName" Type="String" Nullable="false" />
+          <Property Name="Company" Type="String" Nullable="true" />
+          <Property Name="EmailAddress" Type="String" Nullable="true" />
+          <Property Name="WorkPhone" Type="String" Nullable="true" />
+          <Property Name="HomePhone" Type="String" Nullable="false" />
+          <Property Name="Address" Type="String" Nullable="true" />
+          <Property Name="City" Type="String" Nullable="true" />
+          <Property Name="State" Type="String" Nullable="true" />
+          <Property Name="ZipCode" Type="String" Nullable="true" />
+          <Property Name="Gender" Type="String" MaxLength="1" Nullable="true" />
+          <Property Name="BirthDate" Type="DateTime" Nullable="false" />
+          <Property Name="FirstPurchaseDate" Type="DateTime" Nullable="true" />
+          <Property Name="LastPurchaseDate" Type="DateTime" Nullable="true" />
+          <NavigationProperty Name="Invoices" Relationship="WingtipSalesModel.CustomerInvoice" FromRole="Customer" ToRole="Invoice" />
+        </EntityType>
+        <EntityType Name="Invoice">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="InvoiceNumber" Type="String" Nullable="true" />
+          <Property Name="InvoiceDate" Type="DateTime" Nullable="false" />
+          <Property Name="InvoiceAmount" Type="Decimal" Nullable="false" Precision="9" Scale="2" />
+          <Property Name="InvoiceType" Type="String" Nullable="false" />
+          <NavigationProperty Name="Customer" Relationship="WingtipSalesModel.CustomerInvoice" FromRole="Invoice" ToRole="Customer" />
+          <Property Name="CustomerId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="InvoiceDetails" Relationship="WingtipSalesModel.InvoiceInvoiceDetail" FromRole="Invoice" ToRole="InvoiceDetail" />
+        </EntityType>
+        <EntityType Name="InvoiceDetail">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Quantity" Type="Int32" Nullable="false" />
+          <Property Name="Price" Type="Decimal" Nullable="false" Precision="9" Scale="2" />
+          <NavigationProperty Name="Invoice" Relationship="WingtipSalesModel.InvoiceInvoiceDetail" FromRole="InvoiceDetail" ToRole="Invoice" />
+          <Property Name="InvoiceId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="WingtipSalesModel.ProductInvoiceDetail" FromRole="InvoiceDetail" ToRole="Product" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProductCode" Type="String" Nullable="false" />
+          <Property Name="Title" Type="String" Nullable="false" />
+          <Property Name="Description" Type="String" Nullable="true" />
+          <Property Name="ProductCategory" Type="String" Nullable="true" />
+          <Property Name="UnitCost" Type="Decimal" Nullable="true" Precision="9" Scale="2" />
+          <Property Name="ListPrice" Type="Decimal" Nullable="false" Precision="9" Scale="2" />
+          <Property Name="Color" Type="String" Nullable="true" />
+          <Property Name="MinimumAge" Type="Int32" Nullable="true" />
+          <Property Name="MaximumAge" Type="Int32" Nullable="true" />
+          <NavigationProperty Name="InvoiceDetails" Relationship="WingtipSalesModel.ProductInvoiceDetail" FromRole="Product" ToRole="InvoiceDetail" />          
+        </EntityType>
+        <Association Name="CustomerInvoice">
+          <End Type="WingtipSalesModel.Customer" Role="Customer" Multiplicity="1" >
+          </End>
+          <End Type="WingtipSalesModel.Invoice" Role="Invoice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customer">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Invoice">
+              <PropertyRef Name="CustomerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="InvoiceInvoiceDetail">
+          <End Type="WingtipSalesModel.Invoice" Role="Invoice" Multiplicity="1" />
+          <End Type="WingtipSalesModel.InvoiceDetail" Role="InvoiceDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Invoice">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="InvoiceDetail">
+              <PropertyRef Name="InvoiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ProductInvoiceDetail">
+          <End Type="WingtipSalesModel.Product" Role="Product" Multiplicity="1" />
+          <End Type="WingtipSalesModel.InvoiceDetail" Role="InvoiceDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="InvoiceDetail">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WingtipSalesModelStoreContainer" CdmEntityContainer="WingtipSalesModelContainer">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="IsTypeOf(WingtipSalesModel.Customer)">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="WorkPhone" ColumnName="WorkPhone" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="FirstPurchaseDate" ColumnName="FirstPurchaseDate" />
+          <ScalarProperty Name="LastPurchaseDate" ColumnName="LastPurchaseDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="IsTypeOf(WingtipSalesModel.Invoice)">
+        <MappingFragment StoreEntitySet="Invoices">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="InvoiceAmount" ColumnName="InvoiceAmount" />
+          <ScalarProperty Name="InvoiceType" ColumnName="InvoiceType" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceDetails">
+      <EntityTypeMapping TypeName="IsTypeOf(WingtipSalesModel.InvoiceDetail)">
+        <MappingFragment StoreEntitySet="InvoiceDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="IsTypeOf(WingtipSalesModel.Product)">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ProductCategory" ColumnName="ProductCategory" />
+          <ScalarProperty Name="UnitCost" ColumnName="UnitCost" />
+          <ScalarProperty Name="ListPrice" ColumnName="ListPrice" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="MinimumAge" ColumnName="MinimumAge" />
+          <ScalarProperty Name="MaximumAge" ColumnName="MaximumAge" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

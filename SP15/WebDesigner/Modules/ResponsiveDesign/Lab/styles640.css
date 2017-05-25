@@ -1,0 +1,39 @@
+﻿/* Wingtip Toys Mobile Styles - 1024px and smaller */
+/*  BEGIN Document Styles  */
+html, .ms-backgroundImage{
+	background:none;
+}
+/*  END Document Styles  */
+
+
+/*  BEGIN Masthead Styles  */
+#DeltaTopNavigation{
+	display:none;
+}
+
+.masthead h1{
+	float:right;
+}
+/*  END Masthead Styles  */
+
+
+/*  BEGIN Content Layout Styles  */
+.content{
+	padding:10px;
+	margin:0;
+}
+
+#panel_left, #panel_right{
+	width: 100%;
+}
+
+#contentBox{
+	width:100%;
+	margin:0;
+	min-width:0%;
+}
+
+#sideNavBox{
+	display:none;
+}
+/*  END Content Layout Styles  */

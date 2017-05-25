@@ -1,0 +1,55 @@
+﻿/* Wingtip Toys Mobile Styles 1023px and smaller */
+/*  BEGIN Document Styles  */
+html, .ms-backgroundImage{
+	background:none;
+}
+/*  END Document Styles  */
+
+
+/*  BEGIN Masthead Styles  */
+.masthead{
+	height:110px;
+}
+
+.masthead h1{
+	padding-top:45px;
+}
+
+#DeltaTopNavigation .ms-core-listMenu-horizontalBox li{
+	display:block;
+	float:right;
+}
+
+#DeltaTopNavigation ul ul{
+	display:none;
+}
+
+.ms-core-listMenu-horizontalBox .dynamic-children.additional-background{
+	background:none;
+	padding-right:0;
+}
+/*  END Masthead Styles  */
+
+
+/*  BEGIN Vertical Nav Styles  */
+#sideNavBox{
+	padding-right:0;
+	width:20%;
+	float:left;
+}
+/*  END Vertical Nav Styles  */
+
+
+/*  BEGIN Content Layout Styles  */
+#contentBox{
+	width:70%;
+	margin:0;
+	min-width:0%;
+	float:right;
+}
+
+.content{
+	padding:10px;
+	margin:0;
+}
+/*  END Content Layout Styles  */

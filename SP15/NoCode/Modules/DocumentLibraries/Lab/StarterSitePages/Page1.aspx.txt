@@ -1,0 +1,7 @@
+﻿<%@ Page language="C#" MasterPageFile="~masterurl/default.master" %> 
+         
+<asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
+  <h2>Hello World</h2>
+  <p>This is a very simple page</p>
+</asp:Content>
+

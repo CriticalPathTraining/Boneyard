@@ -1,0 +1,1 @@
+=IF(AND(ISBLANK([Minimum Age]),ISBLANK([Maximum Age])),"All ages",IF(ISBLANK([Maximum Age]),"Ages "&[Minimum Age]&" and older",IF(ISBLANK([Minimum Age]),"Ages "&[Maximum Age]&" and younger","Ages "&[Minimum Age]&" to "&[Maximum Age])))

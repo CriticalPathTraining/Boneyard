@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="faf180ba-9949-47e6-9f52-31fd5b306879" 
+        solutionId="faf180ba-9949-47e6-9f52-31fd5b306879" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="AppWithEct"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="dfeb8146-6b70-43a7-80b5-dafd33e3b1a2" />
+  </features>
+</package>

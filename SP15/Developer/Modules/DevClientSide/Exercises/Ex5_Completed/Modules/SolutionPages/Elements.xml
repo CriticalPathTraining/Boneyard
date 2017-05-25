@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="SolutionPages">
+    <File Path="SolutionPages\Exercise01.aspx" Url="SolutionPages/Exercise01.aspx" />
+    <File Path="SolutionPages\Exercise01.js" Url="SolutionPages/Exercise01.js" />
+    <File Path="SolutionPages\Exercise02.aspx" Url="SolutionPages/Exercise02.aspx" />
+    <File Path="SolutionPages\Exercise02.js" Url="SolutionPages/Exercise02.js" />
+    <File Path="SolutionPages\Exercise03.aspx" Url="SolutionPages/Exercise03.aspx" />
+    <File Path="SolutionPages\Exercise03.js" Url="SolutionPages/Exercise03.js" />
+    <File Path="SolutionPages\Exercise04.aspx" Url="SolutionPages/Exercise04.aspx" />
+    <File Path="SolutionPages\Exercise04.js" Url="SolutionPages/Exercise04.js" />
+  </Module>
+</Elements>

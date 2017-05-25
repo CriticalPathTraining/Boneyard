@@ -1,0 +1,2 @@
+  var promise = Wingtip.Customers.DataAccess.deleteCustomer(customerId);
+  promise.then(onSuccess, onError);

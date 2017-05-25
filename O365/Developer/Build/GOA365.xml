@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Code>GOA365</Code>
+  <ShortName></ShortName>
+  <LongName>The Great Office 365 Adventure</LongName>
+  <Manual>
+    <FrontMatters>
+      <FrontMatter SortOrder="00A">AboutCourse_GOA365.docx</FrontMatter>
+      <FrontMatter SortOrder="00B">AboutLabs.docx</FrontMatter>
+    </FrontMatters>
+    <BackMatters />
+  </Manual>
+</Course>

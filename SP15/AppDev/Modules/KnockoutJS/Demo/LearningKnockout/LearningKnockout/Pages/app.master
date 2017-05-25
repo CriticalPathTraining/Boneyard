@@ -1,0 +1,46 @@
+﻿<%@ Master %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+  <title>Learning Knockout</title>
+  <link href="../Content/app.css" rel="stylesheet" />
+  <script src="../Scripts/jquery-2.0.3.js"></script>
+  <script src="../Scripts/knockout-2.3.0.js"></script>
+  <script src="../Scripts/app.master.js"></script>
+  <asp:ContentPlaceHolder ID="PlaceholderAdditionalPageHead" runat="server" />
+</head>
+
+<body>
+  <form id="form1" runat="server">
+    <div>
+
+      <div id="page_width">
+      
+        <div id="banner">
+          <span id="site_title">Learning Knockout</span>
+        </div>
+
+        <div id="navbar">
+          <ul>
+            <li><a href="default.aspx">Home</a></li>
+            <li><a href="demo1.aspx">Demo 1</a></li>
+            <li><a href="demo2.aspx">Demo 2</a></li>
+            <li><a href="demo3.aspx">Demo 3</a></li>
+            <li><a href="demo4.aspx">Demo 4</a></li>
+            <li><a href="demo5.aspx">Demo 5</a></li>
+          </ul>
+          <div style="clear:both"></div>
+        </div>
+
+        <div id="contentBox" >
+          <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server" />
+        </div>
+          
+      </div>
+
+    </div>
+  </form>
+</body>
+</html>

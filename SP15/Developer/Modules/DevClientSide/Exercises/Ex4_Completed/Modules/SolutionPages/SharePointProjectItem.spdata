@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SolutionPages\" Type="ElementManifest" />
+    <ProjectItemFile Source="Exercise01.aspx" Target="SolutionPages\" Type="ElementFile" />
+    <ProjectItemFile Source="Exercise01.js" Target="SolutionPages\" Type="ElementFile" />
+    <ProjectItemFile Source="Exercise02.aspx" Target="SolutionPages\" Type="ElementFile" />
+    <ProjectItemFile Source="Exercise02.js" Target="SolutionPages\" Type="ElementFile" />
+    <ProjectItemFile Source="Exercise03.aspx" Target="SolutionPages\" Type="ElementFile" />
+    <ProjectItemFile Source="Exercise03.js" Target="SolutionPages\" Type="ElementFile" />
+    <ProjectItemFile Source="Exercise04.aspx" Target="SolutionPages\" Type="ElementFile" />
+    <ProjectItemFile Source="Exercise04.js" Target="SolutionPages\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

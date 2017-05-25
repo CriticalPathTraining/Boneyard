@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c69eba6d-28a5-48be-b6f9-f75edcee0cbc" solutionId="c69eba6d-28a5-48be-b6f9-f75edcee0cbc" resetWebServer="false" sharePointProductVersion="15.0" name="ClassicEvents" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="7f6ca9cd-a29b-4091-a5c4-e00ddee81324" />
+  </features>
+</package>

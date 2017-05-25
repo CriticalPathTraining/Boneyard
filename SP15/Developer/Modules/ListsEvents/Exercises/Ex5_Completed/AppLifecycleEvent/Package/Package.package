@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="7aabc411-b8b5-43b2-a155-103d13306cfc" 
+        solutionId="7aabc411-b8b5-43b2-a155-103d13306cfc" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="AppLifecycleEvent"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="abebf6b7-957d-40bc-a39c-604f0f4c7f5b" />
+  </features>
+</package>

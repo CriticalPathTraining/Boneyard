@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Code>GSA2013</Code>
+  <ShortName></ShortName>
+  <LongName>The Great SharePoint Adventure 2013</LongName>
+  <ExcludedModules>
+  </ExcludedModules>
+  <Manual>
+    <FrontMatters>
+      <FrontMatter SortOrder="00A">AboutCourse_GSA2013.docx</FrontMatter>
+      <FrontMatter SortOrder="00B">AboutLabs.docx</FrontMatter>
+      <FrontMatter SortOrder="AppendixA">CertificationExam-70-488.docx</FrontMatter>
+      <FrontMatter SortOrder="AppendixB">CertificationExam-70-489.docx</FrontMatter>
+    </FrontMatters>
+    <BackMatters />
+  </Manual>
+</Course>

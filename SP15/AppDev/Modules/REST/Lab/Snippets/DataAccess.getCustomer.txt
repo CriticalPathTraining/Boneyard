@@ -1,0 +1,15 @@
+  // begin work to call across network
+    var requestUri = "/crm.svc/Customers(" + Id + ")";
+
+    // execute AJAX request 
+    var requestHeaders = {
+      "accept": "application/json;odata=verbose"
+    }
+
+    var deferred = $.ajax({
+      url: requestUri,
+      contentType: "application/json;odata=verbose",
+      headers: requestHeaders,
+    });
+
+    return deferred.promise();

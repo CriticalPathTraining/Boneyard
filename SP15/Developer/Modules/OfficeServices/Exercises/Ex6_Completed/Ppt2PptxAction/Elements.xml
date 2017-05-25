@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+<CustomAction
+  Id="1D380367-4D45-4B48-834A-7A881DC5DC5D"
+  RegistrationType="List"
+  RegistrationId="101"
+  Location="EditControlBlock"
+  Sequence="100"
+  Title="Convert PPT to PPTX">
+  <UrlAction Url="/_layouts/PPT2PPTX/Converter.aspx?SiteUrl={SiteUrl}&amp;ListId={ListId}&amp;ItemId={ItemId}"/>
+</CustomAction>
+</Elements>

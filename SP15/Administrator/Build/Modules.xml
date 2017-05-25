@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Modules>
+    <Module Id="GettingStarted">
+      <SortOrder>01</SortOrder>
+      <Title>Getting Started with SharePoint 2013</Title>
+    </Module>
+    <Module Id="Install">
+      <SortOrder>02</SortOrder>
+      <Title>Installing SharePoint 2013</Title>
+    </Module>
+    <Module Id="FarmConfiguration">
+      <SortOrder>03</SortOrder>
+      <Title>Farm Configuration</Title>
+    </Module>
+    <Module Id="HealthMonitoring">
+      <SortOrder>04</SortOrder>
+      <Title>Monitoring and Debugging Tools</Title>
+    </Module>
+    <Module Id="Security">
+      <SortOrder>05</SortOrder>
+      <Title>Security and Authentication</Title>
+    </Module>
+    <Module Id="WebApplications">
+      <SortOrder>06</SortOrder>
+      <Title>Configuration Web Applications</Title>
+    </Module>
+    <Module Id="SiteCollections">
+      <SortOrder>07</SortOrder>
+      <Title>Managing Site Collections</Title>
+    </Module>
+    <Module Id="ServiceApplications">
+      <SortOrder>08</SortOrder>
+      <Title>Configuring Service Applications</Title>
+    </Module>
+    <Module Id="BCS">
+      <SortOrder>09</SortOrder>
+      <Title>Business Connectivity Services</Title>
+    </Module>
+    <Module Id="ManagedMetadata">
+      <SortOrder>10</SortOrder>
+      <Title>Managed Metadata Service</Title>
+    </Module>
+    <Module Id="UserProfiles">
+      <SortOrder>11</SortOrder>
+      <Title>User Profile Service</Title>
+    </Module>
+
+    <Module Id="Search">
+      <SortOrder>12</SortOrder>
+      <Title>Configuring Search</Title>
+    </Module>
+    <Module Id="Workflow">
+      <SortOrder>13</SortOrder>
+      <Title>Configuring Workflow</Title>
+    </Module>
+    <Module Id="CustomSolutions">
+      <SortOrder>14</SortOrder>
+      <Title>Deploying Custom Solutions</Title>
+    </Module>
+    <Module Id="Recovery">
+      <SortOrder>15</SortOrder>
+      <Title>Backup and Recovery</Title>
+    </Module>
+    <Module Id="Upgrade">
+      <SortOrder>16</SortOrder>
+      <Title>Upgrading to SharePoint 2013</Title>
+    </Module>
+  </Modules>
+</Course>

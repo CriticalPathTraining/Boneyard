@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+  <title>My Client-side App</title>
+  <!-- links for CSS and JavaScript files go here -->
+</head>
+
+<body>
+
+  <div id="page_width">
+    
+    <div id="nav_bar">
+      &nbsp;
+    </div>
+
+    <div id="top_banner">
+      <div id="site_title">Client-side App</div>
+    </div>
+
+    <div class="toolbar">
+      <input id="cmdHelloDOM" type="button" value="Hello DOM" />
+      <input id="cmdHellojQuery" type="button" value="Hello jQuery" />
+      <input id="cmdCreateList" type="button" value="Create List" />
+      <input id="cmdLinkHostWeb" type="button" value="Link to Host Web" />
+      <input id="cmdAjax" type="button" value="AJAX" />
+      <input id="cmdPromises" type="button" value="Promises" />
+    </div>
+
+    <div id="content_box">
+      <div id="results"></div>
+    </div>
+
+  </div>
+
+</body>
+</html>

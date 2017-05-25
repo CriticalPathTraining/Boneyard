@@ -1,0 +1,1 @@
+This folder is where you will create the WingtipSalesModel.xlsx file that you create during lab exercises.

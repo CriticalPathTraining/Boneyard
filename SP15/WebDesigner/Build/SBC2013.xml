@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Code>SBC2013</Code>
+  <ShortName></ShortName>
+  <LongName>SharePoint Brand Camp 2013</LongName>
+  <ExcludedModules>
+  </ExcludedModules>
+  <Manual>
+    <FrontMatters>
+      <FrontMatter SortOrder="00A">AboutCourse_SBC2013.docx</FrontMatter>
+      <FrontMatter SortOrder="00B">AboutLabs.docx</FrontMatter>
+    </FrontMatters>
+    <BackMatters />
+  </Manual>
+</Course>

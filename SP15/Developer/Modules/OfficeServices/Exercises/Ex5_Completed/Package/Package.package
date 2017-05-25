@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e5045b72-5dd6-4fa2-9305-2bfa55e6b86e" solutionId="e5045b72-5dd6-4fa2-9305-2bfa55e6b86e" resetWebServer="false" sharePointProductVersion="15.0" name="Doc2Pdf" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="2e657a8f-89f3-45aa-976a-1803dc01a920" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="d152ed64-fe36-4ff3-8928-5ff6cdb7fa1e" />
+    <projectItemReference itemId="3769a75a-8251-4e81-ba1b-8d6f5dd419e9" />
+  </projectItems>
+</package>

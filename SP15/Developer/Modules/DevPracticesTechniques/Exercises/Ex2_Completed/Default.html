@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title></title>
+  <script src="jquery-1.8.1.min.js"></script>
+  <script src="datajs-1.0.3.min.js"></script>
+</head>
+<body>
+  <h1>Adventure Works Product Catalog Search Tool</h1>
+
+  <p>Enter words to search for in the catalog, seperated by spaces.</p>
+  <input id="searchBox" type="text" />
+  <button id="searchButton">Search</button>
+
+  <div>
+    <div style="float: left; width: 200px; padding: 10px;">
+      <h2>Query Results</h2>
+      <ul id="queryResultsList">
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var serviceUri = "http://cptresources.wingtip.com:81/services/AdventureWorks2012Product.svc/";
+
+    // using jQuery, once the jQuery library has loaded & the page is ready...
+    $(document).ready(function () {
+      // attach event to search button
+      $("#searchButton").click(function () {
+        // break search into array of words
+        var searchQuery = $("#searchBox").val();
+        var regEx = /\b(\w+)\b/g;
+        var searchWords = searchQuery.match(regEx);
+
+        // if something was entered, execute query
+        if (searchWords) {
+          // get words to add to query
+          var filterWords = "";
+          $.each(searchWords, function (key, word) {
+            if (key) filterWords += "%20and%20";
+            // double up any single quotes
+            word = word.replace(/'/g, "''");
+            // url escape word
+            word = encodeURIComponent(word);
+            filterWords += "substringof('" + word + "',Name)";
+          });
+
+          // create base portion of the URI
+          var queryUri = serviceUri + "Products?" +
+            "$select=ProductID,ProductNumber,Name,ListPrice&" +
+            "$top=10&" +
+            "$filter=" + filterWords;
+
+          // configure datajs to allow cross domain callbacks using JSONP
+          OData.defaultHttpClient.enableJsonpCallback = true;
+          // run query
+          OData.read(queryUri, function (queryResponse) {
+            // clear out returned items
+            $("#queryResultsList").empty();
+
+            // for each result, add to list
+            $.each(queryResponse.results, function (o) {
+              $("#queryResultsList").append("<li>" + this.Name + "</li>");
+            });
+          }, function (error) { alert("error occured:" + JSON.stringify(error)); });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

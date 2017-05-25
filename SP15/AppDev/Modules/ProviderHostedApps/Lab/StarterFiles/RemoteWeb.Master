@@ -1,0 +1,26 @@
+﻿<%@Master %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+  <title>Customer Manager App</title>
+  <!-- add links to CSS and JavaScript files here -->
+  <asp:ContentPlaceHolder ID="PlaceholderAdditionalPageHead" runat="server" />
+</head>
+
+<body>
+  <form id="form1" runat="server">
+    <div id="pageWidth">
+      <div id="chrome_ctrl_container"></div>
+      <div id="contentBody">
+        <asp:ContentPlaceHolder ID="PlaceholderMain" runat="server" />
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>

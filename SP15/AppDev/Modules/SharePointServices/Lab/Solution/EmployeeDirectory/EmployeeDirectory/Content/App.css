@@ -1,0 +1,61 @@
+﻿.tab {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#resultsTable
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	background: #fff;
+	margin: 0px;
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+#resultsTable th
+{
+	font-size: 14px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+#resultsTable td
+{
+    color: #669;
+	padding: 9px 8px 0px 8px;
+}
+
+#resultsTable tbody tr:hover td
+{
+	color: #009;
+}
+
+.tab-table {
+   border-spacing:0px;
+}
+
+.tab-tableCellUnselected {
+   border-top:none;
+   border-left:none;
+   border-right:none;
+   border-bottom: 1px solid #666666;
+}
+
+.tab-tableCellSelected {
+   border-top: 1px solid #666666;
+   border-left: 1px solid #666666;
+   border-right: 1px solid #666666;
+   border-bottom: none;
+}
+
+#resultsCell {
+    border-left:1px solid #666666;
+    border-right:1px solid #666666;
+    border-bottom:1px solid #666666;
+}
+
+#resultsDiv {
+    height:400px;
+}

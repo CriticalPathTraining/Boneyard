@@ -1,0 +1,16 @@
+
+    var requestUri = "/crm.svc/Customers(" + Id + ")";
+
+    var requestHeaders = {
+      "accept": "application/json;odata=verbose",
+    }
+
+    var deferred = $.ajax({
+      url: requestUri,
+      type: "DELETE",
+      headers: requestHeaders,
+      success: onSuccess,
+      error: onError
+    });
+
+    return deferred.promise();

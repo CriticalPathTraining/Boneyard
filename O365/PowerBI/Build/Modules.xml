@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Modules>
+    <Module Id="IntroToPowerBI">
+      <SortOrder>01</SortOrder>
+      <Title>Introduction to the Power BI Platform</Title>
+    </Module>
+    <Module Id="PowerBIDesktop">
+      <SortOrder>02</SortOrder>
+      <Title>Getting Started with Power BI Desktop</Title>
+    </Module>
+    <Module Id="PowerQuery">
+      <SortOrder>03</SortOrder>
+      <Title>Importing and Reshaping Data using Power Query</Title>
+    </Module>
+    <Module Id="PowerPivot">
+      <SortOrder>04</SortOrder>
+      <Title>Modeling Datasets using PowerPivot and DAX</Title>
+    </Module>
+    <Module Id="TimeIntelligence">
+      <SortOrder>05</SortOrder>
+      <Title>Adding DAX Support for Time Intelligence</Title>
+    </Module>
+    <Module Id="ReportsAndDashboards">
+      <SortOrder>06</SortOrder>
+      <Title>Creating Reports And Dashboards</Title>
+    </Module>
+    <Module Id="MobileDevices">
+      <SortOrder>07</SortOrder>
+      <Title>Creating Dashboards for Mobile Devices</Title>
+    </Module>
+    <Module Id="ContentPacks">
+      <SortOrder>08</SortOrder>
+      <Title>Creating and Deploying Content Packs</Title>
+    </Module>
+    <Module Id="ExcelDesktop">
+      <SortOrder>09</SortOrder>
+      <Title>Leveraging the New BI Features in Excel 2016</Title>
+    </Module>
+    <Module Id="ExcelOnline">
+      <SortOrder>10</SortOrder>
+      <Title>Creating BI Solution using Excel Online</Title>
+    </Module>
+  </Modules>
+</Course>

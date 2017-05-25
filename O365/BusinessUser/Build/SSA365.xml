@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Code>SSA365</Code>
+  <ShortName></ShortName>
+  <LongName></LongName>
+  <ExcludedModules>
+    <ExcludedModule Id="GettingStarted" />
+    <ExcludedModule Id="Lists" />
+    <ExcludedModule Id="Documents" />
+    <ExcludedModule Id="Pages" />
+    <ExcludedModule Id="Forms" />
+    <ExcludedModule Id="Social" />
+  </ExcludedModules>
+  <Manual>
+    <FrontMatters>
+      <FrontMatter SortOrder="00A">AboutCourse_SSA365.docx</FrontMatter>
+      <FrontMatter SortOrder="00B">AboutLabs.docx</FrontMatter>
+    </FrontMatters>
+    <BackMatters />
+  </Manual>
+</Course>

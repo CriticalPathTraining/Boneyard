@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Course-Detail-Forms:-myXSD-2010-05-18T18-37-18" solutionVersion="1.0.0.24" productVersion="14.0.0.0" PIVersion="1.0.0.0" href="http://intranet.sharepointblackops.com/Courses/Course%20Detail%20Forms/Forms/template.xsn"?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:courseDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2010-05-18T18:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:title>SharePoint Planning and Governance </my:title>
+	<my:description>This intensive 3-day course will take you through the process of developing a successful implementation plan for your Windows SharePoint Services 3.0 (WSS) or Microsoft Office SharePoint Server 2007 (MOSS) deployment. Determining the goals and vision, stakeholders, level of customization or development, rollout, phasing, intranet, extranet, and internet considerations and taxonomy of your portal will all be discussed through lectures, hands on experience, and case studies. This class will not only cover what you should do but will also cover real world scenarios and best practices.</my:description>
+	<my:courseCode>SPG301</my:courseCode>
+	<my:prerequisites>Attendees should have experience with the Internet Explorer and Office Products such as Word, Excel and Outlook. It is highly recommended (but not required) that students get some hands-on experience working with sites in a Windows SharePoint Services 3.0 environment and using Microsoft Office SharePoint Designer 2007 before the start of class.</my:prerequisites>
+	<my:modules>
+		<my:moduleName>Beginning Your SharePoint Project </my:moduleName>
+		<my:moduleNumber>1</my:moduleNumber>
+		<my:moduleDescription>"to do"</my:moduleDescription>
+		<my:topicCovered>How a typical SharePoint project normally goes </my:topicCovered>
+	<my:topicCovered>Unique challenges for SharePoint projects</my:topicCovered><my:topicCovered>Introduction to SharePoint Project Planning and Governance</my:topicCovered></my:modules>
+<my:modules>
+									<my:moduleName>Key SharePoint Concepts </my:moduleName>
+									<my:moduleNumber>2</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Lists</my:topicCovered>
+								<my:topicCovered>Sites vs Site Collection </my:topicCovered><my:topicCovered>What is SharePoint? </my:topicCovered><my:topicCovered>Business Examples </my:topicCovered><my:topicCovered>Commonly-used Terms</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Introduction to Governance </my:moduleName>
+									<my:moduleNumber>3</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>What is governance? </my:topicCovered>
+								<my:topicCovered>Why is governance important? </my:topicCovered><my:topicCovered>Creating a governance plan </my:topicCovered><my:topicCovered>Defining goals and success criteria</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Building the SharePoint Project Team </my:moduleName>
+									<my:moduleNumber>4</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Roles of the SharePoint Project Team </my:topicCovered>
+								<my:topicCovered>Mapping roles to responsibilities </my:topicCovered><my:topicCovered>Building the governance committee </my:topicCovered><my:topicCovered>Governance committee responsibilities</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Building Information Architecture </my:moduleName>
+									<my:moduleNumber>5</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>What is information architecture? </my:topicCovered>
+								<my:topicCovered>Taxonomy </my:topicCovered><my:topicCovered>Searching vs. Navigating </my:topicCovered><my:topicCovered>Governance for IA</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Planning for Servers </my:moduleName>
+									<my:moduleNumber>6</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Server topologies</my:topicCovered>
+								<my:topicCovered>Development environments</my:topicCovered><my:topicCovered>Authentication</my:topicCovered><my:topicCovered>Disaster Recovery</my:topicCovered><my:topicCovered>Migration </my:topicCovered><my:topicCovered>Governance for servers</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Planning for Branding </my:moduleName>
+									<my:moduleNumber>7</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>What is branding? </my:topicCovered>
+								<my:topicCovered>Anatomy of a page </my:topicCovered><my:topicCovered>Master Pages vs Themes</my:topicCovered><my:topicCovered>Layouts </my:topicCovered><my:topicCovered>Branding Considerations </my:topicCovered><my:topicCovered>Governance for branding</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Setting Expectations </my:moduleName>
+									<my:moduleNumber>8</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Whose expectations? </my:topicCovered>
+								<my:topicCovered>What expectations? </my:topicCovered><my:topicCovered>Controlling scope </my:topicCovered><my:topicCovered>Adding functionality: Customization vs. Development</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Planning for Training, Migration, and Post Implementation </my:moduleName>
+									<my:moduleNumber>9</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Rollout ideas</my:topicCovered>
+								<my:topicCovered>Training</my:topicCovered><my:topicCovered>Role of IT </my:topicCovered><my:topicCovered>Transfer of information </my:topicCovered><my:topicCovered>Reporting</my:topicCovered></my:modules></my:courseDetails>

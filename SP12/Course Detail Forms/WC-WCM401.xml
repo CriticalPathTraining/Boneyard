@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?mso-infoPathSolution name="urn:schemas-microsoft-com:office:infopath:Course-Detail-Forms:-myXSD-2010-05-18T18-37-18" solutionVersion="1.0.0.24" productVersion="14.0.0.0" PIVersion="1.0.0.0" href="http://intranet.sharepointblackops.com/Courses/Course%20Detail%20Forms/Forms/template.xsn"?>
+<?mso-application progid="InfoPath.Document" versionProgid="InfoPath.Document.2"?><my:courseDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2010-05-18T18:37:18" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:title>Developing Publishing Sites with SharePoint Server 2007 Web Content Management Webcast </my:title>
+	<my:description>This intensive 5-day course takes developers through the process of building and implementing content-centric websites on the SharePoint platform using the latest release: Microsoft Office SharePoint Server 2007 (MOSS). You will learn how to leverage the new concepts in the latest release of SharePoint to build Publishing sites (aka: Web Content Management sites) such as master pages, page layouts, field controls and custom workflows as well as existing SharePoint technologies including custom Web Parts and the provided out-of-the-box Web Parts. Technologies and concepts covered specific to MOSS Publishing sites such as content deployment, support for multilingual sites (variations) and the various types of caching offered to build a well performing site. In addition, an emphasis on using Features and solutions for development is covered throughout this course in addition to using the browser experience and SharePoint Designer 2007.</my:description>
+	<my:courseCode>WC-WCM401</my:courseCode>
+	<my:prerequisites>Attendees should have professional development experience with Visual Studio 2005 or Visual Studio 2008., the .NET framework and ASP.NET as well as familiarity with Microsoft Office products such as Word and Excel. It is also recommended (but not required) that attendees have a background with the previous version of Windows SharePoint Services V2 and have experience working directly with XML files in Visual Studio 2005 or Visual Studio 2008.</my:prerequisites>
+	<my:modules>
+		<my:moduleName>WSS 3.0 Development Primer</my:moduleName>
+		<my:moduleNumber>1</my:moduleNumber>
+		<my:moduleDescription>"to do"</my:moduleDescription>
+		<my:topicCovered>Overview of Windows SharePoint Services (WSS) 3.0 </my:topicCovered>
+	<my:topicCovered>Compare &amp; contrast SharePoint customization from development </my:topicCovered><my:topicCovered>Working with Visual Studio 2005 / 2008 and the WSS object model </my:topicCovered><my:topicCovered>Working with WSS Features &amp; the WSS solution package framework </my:topicCovered><my:topicCovered>Working with the Microsoft SharePoint namespace</my:topicCovered></my:modules>
+<my:modules>
+									<my:moduleName>MOSS 2007 &amp; Web Content Management Overview</my:moduleName>
+									<my:moduleNumber>2</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Overview of MOSS: added value on top of WSS </my:topicCovered>
+								<my:topicCovered>Overview of Web Content Management (WCM) and Publishing sites</my:topicCovered><my:topicCovered>Creating Publishing sites</my:topicCovered><my:topicCovered>Working with the Microsoft. SharePoint .Publishing namespace</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Master Pages and Navigation </my:moduleName>
+									<my:moduleNumber>3</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Creating and editing master pages using Office SharePoint Designer 2007</my:topicCovered>
+								<my:topicCovered>Implications of customized and uncustomized master pages (unghosted and ghosted)</my:topicCovered><my:topicCovered>Managing and deploying Master Pages using the structured development approach with Features and solutions</my:topicCovered><my:topicCovered>Navigation provider model and SharePoint’s site map data sources</my:topicCovered><my:topicCovered>Customizing the out-of-the-box navigation controls and site map data sources</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Creating Custom Page Layouts </my:moduleName>
+									<my:moduleNumber>4</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Creating and editing page layouts using Office SharePoint Designer 2007</my:topicCovered>
+								<my:topicCovered>Adding and editing field controls and Web Part zones on Page Layouts </my:topicCovered><my:topicCovered>Managing and deploying page layouts using the structured development approach with Features and solutions</my:topicCovered><my:topicCovered>Incorporating 3rd party components (including your custom components)</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Leveraging Publishing &amp; Custom Web Parts</my:moduleName>
+									<my:moduleNumber>5</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Implementing the Table of Contents Web Part </my:topicCovered>
+								<my:topicCovered>Implementing the Summary Links Web Part</my:topicCovered><my:topicCovered>Implementing the Content Query Web Part </my:topicCovered><my:topicCovered>Customizing the rendered output of Publishing Web Parts </my:topicCovered><my:topicCovered>Creating and deploying custom Web Parts with Features and solutions </my:topicCovered><my:topicCovered>Creating connectable Web Parts (Web Part connections)</my:topicCovered><my:topicCovered>Creating custom Web Part Editor Parts</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Custom Field Types &amp; Field Controls </my:moduleName>
+									<my:moduleNumber>6</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Site columns and content types </my:topicCovered>
+								<my:topicCovered>Creating custom field types </my:topicCovered><my:topicCovered>Creating custom field controls </my:topicCovered><my:topicCovered>Incorporating custom field controls and types into page layouts </my:topicCovered><my:topicCovered>Deploying custom field types and field controls with Features and solutions</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Implementing Multilingual Sites Using Variations </my:moduleName>
+									<my:moduleNumber>7</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Overview of Web Content Management multilingual enhancements and capabilities </my:topicCovered>
+								<my:topicCovered>Implementing variations and labels</my:topicCovered><my:topicCovered>Using variations to implement multilingual and multidevice sites </my:topicCovered><my:topicCovered>Implications related to navigation, search and Web Part personlization in multilingual sites </my:topicCovered><my:topicCovered>Applying a different user experience in different variation labels</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Understanding Workflow Foundation &amp; Creating Interactive Workflows</my:moduleName>
+									<my:moduleNumber>8</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Creating and editing workflows using Office SharePoint Designer 2007 </my:topicCovered>
+								<my:topicCovered>Creating template sequential and state machine workflows using Visual Studio 2005</my:topicCovered><my:topicCovered>Integrating Office InfoPath 2007 forms into Visual Studio 2005 authored workflows</my:topicCovered><my:topicCovered>Deploying workflows created using Visual Studio 2005 with Features and solutions</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Authentication &amp; Authorization</my:moduleName>
+									<my:moduleNumber>9</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Additional SharePoint groups and permission levels in MOSS Publishing sites</my:topicCovered>
+								<my:topicCovered>Managing permissions</my:topicCovered><my:topicCovered>Pluggable authentication </my:topicCovered><my:topicCovered>Alternative Access Mappings and Zones</my:topicCovered><my:topicCovered>Utilizing multiple authentication models</my:topicCovered></my:modules><my:modules>
+									<my:moduleName>Implementing and Customizing SharePoint Search</my:moduleName>
+									<my:moduleNumber>10</my:moduleNumber>
+									<my:moduleDescription>"to do"</my:moduleDescription>
+									<my:topicCovered>Understanding search in Office SharePoint Server 2007 </my:topicCovered>
+								<my:topicCovered>Search and SSP's: setup, configuration and amdinistration </my:topicCovered><my:topicCovered>Implementing and configuring search Web Parts </my:topicCovered><my:topicCovered>Customizing search results</my:topicCovered><my:topicCovered>Programatically working with the search API</my:topicCovered></my:modules></my:courseDetails>

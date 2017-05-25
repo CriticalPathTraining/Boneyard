@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Course>
+  <Code>SSC2013</Code>
+  <ShortName></ShortName>
+  <LongName>The SharePoint 2013 Administrators Survival Camp</LongName>
+  <Manual>
+    <FrontMatters>
+      <FrontMatter SortOrder="00A">AboutCourse_SSC2013.docx</FrontMatter>
+      <FrontMatter SortOrder="00B">AboutLabs.docx</FrontMatter>
+      <FrontMatter SortOrder="00C">CertificationExam-70-331.docx</FrontMatter>
+      <FrontMatter SortOrder="00D">CertificationExam-70-332.docx</FrontMatter>
+      <FrontMatter SortOrder="00E">SettingUpTheLabEnvironment.docx</FrontMatter>
+    </FrontMatters>
+    <BackMatters />
+  </Manual>
+</Course>

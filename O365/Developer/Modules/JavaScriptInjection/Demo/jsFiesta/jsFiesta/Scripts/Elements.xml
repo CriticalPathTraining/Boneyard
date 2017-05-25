@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\App.js" Url="Scripts/App.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-ui-1.10.3.min.js" Url="Scripts/jquery-ui-1.10.3.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-ui-1.10.3.js" Url="Scripts/jquery-ui-1.10.3.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-2.0.3.min.map" Url="Scripts/jquery-2.0.3.min.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-2.0.3.min.js" Url="Scripts/jquery-2.0.3.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-2.0.3.js" Url="Scripts/jquery-2.0.3.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-2.0.3.intellisense.js" Url="Scripts/jquery-2.0.3.intellisense.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\Wingtip.Counter.js" Url="Scripts/Wingtip.Counter.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\Listings.js" Url="Scripts/Listings.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

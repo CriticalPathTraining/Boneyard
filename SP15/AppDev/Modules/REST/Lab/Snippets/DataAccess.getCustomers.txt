@@ -1,0 +1,18 @@
+
+    // parse target URI for customer list in app web
+    var requestUri = "/crm.svc/Customers/" +
+                     "?$select=ID,FirstName,LastName,Company,WorkPhone,HomePhone,EmailAddress" +
+                     "&$orderby=LastName,FirstName";
+
+    // create object for request headers
+    var requestHeaders = {
+      "accept": "application/json;odata=verbose"
+    }
+
+    // send call across network
+    var deferred = $.ajax({
+      url: requestUri,
+      headers: requestHeaders,
+    });
+
+    return deferred.promise();

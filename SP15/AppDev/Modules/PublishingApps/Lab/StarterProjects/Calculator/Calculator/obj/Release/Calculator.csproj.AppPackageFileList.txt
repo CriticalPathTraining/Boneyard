@@ -1,0 +1,1 @@
+C:\Users\Administrator\Desktop\CPT Deployment Lab\Starter Files\Calculator\Calculator\bin\Release\app.publish\1.0.0.0\Calculator.app

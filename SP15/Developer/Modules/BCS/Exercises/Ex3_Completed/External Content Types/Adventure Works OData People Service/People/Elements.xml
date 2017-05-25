@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Url="Lists/People" Description="People" OnQuickLaunch="TRUE" Title="People">
+    <DataSource>
+      <Property Name="LobSystemInstance" Value="Adventure Works OData People Service" />
+      <Property Name="EntityNamespace" Value="AdventureWorks2012PersonModel" />
+      <Property Name="Entity" Value="People" />
+      <Property Name="SpecificFinder" Value="ReadSpecificPerson" />
+      <Property Name="MetadataCatalogFileName" Value="BDCMetadata.bdcm" />
+    </DataSource>
+  </ListInstance>
+</Elements>

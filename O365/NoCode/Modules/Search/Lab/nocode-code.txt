@@ -1,0 +1,33 @@
+<!--#_				
+				if(!Srch.U.n(ctx.CurrentItem.ProductImageUrlOWSURLH) && !ctx.CurrentItem.IsContainer) {
+					var len = ctx.CurrentItem.ProductImageUrlOWSURLH.indexOf(",");
+					ctx.CurrentItem.csr_PathLength = Srch.U.pathTruncationLengthWithPreview;
+                    ctx.CurrentItem.csr_PreviewImage = ctx.CurrentItem.ProductImageUrlOWSURLH.substring(0,len);
+			    }
+_#-->
+				
+				<div class="ms-srch-item-body ms-srch-item-summaryPreview" >
+				<h3 class="ms-srch-ellipsis">
+					<a title="_#=ctx.CurrentItem.Title=#_" class="ms-srch-item-link" href="_#=ctx.CurrentItem.Path=#_">_#=ctx.CurrentItem.Title=#_</a>
+				</h3>
+				<div class="ms-srch-item-previewContainer" style="display: inline-block;float:right;">
+				<a class="ms-srch-item-previewLink" href="_#=ctx.CurrentItem.Path=#_" >
+					<img class="ms-srch-item-preview" alt="_#=ctx.CurrentItem.Title=#_" src="_#=ctx.CurrentItem.csr_PreviewImage=#_"></a></div>
+				Description: _#=ctx.CurrentItem.ProductDescriptionOWSMTXT=#_<br/>
+				Product Code: <b>_#=ctx.CurrentItem.ProductCodeOWSTEXT=#_ </b><br/>
+				<div style="text-align:middle;">Product Color: 
+				<!--#_
+				var colorSplit = ctx.CurrentItem.ProductColorOWSCHCM.split(";#")
+				for(i = 0; i < colorSplit.length; i++){
+				_#-->
+				<div style="background-color:_#=colorSplit[i]=#_;width:25px;height:25px;border-radius:3px;display:inline-block;"></div>
+				<!--#_
+				}
+				_#-->
+				</div><br/>
+				<!--#_
+				var dec = ctx.CurrentItem.ProductListPriceOWSCURR.indexOf(".");
+				var listPrice = "$" + ctx.CurrentItem.ProductListPriceOWSCURR.substring(0,dec+3); 
+				_#-->
+				List Price: _#=listPrice=#_<br/>
+				</div>

@@ -1,0 +1,24 @@
+﻿
+<Field 
+  Type="Calculated" 
+  DisplayName="Age Range" 
+  EnforceUniqueValues="FALSE" 
+  Indexed="FALSE" 
+  Format="DateOnly" 
+  LCID="1033" 
+  ResultType="Text" 
+  ReadOnly="TRUE" 
+  ID="{220ae9c7-bcd5-432b-a676-4265e965cc98}" 
+  SourceID="{48427944-c512-4b61-a29b-cb4873dd9ae8}" 
+  StaticName="Age_x0020_Range" 
+  Name="Age_x0020_Range" 
+  ColName="sql_variant1" 
+  RowOrdinal="0">
+
+  <Formula>=MinimumAge</Formula>
+
+  <FieldRefs>
+    <FieldRef Name="MinimumAge"/>
+  </FieldRefs>
+
+</Field>

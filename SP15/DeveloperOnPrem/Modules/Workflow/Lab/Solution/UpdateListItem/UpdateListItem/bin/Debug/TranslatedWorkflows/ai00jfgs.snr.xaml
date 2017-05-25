@@ -1,0 +1,654 @@
+<Activity mc:Ignorable="sads" x:Class="UpdateListItem.Update_Contact_From_Service.Workflow"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:made="clr-namespace:Microsoft.Activities.Design.ExpressionTranslation;assembly=Microsoft.Activities.Design"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:p="http://schemas.microsoft.com/workflow/2012/07/xaml/activities"
+ xmlns:p1="wf://workflow.windows.net/$Activities"
+ xmlns:s="clr-namespace:System;assembly=mscorlib"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence DisplayName="Root" sads:DebugSymbol.Symbol="9xAVkCOos3N5W6AgZvpkFGqeZEM6XFN0dWRlbnRcTW9kdWxlc1xXb3JrZmxvd1xMYWJcVXBkYXRlTGlzdEl0ZW1cVXBkYXRlTGlzdEl0ZW1cVXBkYXRlQ29udGFjdEZyb21TZXJ2aWNlXFdvcmtmbG93LnhhbWwcKwPIAg4CAQEzBVwQAgFpXQW7ARACAUC8AQXGAgoCAQQ0B0gdAgFySQdUHgIBbVUHWxsCAWphB2wQAgFjbQdzGwIBYHQHiAEUAgFYiQEHkgEiAgFTkwEHmQEbAgFQmgEHugEMAgFBwwEJwQIUAgEJxAIJxAKaAQIBB3cNeysCAV6hAQu1ARYCAUa4AQu4AZABAgFEzQELzQGdAQIBPs4BC9kBFAIBONoBC+ABHwIBNeEBC/UBGAIBLfYBC5MCIgIBHJQCC8ACHwIBCqIBDa0BKQIBSq4BDbQBIQIBR+QBEegBLwIBM6UCEb0CLwIBDQ==">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID1" Name="PersonName" />
+      <Variable x:TypeArguments="p:DynamicValue" x:Name="__ReferenceID0" Name="WebServiceResponse" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID2" Name="WebServiceQuery" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID5" Default="-1" Name="PersonID" />
+      <Variable x:TypeArguments="x:String" x:Name="__ReferenceID3" Default="http://services.odata.org/V3/OData/OData.svc" Name="WebServiceUri" />
+    </Sequence.Variables>
+    <Sequence DisplayName="Get Person Name from ListItem">
+      <p1:LookupSPListItem ItemGuid="{x:Null}" Properties="{x:Null}" DisplayName="Get List Item Properties">
+        <p1:LookupSPListItem.ItemId>
+          <InArgument x:TypeArguments="x:Int32">
+            <p:ExpressionContainerValue x:TypeArguments="x:Int32">
+              <p1:GetCurrentItemId />
+            </p:ExpressionContainerValue>
+          </InArgument>
+        </p1:LookupSPListItem.ItemId>
+        <p1:LookupSPListItem.ListId>
+          <InArgument x:TypeArguments="s:Guid">
+            <p:ExpressionContainerValue x:TypeArguments="s:Guid">
+              <p1:GetCurrentListId />
+            </p:ExpressionContainerValue>
+          </InArgument>
+        </p1:LookupSPListItem.ListId>
+        <p1:LookupSPListItem.Result>
+          <OutArgument x:TypeArguments="p:DynamicValue">
+            <p:ExpressionContainerReference x:TypeArguments="p:DynamicValue" DisplayName="WebServiceResponse">
+              <p:ExpressionContainerReference.Arguments>
+                <InOutArgument x:TypeArguments="p:DynamicValue" x:Key="WebServiceResponse">
+                  <VariableReference x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID0}" />
+                </InOutArgument>
+              </p:ExpressionContainerReference.Arguments>
+              <ArgumentReference x:TypeArguments="p:DynamicValue" ArgumentName="WebServiceResponse" />
+            </p:ExpressionContainerReference>
+          </OutArgument>
+        </p1:LookupSPListItem.Result>
+      </p1:LookupSPListItem>
+      <p:GetODataProperties DisplayName="Extract Person Name to Local Value">
+        <p:GetODataProperties.Source>
+          <InArgument x:TypeArguments="p:DynamicValue">
+            <p:ExpressionContainerValue x:TypeArguments="p:DynamicValue" DisplayName="WebServiceResponse">
+              <p:ExpressionContainerValue.Arguments>
+                <InArgument x:TypeArguments="p:DynamicValue" x:Key="WebServiceResponse">
+                  <VariableValue x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID0}" />
+                </InArgument>
+              </p:ExpressionContainerValue.Arguments>
+              <ArgumentValue x:TypeArguments="p:DynamicValue" ArgumentName="WebServiceResponse" />
+            </p:ExpressionContainerValue>
+          </InArgument>
+        </p:GetODataProperties.Source>
+        <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+          <OutArgument x:TypeArguments="x:String" x:Key="Title">
+            <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="PersonName">
+              <p:ExpressionContainerReference.Arguments>
+                <InOutArgument x:TypeArguments="x:String" x:Key="PersonName">
+                  <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID1}" />
+                </InOutArgument>
+              </p:ExpressionContainerReference.Arguments>
+              <ArgumentReference x:TypeArguments="x:String" ArgumentName="PersonName" />
+            </p:ExpressionContainerReference>
+          </OutArgument>
+        </scg:Dictionary>
+      </p:GetODataProperties>
+      <p1:WriteToHistory DisplayName="Log person name">
+        <p1:WriteToHistory.Message>
+          <InArgument x:TypeArguments="x:String">
+            <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="&quot;Person name: &quot; + PersonName">
+              <p:ExpressionContainerValue.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="PersonName">
+                  <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID1}" />
+                </InArgument>
+              </p:ExpressionContainerValue.Arguments>
+              <p:ConcatString>
+                <InArgument x:TypeArguments="x:String" EvaluationOrder="1" Expression="Person name: " />
+                <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="PersonName" />
+                </InArgument>
+              </p:ConcatString>
+            </p:ExpressionContainerValue>
+          </InArgument>
+        </p1:WriteToHistory.Message>
+      </p1:WriteToHistory>
+    </Sequence>
+    <Sequence DisplayName="Get Person ID from Service">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID4" Name="ODataQueryResultCount" />
+      </Sequence.Variables>
+      <Assign DisplayName="Create OData Query">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">
+            <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="WebServiceQuery">
+              <p:ExpressionContainerReference.Arguments>
+                <InOutArgument x:TypeArguments="x:String" x:Key="WebServiceQuery">
+                  <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID2}" />
+                </InOutArgument>
+              </p:ExpressionContainerReference.Arguments>
+              <ArgumentReference x:TypeArguments="x:String" ArgumentName="WebServiceQuery" />
+            </p:ExpressionContainerReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">
+            <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="WebServiceUri + &quot;/Persons?$select=ID&amp;$filter=Name eq '&quot; + PersonName + &quot;'&quot;">
+              <p:ExpressionContainerValue.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="WebServiceUri">
+                  <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID3}" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="PersonName">
+                  <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID1}" />
+                </InArgument>
+              </p:ExpressionContainerValue.Arguments>
+              <p:ConcatString>
+                <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                  <p:ConcatString>
+                    <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                      <p:ConcatString>
+                        <p:ConcatString.Result>
+                          <OutArgument x:TypeArguments="x:String" />
+                        </p:ConcatString.Result>
+                        <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                          <ArgumentValue x:TypeArguments="x:String" ArgumentName="WebServiceUri" />
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="/Persons?$select=ID&amp;$filter=Name eq '" />
+                      </p:ConcatString>
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                      <ArgumentValue x:TypeArguments="x:String" ArgumentName="PersonName" />
+                    </InArgument>
+                  </p:ConcatString>
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="'" />
+              </p:ConcatString>
+            </p:ExpressionContainerValue>
+          </InArgument>
+        </Assign.Value>
+      </Assign>
+      <p1:WriteToHistory DisplayName="Log Query Uri">
+        <p1:WriteToHistory.Message>
+          <InArgument x:TypeArguments="x:String">
+            <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="&quot;REST Query URI: &quot; + WebServiceQuery">
+              <p:ExpressionContainerValue.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="WebServiceQuery">
+                  <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID2}" />
+                </InArgument>
+              </p:ExpressionContainerValue.Arguments>
+              <p:ConcatString>
+                <InArgument x:TypeArguments="x:String" EvaluationOrder="1" Expression="REST Query URI: " />
+                <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="WebServiceQuery" />
+                </InArgument>
+              </p:ConcatString>
+            </p:ExpressionContainerValue>
+          </InArgument>
+        </p1:WriteToHistory.Message>
+      </p1:WriteToHistory>
+      <p:HttpSend DisplayName="Execute OData Query" Method="GET">
+        <p:HttpSend.RequestHeaders>
+          <InArgument x:TypeArguments="p:DynamicValue">
+            <p:SetDynamicValueProperties>
+              <scg:Dictionary x:TypeArguments="x:String, InArgument">
+                <InArgument x:TypeArguments="x:String" x:Key="Accept">application/json;odata=verbose</InArgument>
+              </scg:Dictionary>
+            </p:SetDynamicValueProperties>
+          </InArgument>
+        </p:HttpSend.RequestHeaders>
+        <p:HttpSend.ResponseContent>
+          <OutArgument x:TypeArguments="p:DynamicValue">
+            <p:ExpressionContainerReference x:TypeArguments="p:DynamicValue" DisplayName="WebServiceResponse">
+              <p:ExpressionContainerReference.Arguments>
+                <InOutArgument x:TypeArguments="p:DynamicValue" x:Key="WebServiceResponse">
+                  <VariableReference x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID0}" />
+                </InOutArgument>
+              </p:ExpressionContainerReference.Arguments>
+              <ArgumentReference x:TypeArguments="p:DynamicValue" ArgumentName="WebServiceResponse" />
+            </p:ExpressionContainerReference>
+          </OutArgument>
+        </p:HttpSend.ResponseContent>
+        <p:HttpSend.Uri>
+          <InArgument x:TypeArguments="x:String">
+            <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="WebServiceQuery">
+              <p:ExpressionContainerValue.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="WebServiceQuery">
+                  <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID2}" />
+                </InArgument>
+              </p:ExpressionContainerValue.Arguments>
+              <ArgumentValue x:TypeArguments="x:String" ArgumentName="WebServiceQuery" />
+            </p:ExpressionContainerValue>
+          </InArgument>
+        </p:HttpSend.Uri>
+      </p:HttpSend>
+      <p:CountDynamicValueItems DisplayName="Get Number of Items in Query Results">
+        <p:CountDynamicValueItems.Result>
+          <OutArgument x:TypeArguments="x:Int32">
+            <p:ExpressionContainerReference x:TypeArguments="x:Int32" DisplayName="ODataQueryResultCount">
+              <p:ExpressionContainerReference.Arguments>
+                <InOutArgument x:TypeArguments="x:Int32" x:Key="ODataQueryResultCount">
+                  <VariableReference x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID4}" />
+                </InOutArgument>
+              </p:ExpressionContainerReference.Arguments>
+              <ArgumentReference x:TypeArguments="x:Int32" ArgumentName="ODataQueryResultCount" />
+            </p:ExpressionContainerReference>
+          </OutArgument>
+        </p:CountDynamicValueItems.Result>
+        <InArgument x:TypeArguments="p:DynamicValue">
+          <p:ExpressionContainerValue x:TypeArguments="p:DynamicValue" DisplayName="WebServiceResponse">
+            <p:ExpressionContainerValue.Arguments>
+              <InArgument x:TypeArguments="p:DynamicValue" x:Key="WebServiceResponse">
+                <VariableValue x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID0}" />
+              </InArgument>
+            </p:ExpressionContainerValue.Arguments>
+            <ArgumentValue x:TypeArguments="p:DynamicValue" ArgumentName="WebServiceResponse" />
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </p:CountDynamicValueItems>
+      <p1:WriteToHistory DisplayName="Log count of returned items">
+        <p1:WriteToHistory.Message>
+          <InArgument x:TypeArguments="x:String">
+            <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="&quot;Number of returned items: &quot; + ODataQueryResultCount">
+              <p:ExpressionContainerValue.Arguments>
+                <InArgument x:TypeArguments="x:Int32" x:Key="ODataQueryResultCount">
+                  <VariableValue x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID4}" />
+                </InArgument>
+              </p:ExpressionContainerValue.Arguments>
+              <p:ConcatString>
+                <InArgument x:TypeArguments="x:String" EvaluationOrder="1" Expression="Number of returned items: " />
+                <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                  <p:Convert x:TypeArguments="x:Int32, x:String">
+                    <InArgument x:TypeArguments="x:Int32">
+                      <ArgumentValue x:TypeArguments="x:Int32" ArgumentName="ODataQueryResultCount" />
+                    </InArgument>
+                  </p:Convert>
+                </InArgument>
+              </p:ConcatString>
+            </p:ExpressionContainerValue>
+          </InArgument>
+        </p1:WriteToHistory.Message>
+      </p1:WriteToHistory>
+      <If DisplayName="Check if Person Found in OData Query">
+        <If.Condition>
+          <InArgument x:TypeArguments="x:Boolean">
+            <p:ExpressionContainerValue x:TypeArguments="x:Boolean" DisplayName="ODataQueryResultCount != 0">
+              <p:ExpressionContainerValue.Arguments>
+                <InArgument x:TypeArguments="x:Int32" x:Key="ODataQueryResultCount">
+                  <VariableValue x:TypeArguments="x:Int32" Variable="{x:Reference __ReferenceID4}" />
+                </InArgument>
+              </p:ExpressionContainerValue.Arguments>
+              <p:Not>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <p:IsEqual x:TypeArguments="x:Int32">
+                    <p:IsEqual.Left>
+                      <InArgument x:TypeArguments="x:Int32" EvaluationOrder="0">
+                        <ArgumentValue x:TypeArguments="x:Int32" ArgumentName="ODataQueryResultCount" />
+                      </InArgument>
+                    </p:IsEqual.Left>
+                    <p:IsEqual.Right>
+                      <InArgument x:TypeArguments="x:Int32" EvaluationOrder="1" Expression="0" />
+                    </p:IsEqual.Right>
+                  </p:IsEqual>
+                </InArgument>
+              </p:Not>
+            </p:ExpressionContainerValue>
+          </InArgument>
+        </If.Condition>
+        <If.Then>
+          <Sequence>
+            <p:GetDynamicValueProperty x:TypeArguments="x:String" DisplayName="Extract Person ID" PropertyName="d/results/(0)/ID">
+              <p:GetDynamicValueProperty.Result>
+                <OutArgument x:TypeArguments="x:String">
+                  <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="PersonID">
+                    <p:ExpressionContainerReference.Arguments>
+                      <InOutArgument x:TypeArguments="x:String" x:Key="PersonID">
+                        <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID5}" />
+                      </InOutArgument>
+                    </p:ExpressionContainerReference.Arguments>
+                    <ArgumentReference x:TypeArguments="x:String" ArgumentName="PersonID" />
+                  </p:ExpressionContainerReference>
+                </OutArgument>
+              </p:GetDynamicValueProperty.Result>
+              <p:GetDynamicValueProperty.Source>
+                <InArgument x:TypeArguments="p:DynamicValue">
+                  <p:ExpressionContainerValue x:TypeArguments="p:DynamicValue" DisplayName="WebServiceResponse">
+                    <p:ExpressionContainerValue.Arguments>
+                      <InArgument x:TypeArguments="p:DynamicValue" x:Key="WebServiceResponse">
+                        <VariableValue x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID0}" />
+                      </InArgument>
+                    </p:ExpressionContainerValue.Arguments>
+                    <ArgumentValue x:TypeArguments="p:DynamicValue" ArgumentName="WebServiceResponse" />
+                  </p:ExpressionContainerValue>
+                </InArgument>
+              </p:GetDynamicValueProperty.Source>
+            </p:GetDynamicValueProperty>
+            <p1:WriteToHistory DisplayName="Log Person ID">
+              <p1:WriteToHistory.Message>
+                <InArgument x:TypeArguments="x:String">
+                  <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="&quot;Person ID: &quot; + PersonID">
+                    <p:ExpressionContainerValue.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="PersonID">
+                        <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID5}" />
+                      </InArgument>
+                    </p:ExpressionContainerValue.Arguments>
+                    <p:ConcatString>
+                      <InArgument x:TypeArguments="x:String" EvaluationOrder="1" Expression="Person ID: " />
+                      <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="PersonID" />
+                      </InArgument>
+                    </p:ConcatString>
+                  </p:ExpressionContainerValue>
+                </InArgument>
+              </p1:WriteToHistory.Message>
+            </p1:WriteToHistory>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <p1:WriteToHistory DisplayName="Log No Results" Message="No results from query" />
+        </If.Else>
+      </If>
+    </Sequence>
+    <If DisplayName="If Person Found in OData Service">
+      <If.Condition>
+        <InArgument x:TypeArguments="x:Boolean">
+          <p:ExpressionContainerValue x:TypeArguments="x:Boolean" DisplayName="PersonID!=&quot;-1&quot;">
+            <p:ExpressionContainerValue.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="PersonID">
+                <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID5}" />
+              </InArgument>
+            </p:ExpressionContainerValue.Arguments>
+            <p:Not>
+              <InArgument x:TypeArguments="x:Boolean">
+                <p:IsEqualString Pattern="{x:Null}" Text="-1">
+                  <p:IsEqualString.Input>
+                    <InArgument x:TypeArguments="x:String">
+                      <ArgumentValue x:TypeArguments="x:String" ArgumentName="PersonID" />
+                    </InArgument>
+                  </p:IsEqualString.Input>
+                </p:IsEqualString>
+              </InArgument>
+            </p:Not>
+          </p:ExpressionContainerValue>
+        </InArgument>
+      </If.Condition>
+      <If.Then>
+        <Sequence>
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID6" Name="PersonAge" />
+            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID7" Name="PersonStreetAddress" />
+            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID8" Name="PersonCity" />
+            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID9" Name="PersonState" />
+            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID10" Name="PersonZipCode" />
+            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID11" Name="PersonCountry" />
+            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID12" Name="PersonPhone" />
+          </Sequence.Variables>
+          <p1:WriteToHistory DisplayName="Now Updating Person Item" Message="Now updating person item" />
+          <Assign DisplayName="Create OData Query">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">
+                <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="WebServiceQuery">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="x:String" x:Key="WebServiceQuery">
+                      <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID2}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="x:String" ArgumentName="WebServiceQuery" />
+                </p:ExpressionContainerReference>
+              </OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">
+                <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="WebServiceUri + &quot;/Persons(&quot; + PersonID + &quot;)/PersonDetail&quot;">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="WebServiceUri">
+                      <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID3}" />
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="PersonID">
+                      <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID5}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <p:ConcatString>
+                    <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                      <p:ConcatString>
+                        <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                          <p:ConcatString>
+                            <p:ConcatString.Result>
+                              <OutArgument x:TypeArguments="x:String" />
+                            </p:ConcatString.Result>
+                            <InArgument x:TypeArguments="x:String" EvaluationOrder="1">
+                              <ArgumentValue x:TypeArguments="x:String" ArgumentName="WebServiceUri" />
+                            </InArgument>
+                            <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression="/Persons(" />
+                          </p:ConcatString>
+                        </InArgument>
+                        <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                          <ArgumentValue x:TypeArguments="x:String" ArgumentName="PersonID" />
+                        </InArgument>
+                      </p:ConcatString>
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" EvaluationOrder="2" Expression=")/PersonDetail" />
+                  </p:ConcatString>
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </Assign.Value>
+          </Assign>
+          <p1:WriteToHistory DisplayName="Log REST Query URI">
+            <p1:WriteToHistory.Message>
+              <InArgument x:TypeArguments="x:String">
+                <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="&quot;REST Query URI: &quot; + WebServiceQuery">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="WebServiceQuery">
+                      <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID2}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <p:ConcatString>
+                    <InArgument x:TypeArguments="x:String" EvaluationOrder="1" Expression="REST Query URI: " />
+                    <InArgument x:TypeArguments="x:String" EvaluationOrder="2">
+                      <ArgumentValue x:TypeArguments="x:String" ArgumentName="WebServiceQuery" />
+                    </InArgument>
+                  </p:ConcatString>
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </p1:WriteToHistory.Message>
+          </p1:WriteToHistory>
+          <p:HttpSend DisplayName="Execute OData Query" Method="GET">
+            <p:HttpSend.RequestHeaders>
+              <InArgument x:TypeArguments="p:DynamicValue">
+                <p:SetDynamicValueProperties>
+                  <scg:Dictionary x:TypeArguments="x:String, InArgument">
+                    <InArgument x:TypeArguments="x:String" x:Key="Accept">application/json;odata=verbose</InArgument>
+                  </scg:Dictionary>
+                </p:SetDynamicValueProperties>
+              </InArgument>
+            </p:HttpSend.RequestHeaders>
+            <p:HttpSend.ResponseContent>
+              <OutArgument x:TypeArguments="p:DynamicValue">
+                <p:ExpressionContainerReference x:TypeArguments="p:DynamicValue" DisplayName="WebServiceResponse">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="p:DynamicValue" x:Key="WebServiceResponse">
+                      <VariableReference x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID0}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="p:DynamicValue" ArgumentName="WebServiceResponse" />
+                </p:ExpressionContainerReference>
+              </OutArgument>
+            </p:HttpSend.ResponseContent>
+            <p:HttpSend.Uri>
+              <InArgument x:TypeArguments="x:String">
+                <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="WebServiceQuery">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="WebServiceQuery">
+                      <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID2}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <ArgumentValue x:TypeArguments="x:String" ArgumentName="WebServiceQuery" />
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </p:HttpSend.Uri>
+          </p:HttpSend>
+          <p:GetODataProperties DisplayName="Extract OData Query Response">
+            <p:GetODataProperties.Source>
+              <InArgument x:TypeArguments="p:DynamicValue">
+                <p:ExpressionContainerValue x:TypeArguments="p:DynamicValue" DisplayName="WebServiceResponse">
+                  <p:ExpressionContainerValue.Arguments>
+                    <InArgument x:TypeArguments="p:DynamicValue" x:Key="WebServiceResponse">
+                      <VariableValue x:TypeArguments="p:DynamicValue" Variable="{x:Reference __ReferenceID0}" />
+                    </InArgument>
+                  </p:ExpressionContainerValue.Arguments>
+                  <ArgumentValue x:TypeArguments="p:DynamicValue" ArgumentName="WebServiceResponse" />
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </p:GetODataProperties.Source>
+            <scg:Dictionary x:TypeArguments="x:String, OutArgument">
+              <OutArgument x:TypeArguments="x:String" x:Key="d/Age">
+                <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="PersonAge">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="x:String" x:Key="PersonAge">
+                      <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID6}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="x:String" ArgumentName="PersonAge" />
+                </p:ExpressionContainerReference>
+              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="d/Address/Street">
+                <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="PersonStreetAddress">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="x:String" x:Key="PersonStreetAddress">
+                      <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID7}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="x:String" ArgumentName="PersonStreetAddress" />
+                </p:ExpressionContainerReference>
+              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="d/Address/City">
+                <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="PersonCity">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="x:String" x:Key="PersonCity">
+                      <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID8}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="x:String" ArgumentName="PersonCity" />
+                </p:ExpressionContainerReference>
+              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="d/Address/State">
+                <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="PersonState">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="x:String" x:Key="PersonState">
+                      <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID9}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="x:String" ArgumentName="PersonState" />
+                </p:ExpressionContainerReference>
+              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="d/Address/ZipCode">
+                <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="PersonZipCode">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="x:String" x:Key="PersonZipCode">
+                      <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID10}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="x:String" ArgumentName="PersonZipCode" />
+                </p:ExpressionContainerReference>
+              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="d/Address/Country">
+                <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="PersonCountry">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="x:String" x:Key="PersonCountry">
+                      <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID11}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="x:String" ArgumentName="PersonCountry" />
+                </p:ExpressionContainerReference>
+              </OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="d/Phone">
+                <p:ExpressionContainerReference x:TypeArguments="x:String" DisplayName="PersonPhone">
+                  <p:ExpressionContainerReference.Arguments>
+                    <InOutArgument x:TypeArguments="x:String" x:Key="PersonPhone">
+                      <VariableReference x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID12}" />
+                    </InOutArgument>
+                  </p:ExpressionContainerReference.Arguments>
+                  <ArgumentReference x:TypeArguments="x:String" ArgumentName="PersonPhone" />
+                </p:ExpressionContainerReference>
+              </OutArgument>
+            </scg:Dictionary>
+          </p:GetODataProperties>
+          <p1:UpdateListItem ItemGuid="{x:Null}" ListItemProperties="{x:Null}" DisplayName="Update List Item">
+            <p1:UpdateListItem.ItemId>
+              <InArgument x:TypeArguments="x:Int32">
+                <p:ExpressionContainerValue x:TypeArguments="x:Int32">
+                  <p1:GetCurrentItemId />
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </p1:UpdateListItem.ItemId>
+            <p1:UpdateListItem.ListId>
+              <InArgument x:TypeArguments="s:Guid">
+                <p:ExpressionContainerValue x:TypeArguments="s:Guid">
+                  <p1:GetCurrentListId />
+                </p:ExpressionContainerValue>
+              </InArgument>
+            </p1:UpdateListItem.ListId>
+            <p1:UpdateListItem.ListItemPropertiesDynamicValue>
+              <InArgument x:TypeArguments="p:DynamicValue">
+                <p:SetDynamicValueProperties>
+                  <scg:Dictionary x:TypeArguments="x:String, InArgument">
+                    <InArgument x:TypeArguments="x:String" x:Key="Age">
+                      <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="PersonAge">
+                        <p:ExpressionContainerValue.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="PersonAge">
+                            <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID6}" />
+                          </InArgument>
+                        </p:ExpressionContainerValue.Arguments>
+                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="PersonAge" />
+                      </p:ExpressionContainerValue>
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="BusinessPhone">
+                      <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="PersonPhone">
+                        <p:ExpressionContainerValue.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="PersonPhone">
+                            <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID12}" />
+                          </InArgument>
+                        </p:ExpressionContainerValue.Arguments>
+                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="PersonPhone" />
+                      </p:ExpressionContainerValue>
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="StreetAddress">
+                      <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="PersonStreetAddress">
+                        <p:ExpressionContainerValue.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="PersonStreetAddress">
+                            <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID7}" />
+                          </InArgument>
+                        </p:ExpressionContainerValue.Arguments>
+                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="PersonStreetAddress" />
+                      </p:ExpressionContainerValue>
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="City">
+                      <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="PersonCity">
+                        <p:ExpressionContainerValue.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="PersonCity">
+                            <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID8}" />
+                          </InArgument>
+                        </p:ExpressionContainerValue.Arguments>
+                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="PersonCity" />
+                      </p:ExpressionContainerValue>
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="State_x002f_Province">
+                      <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="PersonState">
+                        <p:ExpressionContainerValue.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="PersonState">
+                            <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID9}" />
+                          </InArgument>
+                        </p:ExpressionContainerValue.Arguments>
+                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="PersonState" />
+                      </p:ExpressionContainerValue>
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="Zip_x002f_PostalCode">
+                      <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="PersonZipCode">
+                        <p:ExpressionContainerValue.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="PersonZipCode">
+                            <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID10}" />
+                          </InArgument>
+                        </p:ExpressionContainerValue.Arguments>
+                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="PersonZipCode" />
+                      </p:ExpressionContainerValue>
+                    </InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="Country_x002f_Region">
+                      <p:ExpressionContainerValue x:TypeArguments="x:String" DisplayName="PersonCountry">
+                        <p:ExpressionContainerValue.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="PersonCountry">
+                            <VariableValue x:TypeArguments="x:String" Variable="{x:Reference __ReferenceID11}" />
+                          </InArgument>
+                        </p:ExpressionContainerValue.Arguments>
+                        <ArgumentValue x:TypeArguments="x:String" ArgumentName="PersonCountry" />
+                      </p:ExpressionContainerValue>
+                    </InArgument>
+                  </scg:Dictionary>
+                </p:SetDynamicValueProperties>
+              </InArgument>
+            </p1:UpdateListItem.ListItemPropertiesDynamicValue>
+          </p1:UpdateListItem>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <p1:WriteToHistory DisplayName="Log No Person Found" Message="No person found - do nothing" />
+      </If.Else>
+    </If>
+  </Sequence>
+</Activity>
