@@ -1,8 +1,0 @@
-=If([Age] >= 80, "Customers 80 and up",
-  If([Age] >= 65, "Customers 65 TO 80",
-   If([Age] >= 50, "Customers 50 TO 65",
-    If([Age] >= 40, "Customers 40 TO 49",
-     If([Age] >= 30, "Customers 30 TO 39",
-      If([Age] >= 24, "Customers 24 TO 29",
-       If([Age] >= 18, "Customers 18 TO 23",
-                        "Customers under 18")))))))
